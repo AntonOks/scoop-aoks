@@ -34,7 +34,7 @@
     ],
     "env_set": {
                     "LazarusDir": "$dir"
-               }
+               },
     "bin": [
                 "lazarus.exe",
                 "lazbuild.exe",
