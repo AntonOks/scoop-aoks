@@ -9,7 +9,6 @@ In this repository you will find everything you need to know about creating cust
 ### `bucket` Folder
 
 - All manifests belong here
-- `.gitkeep` file could be removed after you push your first manifest
 
 ### `bin` Folder
 
