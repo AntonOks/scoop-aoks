@@ -33,7 +33,8 @@
         ]
     ],
     "env_set": {
-                    "LazarusDir": "$dir"
+                    "LazarusDir": "$dir",
+                    "LazDir": "$dir"
                },
     "bin": [
                 "lazarus.exe",
