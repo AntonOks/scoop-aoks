@@ -6,12 +6,21 @@
         "url": "https://github.com/mirinsoft/CloneApp/blob/master/README.md"
     },
     "bin": "CloneApp.exe",
+    "shortcuts": [
+            [
+                "CloneApp.exe",
+                "CloneApp"
+            ]
+        ],
     "checkver": {
         "github": "https://github.com/mirinsoft/CloneApp"
     },
     "url": "https://github.com/mirinsoft/CloneApp/releases/download/2.14.555/CloneApp.zip",
     "hash": "18e3de7985285dd5e9b1a52337b43d51739d9f1d9fae0e545c8d788cb2a4cb39",
     "autoupdate": {
-        "url": "https://github.com/mirinsoft/CloneApp/releases/download/$version/CloneApp.zip"
+        "url": "https://github.com/mirinsoft/CloneApp/releases/download/$version/CloneApp.zip",
+		"hash": {
+            "url": "$url.sha256"
+        }
     }
 }
