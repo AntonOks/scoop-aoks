@@ -1,0 +1,44 @@
+{
+    "version": "3.3.2.0",
+    "description": "file renaming software for Windows",
+    "homepage": "https://www.bulkrenameutility.co.uk/",
+    "license": {
+        "url": "https://www.bulkrenameutility.co.uk/License.php"
+    },
+    "url": "http://www.s3.tgrmn.com/bru/BRU_NoInstall.zip",
+    "hash": "md5:8210a739e3da640cb03a7eee50ebae7b",
+    "architecture": {
+        "64bit": {
+            "extract_dir": "64-bit"
+        },
+        "32bit": {
+            "extract_dir": "32-bit"
+        }
+    },
+    "bin": "Bulk Rename Utility.exe",
+	"shortcuts": [
+        [
+            "Bulk Rename Utility.exe",
+            "Bulk Rename Utility"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.bulkrenameutility.co.uk/Download.php",
+        "regex": "Bulk Rename Utility version ([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "http://www.s3.tgrmn.com/bru/BRU_NoInstall.zip",
+        "architecture": {
+            "64bit": {
+                "extract_dir": "64-bit"
+            },
+            "32bit": {
+                "extract_dir": "32-bit"
+            }
+        },
+        "hash": {
+            "url": "https://www.bulkrenameutility.co.uk/Download.php",
+            "find": "MD5 value: <i>([A-Fa-f\\d]{32})"
+        }
+    }
+}
