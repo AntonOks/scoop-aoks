@@ -22,6 +22,9 @@
             "Bulk Rename Utility"
         ]
     ],
+    "persist": [
+        "Bulk Rename Utility.ini"
+    ],
     "checkver": {
         "url": "https://www.bulkrenameutility.co.uk/Download.php",
         "regex": "Bulk Rename Utility version ([\\d.]+)"
