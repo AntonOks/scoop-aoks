@@ -28,7 +28,7 @@
     ],
     "checkver": {
         "url": "https://www.bulkrenameutility.co.uk/Download.php",
-        "regex": "Bulk Rename Utility version ([\\d.]+)"
+        "regex": ">Bulk Rename Utility <span class=\"text-muted\">version ([\\d.]+)"
     },
     "autoupdate": {
         "url": "http://www.s3.tgrmn.com/bru/BRU_NoInstall.zip",
