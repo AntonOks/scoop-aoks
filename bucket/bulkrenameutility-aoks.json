@@ -3,6 +3,7 @@
     "description": "file renaming software for Windows",
     "homepage": "https://www.bulkrenameutility.co.uk/",
     "license": {
+        "identifier": "Proprietary",
         "url": "https://www.bulkrenameutility.co.uk/License.php"
     },
     "url": "http://www.s3.tgrmn.com/bru/BRU_NoInstall.zip",
