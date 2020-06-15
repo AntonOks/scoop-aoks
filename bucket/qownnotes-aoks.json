@@ -15,6 +15,9 @@
             "QOwnNotes"
         ]
     ],
+    "persist": [
+        "Data"
+    ],
     "checkver": {
         "url": "https://www.qownnotes.org/installation",
         "regex": "<span class=\"build-number\">version (?<version>[\\d.]+) - build windows-(?<build>[a-fA-F0-9]+)</span>"
