@@ -13,10 +13,10 @@
         "osquery.conf"
     ],
     "notes": [
-        "Parameters can be passed to the installer with the use of `--params`.",
-        "For example: `--params='/InstallService'`",
+        "Parameters can be passed to the installer with the use of --params",
+        "For example: --params=/InstallService",
         " ",
-        "* `/InstallService` - This creates a new windows service that will auto-start the daemon."
+        "* /InstallService - This creates a new windows service that will auto-start the daemon"
     ],
     "checkver": {
         "url": "https://raw.githubusercontent.com/osquery/osquery-site/source/src/data/osquery_metadata.json",
