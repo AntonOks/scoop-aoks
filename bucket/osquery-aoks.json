@@ -1,0 +1,25 @@
+{
+    "version": "4.3.0",
+    "description": "Performant endpoint visibility",
+    "homepage": "https://osquery.io/",
+    "license": {
+        "identifier": "Apache-2.0|GPL-2.0-only",
+        "url": "https://github.com/osquery/osquery/blob/master/LICENSE"
+    },
+    "url": "https://pkg.osquery.io/windows/osquery-4.3.0.msi",
+    "hash": "9dc52f16c54020f44fd1c5ec740c181b2ede530c9e1489f9afe727d4f6fb0be5",
+    "bin": "osqueryi.exe",
+    "persist": [
+        "osquery.conf"
+    ],
+    "checkver": {
+        "url": "https://raw.githubusercontent.com/osquery/osquery-site/source/src/data/osquery_metadata.json",
+        "jp": "$.current_version"
+    },
+    "autoupdate": {
+        "url": "https://pkg.osquery.io/windows/osquery-$version.msi",
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
