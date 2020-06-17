@@ -8,7 +8,11 @@
     },
     "url": "https://pkg.osquery.io/windows/osquery-4.3.0.msi",
     "hash": "9dc52f16c54020f44fd1c5ec740c181b2ede530c9e1489f9afe727d4f6fb0be5",
-    "bin": "osqueryi.exe",
+	"extract_dir": "osquery",
+    "bin": [
+        "osqueryi.exe",
+        "osqueryd\\osqueryd.exe"
+        ],
     "persist": [
         "osquery.conf"
     ],
