@@ -11,16 +11,16 @@
 	"extract_dir": "osquery",
     "bin": [
         "osqueryi.exe",
-        "osqueryd\\osqueryd.exe"
+        "osqueryd\\osqueryd.exe",
+		"manage-osqueryd.ps1"
         ],
     "persist": [
         "osquery.conf"
     ],
     "notes": [
-        "Parameters can be passed to the installer with the use of --params",
-        "For example: --params=/InstallService",
-        " ",
-        "* /InstallService - This creates a new windows service that will auto-start the daemon"
+        "run \"manage-osqueryd.ps1 -help\" to learn howto install/uninstall/start/stop the osqueryd daemon... and more...",
+		"run \"osqueryd --help\" for the osqueryd daemon help",
+		"run \"osqueryi --help\" for the interactive shell help"
     ],
     "checkver": {
         "url": "https://raw.githubusercontent.com/osquery/osquery-site/source/src/data/osquery_metadata.json",
