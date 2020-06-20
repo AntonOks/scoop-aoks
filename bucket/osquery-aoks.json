@@ -17,6 +17,12 @@
     "persist": [
         "osquery.conf"
     ],
+    "post_install": [
+        "$mng_d = \"$dir\\manage-osqueryd.ps1\"",
+        "$find = \"$PSScriptRoot, '..', 'osquery', 'osqueryd', 'osqueryd.exe'\"",
+        "$replace = \"$PSScriptRoot, 'osqueryd', 'osqueryd.exe'\"",
+        "(Get-Content \"$mng_d\").replace(\"$find\", \"$replace\") | Set-Content \"$mng_d\" | Out-Null"
+        ],
     "notes": [
         "run \"manage-osqueryd.ps1 -help\" to learn howto install/uninstall/start/stop the osqueryd daemon... and more...",
 		"run \"osqueryd --help\" for the osqueryd daemon help",
