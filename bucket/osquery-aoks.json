@@ -1,32 +1,30 @@
 {
-    "version": "4.3.0",
+    "version": "4.4.0",
     "description": "Performant endpoint visibility",
     "homepage": "https://osquery.io/",
     "license": {
         "identifier": "Apache-2.0|GPL-2.0-only",
         "url": "https://github.com/osquery/osquery/blob/master/LICENSE"
     },
-    "url": "https://pkg.osquery.io/windows/osquery-4.3.0.msi",
-    "hash": "9dc52f16c54020f44fd1c5ec740c181b2ede530c9e1489f9afe727d4f6fb0be5",
-	"extract_dir": "osquery",
+    "url": "https://pkg.osquery.io/windows/osquery-4.4.0.msi",
+    "hash": "0d295139c75b0b8ce485121b75e68dba833a65d7d719312f5d6809a7081f0d3a",
+    "extract_dir": "osquery",
     "bin": [
         "osqueryi.exe",
         "osqueryd\\osqueryd.exe",
-		"manage-osqueryd.ps1"
-        ],
-    "persist": [
-        "osquery.conf"
+        "manage-osqueryd.ps1"
     ],
+    "persist": "osquery.conf",
     "post_install": [
         "$mng_d = \"$dir\\manage-osqueryd.ps1\"",
         "$find = \"$PSScriptRoot, '..', 'osquery', 'osqueryd', 'osqueryd.exe'\"",
         "$replace = \"$PSScriptRoot, 'osqueryd', 'osqueryd.exe'\"",
         "(Get-Content \"$mng_d\").replace(\"$find\", \"$replace\") | Set-Content \"$mng_d\" | Out-Null"
-        ],
+    ],
     "notes": [
         "run \"manage-osqueryd.ps1 -help\" to learn howto install/uninstall/start/stop the osqueryd daemon... and more...",
-		"run \"osqueryd --help\" for the osqueryd daemon help",
-		"run \"osqueryi --help\" for the interactive shell help"
+        "run \"osqueryd --help\" for the osqueryd daemon help",
+        "run \"osqueryi --help\" for the interactive shell help"
     ],
     "checkver": {
         "url": "https://raw.githubusercontent.com/osquery/osquery-site/source/src/data/osquery_metadata.json",
