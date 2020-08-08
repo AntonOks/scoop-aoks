@@ -16,12 +16,6 @@
             "KDiff3"
         ]
     ],
-    "uninstaller": {
-        "script": [
-            "Get-Process -Name dbus-daemon | Stop-Process",
-            "scoop uninstall \"$app\""
-        ]
-    },
     "checkver": {
         "url": "https://binary-factory.kde.org/job/KDiff3_Stable_win64/lastSuccessfulBuild/artifact/",
         "regex": "kdiff3-([\\d.-]+)-windows-(?<lib>\\w+)-cl\\.7z"
