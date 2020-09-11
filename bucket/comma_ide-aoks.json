@@ -5,7 +5,7 @@
     "license": {
         "identifier": "Proprietary"
     },
-    "url": "https://commaide.com/download/community/windows",
+    "url": "https://commaide.com/download/community/windows#/dl.7z",
     "shortcuts": [
         [
             "bin\\comma.exe",
@@ -25,6 +25,6 @@
         "regex": "The latest Comma Community release is <strong>([\\d.-]+)</strong>. Want more frequent"
     },
     "autoupdate": {
-        "url": "https://commaide.com/download/community/windows"
+        "url": "https://commaide.com/download/community/windows#/dl.7z"
     }
 }
