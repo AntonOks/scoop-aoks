@@ -1,0 +1,30 @@
+{
+    "homepage": "https://commaide.com/",
+    "version": "2020.07.0",
+    "description": "The Integrated Development Environment for Raku",
+    "license": {
+        "identifier": "Proprietary"
+    },
+    "url": "https://commaide.com/download/community/windows",
+    "shortcuts": [
+        [
+            "bin\\comma.exe",
+            "Comma IDE"
+        ],
+        [
+            "bin\\comma64.exe",
+            "Comma IDE (64bit)"
+        ]
+    ],
+    "bin": [
+        "bin\\comma.exe",
+        "bin\\comma64.exe"
+    ],
+    "checkver": {
+        "url": "https://commaide.com/download",
+        "regex": "The latest Comma Community release is <strong>([\\d.-]+)</strong>. Want more frequent"
+    },
+    "autoupdate": {
+        "url": "https://commaide.com/download/community/windows"
+    }
+}
