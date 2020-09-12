@@ -20,5 +20,9 @@
     "autoupdate": {
         "url": "https://helgeklein.com/downloads/SetACL-Studio/current/SetACL%20Studio.msi",
         "extract_dir": "Helge Klein\\SetACL Studio"
-    }
+    },
+    "notes": [
+        "Use the following license key to convert the downloaded product to an unrestricted version: ",
+        "RUMH5R-PREMM7-W38EA5-QTSQZ1-1HA1A6-CTXHUQ"
+    ]
 }
