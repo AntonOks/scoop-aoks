@@ -3,7 +3,8 @@
     "description": "Automate Permissions and Manage ACLs",
     "homepage": "https://helgeklein.com/setacl/",
     "license": "Freeware",
-    "url": "https://helgeklein.com/downloads/SetACL/current/SetACL (executable version).zip"
+    "url": "https://helgeklein.com/downloads/SetACL/current/SetACL (executable version).zip",
+    "hash": "09e34e294c95ba7967c5463eca1acb571b745620cc2f58527dd1c1f154436ee0",
     "bin": "setacl.exe",
     "shortcuts": [
         [
