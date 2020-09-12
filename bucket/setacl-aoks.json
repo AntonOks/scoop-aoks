@@ -14,12 +14,6 @@
         }
     },
     "bin": "setacl.exe",
-    "shortcuts": [
-        [
-            "setacl.exe",
-            "SetACL"
-        ]
-    ],
     "checkver": {
         "url": "https://helgeklein.com/download/",
         "regex": ">EXE version of SetACL ([\\d.-]+)</a> for 32-bit and 64-bit Windows"
