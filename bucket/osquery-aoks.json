@@ -1,13 +1,13 @@
 {
-    "version": "4.4.0",
+    "version": "4.5.0",
     "description": "Performant endpoint visibility",
     "homepage": "https://osquery.io/",
     "license": {
         "identifier": "Apache-2.0|GPL-2.0-only",
         "url": "https://github.com/osquery/osquery/blob/master/LICENSE"
     },
-    "url": "https://pkg.osquery.io/windows/osquery-4.4.0.msi",
-    "hash": "0d295139c75b0b8ce485121b75e68dba833a65d7d719312f5d6809a7081f0d3a",
+    "url": "https://pkg.osquery.io/windows/osquery-4.5.0.msi",
+    "hash": "0e66c7ac858997c9d1768cccb315dd96038e87ef1ca424168c31226ca7d88a37",
     "extract_dir": "osquery",
     "bin": [
         "osqueryi.exe",
