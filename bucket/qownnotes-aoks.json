@@ -20,8 +20,7 @@
     ],
     "persist": "Data",
     "checkver": {
-        "url": "https://www.qownnotes.org/installation",
-        "regex": "<span class=\"build-number\">version ([\\d.]+) - build v"
+        "github": "https://github.com/pbek/QOwnNotes"
     },
     "autoupdate": {
         "url": "https://github.com/pbek/QOwnNotes/releases/download/v$version/QOwnNotes.zip",
