@@ -1,7 +1,7 @@
 {
     "homepage": "https://www.builtbybel.com/ms-apps/privatezilla",
     "description": "Privatezilla is the simplest way to perform a quick privacy and security check of your Windows 10 copy.",
-    "version": "0.41.10",
+    "version": "0.42.0",
     "license": "MIT",
     "bin": "Privatezilla.exe",
     "shortcuts": [
@@ -13,8 +13,8 @@
     "checkver": {
         "github": "https://github.com/builtbybel/privatezilla"
     },
-    "url": "https://github.com/builtbybel/privatezilla/releases/download/0.41.10/privatezilla.zip",
-    "hash": "df86646d155370946b689bd6612a7f0e9f31f1595a93db42982d3731a9f85e7b",
+    "url": "https://github.com/builtbybel/privatezilla/releases/download/0.42.0/privatezilla.zip",
+    "hash": "7ece28e19366cabbd519257299f61ef1ec76c1c88ed39156634829005b7ccc7d",
     "autoupdate": {
         "url": "https://github.com/builtbybel/privatezilla/releases/download/$version/privatezilla.zip",
         "hash": {
