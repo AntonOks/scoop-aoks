@@ -1,7 +1,7 @@
 {
     "version": "2020.05.1-01",
     "description": "Raku compiler for the MoarVM and JVM",
-    "homepage": "https://rakudo.org",
+    "homepage": "https://rakudo.org/star",
     "license": "Artistic-2.0",
     "architecture": {
         "64bit": {
