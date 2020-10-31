@@ -8,7 +8,7 @@
     "url": "https://deac-fra.dl.sourceforge.net/project/diff-ext/Binaries/1.9.2/diff-ext-1.9.2.exe",
     "installer": {
         "file": "diff-ext-1.9.2.exe",
-    "args": [
+        "args": [
             "/VERYSILENT",
             "/DIR=\"$dir\"",
             "/SUPPRESSMSGBOXES",
@@ -31,9 +31,7 @@
             "diff-ext Setup"
         ]
     ],
-    "bin": [
-        "diff-ext-setup.exe"
-    ],
+    "bin": "diff-ext-setup.exe",
     "checkver": {
         "url": "http://diff-ext.sourceforge.net/",
         "regex": "<td>Windows Explorer</td>\\r\\n.+<td>([\\d.-]+)</td>"

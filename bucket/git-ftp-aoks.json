@@ -5,16 +5,18 @@
     "url": "https://github.com/git-ftp/git-ftp/archive/1.6.0.zip",
     "extract_dir": "git-ftp-1.6.0",
     "depends": "git",
-    "post_install": "
-        pushd $dir
-        try {
-            New-Item -ItemType HardLink -Value \"${dir}\\git-ftp\" -Path \"${env:GIT_INSTALL_ROOT}\\usr\\bin\\git-ftp\"
-            iex \"$(scoop which git-bash) -c 'chmod +x /bin/git-ftp'\"
-        }
-        finally {
-            popd
-        }
-        ",
+    "post_install": [
+        "",
+        "pushd $dir",
+        "try {",
+        "New-Item -ItemType HardLink -Value \"${dir}\\git-ftp\" -Path \"${env:GIT_INSTALL_ROOT}\\usr\\bin\\git-ftp\"",
+        "iex \"$(scoop which git-bash) -c 'chmod +x /bin/git-ftp'\"",
+        "}",
+        "finally {",
+        "popd",
+        "}",
+        ""
+    ],
     "checkver": {
         "github": "https://github.com/git-ftp/git-ftp"
     },
