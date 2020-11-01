@@ -11,9 +11,13 @@
     },
     "extract_dir": "rakudo-$version",
     "bin": [
+        "bin\\nqp.exe",
         "bin\\perl6.exe",
+        "bin\\perl6w.exe",
         "bin\\raku.exe",
+        "bin\\rakuw.exe",
         "bin\\rakudo.exe",
+        "bin\\rakudow.exe",
         "bin\\perl6-debug.exe",
         "bin\\raku-debug.exe",
         "bin\\rakudo-debug.exe"
