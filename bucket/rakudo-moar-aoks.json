@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://rakudo.org/dl/rakudo/rakudo-moar-2020.08.2-01-win-x86_64.zip",
-            "hash": "6a4a5ffa12f64884d1802aac1244fbeb2d0910b3ba6c9d3ba480f27c18f71631"
+            "hash": "77c662aacc736b87ce38c63ec75d89a8376bc139b29228aaa4ba7137d0595500"
         }
     },
     "extract_dir": "2020.08.2",
