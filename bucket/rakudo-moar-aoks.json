@@ -1,23 +1,20 @@
 {
-    "version": "2020.10-01",
+    "version": "2020.08.2-01",
     "description": "The most mature, production-ready implementation of the Raku language.",
     "homepage": "https://rakudo.org/",
     "license": "Artistic-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://rakudo.org/dl/rakudo/rakudo-moar-2020.10-01-win-x86_64.zip",
+            "url": "https://rakudo.org/dl/rakudo/rakudo-moar-2020.08.2-01-win-x86_64.zip",
             "hash": "6a4a5ffa12f64884d1802aac1244fbeb2d0910b3ba6c9d3ba480f27c18f71631"
         }
     },
-    "extract_dir": "rakudo-2020.10",
+    "extract_dir": "2020.08.2",
     "bin": [
         "bin\\nqp.exe",
         "bin\\perl6.exe",
-        "bin\\perl6w.exe",
         "bin\\raku.exe",
-        "bin\\rakuw.exe",
         "bin\\rakudo.exe",
-        "bin\\rakudow.exe",
         "bin\\perl6-debug.exe",
         "bin\\raku-debug.exe",
         "bin\\rakudo-debug.exe"
