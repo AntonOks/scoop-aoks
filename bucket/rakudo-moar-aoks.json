@@ -20,16 +20,18 @@
     ],
     "checkver": {
         "url": "https://rakudo.org/downloads/rakudo",
-        "regex": "rakudo-moar-([\\d.-]+)-win-x86_64.zip"
+        "regex": "rakudo-moar-(?<version>[\\d.]+)-(?<revision>[\\d]+)-win-x86_64.zip",
+        "replace": "${version}-${revision}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://rakudo.org/dl/rakudo/rakudo-moar-$version-win-x86_64.zip"
+                "url": "https://rakudo.org/dl/rakudo/rakudo-moar-$matchVersion-$matchRevision-win-x86_64.zip"
             }
         },
         "hash": {
             "url": "$url.sha256.txt"
-        }
+        },
+        "extract_dir": "rakudo-$matchVersion"
     }
 }
