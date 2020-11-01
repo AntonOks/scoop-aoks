@@ -9,7 +9,7 @@
             "hash": "6a4a5ffa12f64884d1802aac1244fbeb2d0910b3ba6c9d3ba480f27c18f71631"
         }
     },
-    "extract_dir": "rakudo-$version",
+    "extract_dir": "rakudo-2020.10",
     "bin": [
         "bin\\nqp.exe",
         "bin\\perl6.exe",
