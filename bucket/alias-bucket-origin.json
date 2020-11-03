@@ -8,7 +8,7 @@
         "script": [
             "function global:Write-Host() {}",
             "Write-Host -NoNewline \"Adding alias for \"; Write-host -ForegroundColor green \"bucket-origin\"",
-            "scoop alias add bucket-origin scoop alias add bucket-origin \"Get-ChildItem `$bucketsdir | ForEach-Object { `$BUCKET = `$_.name; `$ORIGIN = `&git -C `$bucketsdir\`$BUCKET\ remote get-url origin; Write-Host -NoNewLine -foreground green `$BUCKET; Write-Host (`\" `\" *(40 - `$BUCKET.length)) `$ORIGIN } \" \"Show the scoop buckets and their `\"git origin`\" info\""
+            "scoop alias add bucket-origin \"Get-ChildItem `$bucketsdir | ForEach-Object { `$BUCKET = `$_.name; `$ORIGIN = `&git -C `$bucketsdir\`$BUCKET\ remote get-url origin; Write-Host -NoNewLine -foreground green `$BUCKET; Write-Host (`\" `\" *(40 - `$BUCKET.length)) `$ORIGIN } \" \"Show the scoop buckets and their `\"git origin`\" info\""
         ]
     },
     "uninstaller": {
