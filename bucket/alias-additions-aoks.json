@@ -30,7 +30,7 @@
             "Write-Host -NoNewline \"Adding alias for \"; Write-host -ForegroundColor green \"search-info\"",
             "scoop alias add search-info \"ls -recurse `$bucketsdir | Select-String `\".*description`\" | Select-String `\".*`$(`$args[0]).*`\" | %{`$A=(`$_.filename.substring(0,`$_.filename.length-5)); `$B=`$_.Line.split('`\"'); `$B=`$B[3..(`$B.length-2)]; Write-Host -NoNewLine -foreground green `$A; Write-Host (`\" `\" *(40-`$A.length)) `$B }\" \"Search available apps and display information about each app\"",
             "Write-Host -NoNewline \"Adding alias for \"; Write-host -ForegroundColor green \"bucket-origin\"",
-            "scoop alias add bucket-origin \"Get-ChildItem `$bucketsdir | ForEach-Object { `$BUCKET = `$_.name; `$ORIGIN = `&git -C `$bucketsdir\`$BUCKET\ remote get-url origin; Write-Host -NoNewLine -foreground green `$BUCKET; Write-Host (`\" `\" *(40 - `$BUCKET.length)) `$ORIGIN } \" \"Show the scoop buckets and their `\"git origin`\" info\""
+            "scoop alias add bucket-origin \"Get-ChildItem `$bucketsdir | ForEach-Object { `$BUCKET = `$_.name; `$ORIGIN = `&git -C `$bucketsdir\\`$BUCKET\\ remote get-url origin; Write-Host -NoNewLine -foreground green `$BUCKET; Write-Host (`\" `\" *(40 - `$BUCKET.length)) `$ORIGIN } \" \"Show the scoop buckets and their `\"git origin`\" info\""
         ]
     },
     "uninstaller": {
