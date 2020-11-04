@@ -13,7 +13,8 @@
     "bin": [
         "bin\\perl6.exe",
         "bin\\raku.exe",
-        "bin\\rakudo.exe"
+        "bin\\rakudo.exe",
+        "share\\perl6\\site\\bin\\zef.exe"
     ],
     "checkver": {
         "url": "https://rakudo.org/downloads/star",
