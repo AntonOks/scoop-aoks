@@ -1,6 +1,6 @@
 {
     "version": "2020.05.1-01",
-    "description": "Raku compiler for the MoarVM and JVM",
+    "description": "The Rakudo Star Bundle contains the Rakudo Compiler, a collection of modules from the Raku ecosystem, and the language documentation.",
     "homepage": "https://rakudo.org/star",
     "license": "Artistic-2.0",
     "architecture": {
