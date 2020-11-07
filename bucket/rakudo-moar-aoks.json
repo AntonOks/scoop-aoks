@@ -21,8 +21,7 @@
         "bin\\perl6-debug.exe",
         "bin\\raku-debug.exe",
         "bin\\rakudo-debug.exe",
-        "share\\perl6\\site\\bin\\zef",
-        "share\\perl6\\site\\bin\\zef.bat"
+        "share\\perl6\\site\\bin\\zef"
     ],
     "checkver": {
         "url": "https://rakudo.org/downloads/rakudo",
