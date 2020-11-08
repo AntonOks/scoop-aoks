@@ -1,0 +1,34 @@
+{
+    "homepage": "https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html",
+    "version": "3.9.3.3",
+    "description": "Link Shell Extension offers  the creation of Hardlinks, Junctions, Volume Mountpoints, Symbolic Links and a folder cloning or copy process.",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://schinagl.priv.at/nt/hardlinkshellext/license.txt"
+    },
+    "url": "https://schinagl.priv.at/nt/hardlinkshellext/HardLinkShellExt_X64.exe",
+    "hash": "cc60bd4b6808770cd32e748dd4b2bf3f97b9b895c20954fc094d7f5b698a2e9c",
+    "installer": {
+        "file": "HardLinkShellExt_X64.exe",
+        "args": [
+            "/S",
+            "/D=\"$dir\"",
+            "/Language=English"
+        ]
+    },
+    "uninstaller": {
+        "file": "uninst-HardLinkShellExt_X64.exe",
+        "args": [
+            "/S"
+        ]
+    },
+    "bin": "symlink.exe",
+    "post_install": "symlink.exe",
+    "checkver": {
+        "url": "https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html",
+        "regex": "<i>Last Updated .+, Version ([\\d.]+)</i>"
+    },
+    "autoupdate": {
+        "url": "https://schinagl.priv.at/nt/hardlinkshellext/HardLinkShellExt_X64.exe"
+    }
+}
