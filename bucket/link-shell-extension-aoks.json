@@ -8,22 +8,23 @@
     },
     "url": "https://schinagl.priv.at/nt/hardlinkshellext/HardLinkShellExt_X64.exe",
     "hash": "cc60bd4b6808770cd32e748dd4b2bf3f97b9b895c20954fc094d7f5b698a2e9c",
+    "depends": "sudo",
     "installer": {
-        "file": "HardLinkShellExt_X64.exe",
-        "args": [
-            "/S",
-            "/D=\"$dir\"",
-            "/Language=English"
-        ]
+        "script": "Invoke-ExternalCommand -FilePath \"$dir\\HardLinkShellExt_X64.exe\" -Args @('/S', '/Language=English', \"/D=$dir\") -RunAs | Out-Null",
     },
     "uninstaller": {
-        "file": "uninst-HardLinkShellExt_X64.exe",
-        "args": [
-            "/S"
-        ]
+        "script": "Invoke-ExternalCommand -FilePath \"$dir\\uninst-HardLinkShellExt_X64.exe\" -Args '/S' -RunAs | Out-Null"
     },
-    "bin": "symlink.exe",
-    "post_install": "symlink.exe",
+    "bin": [
+        "HardLinkShellExt_X64.exe",
+        "LSEConfig.exe"
+    ],
+    "shortcuts": [
+        [
+            "LSEConfig.exe",
+            "Link Shell Extension Config"
+        ]
+    ],
     "checkver": {
         "url": "https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html",
         "regex": "<i>Last Updated .+, Version ([\\d.]+)</i>"
