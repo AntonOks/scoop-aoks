@@ -1,9 +1,9 @@
 {
-    "version": "1.1.1",
+    "version": "1.2.0",
     "description": "Fully featured and highly configurable SFTP server with optional FTP/S and WebDAV support.",
     "homepage": "https://github.com/drakkan/sftpgo",
-    "url": "https://github.com/drakkan/sftpgo/releases/download/v1.1.1/sftpgo_v1.1.1_windows_portable_x86_64.zip",
-    "hash": "303e99f1b0d51aa702d146ae2e2f18c50d564fef6f9182cd4c877328b4f98625",
+    "url": "https://github.com/drakkan/sftpgo/releases/download/v1.2.0/sftpgo_v1.2.0_windows_portable_x86_64.zip",
+    "hash": "f68aab5c9e98e8f73fe74bfc730dff242884ab5c29c5da522d67e08cf373e143",
     "bin": "sftpgo.exe",
     "checkver": "github",
     "autoupdate": {
