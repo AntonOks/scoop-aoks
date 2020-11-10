@@ -1,8 +1,8 @@
 {
     "homepage": "https://github.com/AntonOks/alias-additions-aoks",
-    "description": "Adds an alias 'scoop update-all' for updating scoops and apps, 'scoop cleanup-all' for removing old versions of all apps, 'scoop cache-show-all' for showing the download cache of all apps, 'scoop cache-rm-all' for clearing the download cache of all apps, 'scoop list-all' which list all app names, 'scoop info-all' which list all apps with their description, and 'scoop search-info <\"keyword\">' which searches all app descriptions and returns apps containing the specified keyword.",
-    "version": "v0.0.4",
-    "url": "https://raw.githubusercontent.com/AntonOks/alias-additions-aoks/master/bucket/alias-additions-aoks.json",
+    "description": "Adds aliases to scoop",
+    "version": "v0.0.5",
+    "url": "https://raw.githubusercontent.com/AntonOks/scoop-aoks/master/bucket/alias-additions-aoks.json",
     "installer": {
         "script": [
             "function global:Write-Host() {}",
