@@ -1,0 +1,44 @@
+{
+    "version": "3.92",
+    "description": "The Fastest copy/backup software.",
+    "homepage": "https://fastcopy.jp/en/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://fastcopy.jp/help/fastcopy_eng.htm#license"
+    },
+    "url": "https://fastcopy.jp/archive/FastCopy392_installer.exe",
+    "hash": "0997f838f056246cf2e5d589bb09785aa33f0619e541213bb5b2363d",
+    "installer": {
+        "args": [
+             "/SILENT",
+             "/DIR=\"$dir\"",
+             "/NOPROG",
+             "/NODESK"
+         ]
+        },
+    "uninstaller": {
+        "args": [
+            "/SILEN",
+            "/r"
+        ]
+    },
+    "bin": "FastCopy.exe",
+    "shortcuts": [
+        [
+            "FastCopy.exe",
+            "FastCopy"
+        ],
+        [
+            "doc\\FastCopy.chm",
+            "FastCopy Manual"
+        ]
+    ],
+    "persist": [
+        "FastCopy2.ini",
+        "Log"
+    ],
+    "checkver": "FastCopy ver ([\\d.]+)",
+    "autoupdate": {
+        "url": "https://fastcopy.jp/archive/FastCopy$cleanVersion.zip"
+    }
+}

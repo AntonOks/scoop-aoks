@@ -27,9 +27,9 @@
         ]
     },
     "bin": "PathCopyCopySettings.exe",
-        "notes": [
+    "notes": [
         "run \"PathCopyCopySettings.exe\" to configure the Explorer menu..."
-        ],
+     ],
     "checkver": {
         "github": "https://github.com/clechasseur/pathcopycopy"
     },
