@@ -38,6 +38,9 @@
         "FastCopy2.ini",
         "Log"
     ],
+    "notes": [
+        "Explorer menu can be enabled in \"Option\" -> \"Main Settings\" -> \"Shell Extension\"..."
+    ],
     "checkver": "FastCopy ver ([\\d.]+)",
     "autoupdate": {
         "url": "https://fastcopy.jp/archive/FastCopy$cleanVersion.zip"
