@@ -7,7 +7,7 @@
         "url": "https://fastcopy.jp/help/fastcopy_eng.htm#license"
     },
     "url": "https://fastcopy.jp/archive/FastCopy392_installer.exe",
-    "hash": "0997f838f056246cf2e5d589bb09785aa33f0619e541213bb5b2363d",
+    "hash": "1529f23dbf97aef44f583823e05a61539558c84d7ba3661593da82267f0d236f",
     "installer": {
         "args": [
              "/SILENT",
@@ -17,8 +17,9 @@
          ]
         },
     "uninstaller": {
+        "file": "Setup.exe",
         "args": [
-            "/SILEN",
+            "/SILENT",
             "/r"
         ]
     },
