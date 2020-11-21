@@ -5,10 +5,12 @@
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/sd9j6ldy0hixv48e/artifacts/fio-3.23-x64.msi"
+            "url": "https://ci.appveyor.com/api/buildjobs/sd9j6ldy0hixv48e/artifacts/fio-3.23-x64.msi",
+            "hash": "03936ce4769566ad0c8cdbea0f682db3736de34f"
         },
         "32bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/re3w7ivkqpmq9qdu/artifacts/fio-3.23-x86.msi"
+            "url": "https://ci.appveyor.com/api/buildjobs/re3w7ivkqpmq9qdu/artifacts/fio-3.23-x86.msi",
+            "hash": "0c4cbbc1121d4eb91578478bc8c7de5b7d660b77"
         }
     },
     "bin": "fio.exe",
