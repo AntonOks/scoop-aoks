@@ -13,7 +13,7 @@
             "hash": "624b7c19a3abb52109df532f2fed3eb2a984f20d69a6d276a97032d87481a09b"
         }
     },
-    "bin": "fio.exe",
+    "bin": "fio\\fio.exe",
     "checkver": {
         "url": "https://fio.readthedocs.io/en/latest/fio_doc.html",
         "regex": "fio - Flexible I/O tester rev. ([\\d.-]+)"
