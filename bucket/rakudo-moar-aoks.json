@@ -1,15 +1,15 @@
 {
-    "version": "2020.10-01",
+    "version": "2020.11-01",
     "description": "The most mature, production-ready implementation of the Raku language.",
     "homepage": "https://rakudo.org/",
     "license": "Artistic-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://rakudo.org/dl/rakudo/rakudo-moar-2020.10-01-win-x86_64.zip",
-            "hash": "6a4a5ffa12f64884d1802aac1244fbeb2d0910b3ba6c9d3ba480f27c18f71631"
+            "url": "https://rakudo.org/dl/rakudo/rakudo-moar-2020.11-01-win-x86_64-msvc.zip",
+            "hash": "507484b58890856f90142dc9532f5c3c446d4bc1df87a82ace11bc3b425855c3"
         }
     },
-    "extract_dir": "rakudo-2020.10",
+    "extract_dir": "rakudo-moar-2020.11-01-win-x86_64-msvc",
     "bin": [
         "bin\\nqp.exe",
         "bin\\perl6.exe",
@@ -25,18 +25,18 @@
     ],
     "checkver": {
         "url": "https://rakudo.org/downloads/rakudo",
-        "regex": "rakudo-moar-(?<version>[\\d]{4}.[\\d]{2})(?<patch>.[\\d]+)?-(?<revision>[\\d]+)-win-x86_64.zip",
+        "regex": "rakudo-moar-(?<version>[\\d]{4}.[\\d]{2})(?<patch>.[\\d]+)?-(?<revision>[\\d]+)-win-x86_64-msvc.zip",
         "replace": "${version}${patch}-${revision}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://rakudo.org/dl/rakudo/rakudo-moar-$matchVersion$matchPatch-$matchRevision-win-x86_64.zip"
+                "url": "https://rakudo.org/dl/rakudo/rakudo-moar-$matchVersion$matchPatch-$matchRevision-win-x86_64-msvc.zip"
             }
         },
         "hash": {
             "url": "$url.sha256.txt"
         },
-        "extract_dir": "rakudo-$matchVersion$matchPatch"
+        "extract_dir": "rakudo-moar-$matchVersion$matchPatch-$matchRevision-win-x86_64-msvc"
     }
 }
