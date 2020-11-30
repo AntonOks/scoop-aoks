@@ -1,0 +1,28 @@
+{
+    "description": "XCP-ng Center, the Windows management console for XCP-ng and XenServer.",
+    "homepage": "https://github.com/xcp-ng/xenadmin",
+    "license": {
+        "identifier": "BSD-2-Clause",
+        "url": "https://raw.githubusercontent.com/xcp-ng/xenadmin/development/LICENSE"
+    },
+    "version": "20.04.00.32",
+    "url": "https://github.com/xcp-ng/xenadmin/releases/download/v20.04.00.32/XCP-ng-Center-20.04.00.32.msi",
+    "hash": "7dee975b2b75d20686276f433efa4f9be6307d3bece5a2d255f045e2bd8855f2",
+    "extract_dir": "Program Files\\XCP-ng Center",
+    "bin": "XCP-ng Center.exe",
+    "shortcuts": [
+        [
+            "XCP-ng Center.exe",
+            "XCP-ng Center"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/xcp-ng/xenadmin"
+    },
+    "autoupdate": {
+        "url": "https://github.com/xcp-ng/xenadmin/releases/download/v$version.([\\d]+)/XCP-ng-Center-$version.([\\d]+).msi",
+        "hash": {
+            "url": "$url.sha256.txt"
+        }
+    }
+}
