@@ -1,16 +1,16 @@
 {
-    "version": "3.23",
+    "version": "3.25",
     "description": "Flexible I/O Tester",
     "homepage": "https://github.com/axboe/fio",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/sd9j6ldy0hixv48e/artifacts/fio-3.23-x64.msi",
-            "hash": "37bcfa40d195edb5b3d71a3a7904f8950a24672bc1970c417326125be5b1ce73"
+            "url": "https://ci.appveyor.com/api/buildjobs/r39viuv08uoija1f/artifacts/fio-3.25-x64.msi",
+            "hash": "54b270274e3d11a373ea349e044f5e8aca8f1c0ff706a0e44cab4353b5edab4c"
         },
         "32bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/re3w7ivkqpmq9qdu/artifacts/fio-3.23-x86.msi",
-            "hash": "624b7c19a3abb52109df532f2fed3eb2a984f20d69a6d276a97032d87481a09b"
+            "url": "https://ci.appveyor.com/api/buildjobs/1fj5dgaslsu4j941/artifacts/fio-3.25-x86.msi",
+            "hash": "89902360880e745ea3ca5d08c8761928f64649e028393e8e3d722e78b4389b8a"
         }
     },
     "extract_dir": "fio",
