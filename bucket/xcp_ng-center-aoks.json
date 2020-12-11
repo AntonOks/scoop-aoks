@@ -5,9 +5,9 @@
         "identifier": "BSD-2-Clause",
         "url": "https://raw.githubusercontent.com/xcp-ng/xenadmin/development/LICENSE"
     },
-    "version": "20.04.00.32",
-    "url": "https://github.com/xcp-ng/xenadmin/releases/download/v20.04.00.32/XCP-ng-Center-20.04.00.32.msi",
-    "hash": "7dee975b2b75d20686276f433efa4f9be6307d3bece5a2d255f045e2bd8855f2",
+    "version": "20.04.01.33",
+    "url": "https://github.com/xcp-ng/xenadmin/releases/download/v20.04.01.33/XCP-ng-Center-20.04.01.33.msi",
+    "hash": "29f9c0d5dd738fb8c3e62a5123bb17d5eae1e456adcd11eeb5f3691882753a9d",
     "extract_dir": "Program Files\\XCP-ng Center",
     "bin": "XCP-ng Center.exe",
     "shortcuts": [
@@ -20,7 +20,7 @@
         "github": "https://github.com/xcp-ng/xenadmin"
     },
     "autoupdate": {
-        "url": "https://github.com/xcp-ng/xenadmin/releases/download/v$version.([\\d]+)/XCP-ng-Center-$version.([\\d]+).msi",
+        "url": "https://github.com/xcp-ng/xenadmin/releases/download/v$version/XCP-ng-Center-$version.msi",
         "hash": {
             "url": "$url.sha256.txt"
         }
