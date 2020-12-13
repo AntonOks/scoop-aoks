@@ -1,0 +1,25 @@
+{
+    "version": "14.2",
+    "description": "Free UML Tool for Fast UML Diagrams",
+    "homepage": "https://www.umlet.com/",
+    "license": "GPL-3.0-only",
+    "url": "https://www.umlet.com/download/umlet_14_2/umlet-standalone-14.2.zip",
+    "hash": "dc09538d04cb899218f3bdfdb5205f60359cff68cb1428d1228c6d91743d8cb9",
+    "extract_dir": "Umlet",
+    "bin": "umlet.exe",
+    "shortcuts": [
+        [
+            "Umlet.exe",
+            "Umlet"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.umlet.com/changes.htm",
+        "regex": 'New in <a href="download/umlet_(?<under>[\\d_]+)/umlet-standalone-(?<long>[\\d.]+).zip">UMLet (?<version>[\\d.]+) stand-alone</a>',
+        "replace": "${version}"
+    },
+    "autoupdate": {
+        "url": "https://www.umlet.com/download/umlet_$matchUnder/umlet-standalone-$matchLong.zip",
+        "extract_dir": "Umlet"
+    }
+}
