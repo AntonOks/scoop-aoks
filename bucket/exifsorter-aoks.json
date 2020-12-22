@@ -1,12 +1,12 @@
 {
-    "version": "2.80",
+    "version": "2.81",
     "description": "AmoK Exif Sorter is the easy but powerful solution for renaming your photos.",
     "homepage": "https://amok.am/en/freeware/amok_exif_sorter/",
     "license": {
         "identifier": "Proprietary"
     },
-    "url": "http://www.amok.am/files/releases/AmoK_Exif_Sorter_v2.80_(Windows_64Bit).zip#/dl.7z",
-    "hash": "MD5:f74196d17cdeb80944551f225778f548",
+    "url": "http://www.amok.am/files/releases/AmoK_Exif_Sorter_v2.81_(Windows_64Bit).zip#/dl.7z",
+    "hash": "9988978cb7c5044cea60567860f7e9671fa6e15247c092853d19175af1c6435f",
     "shortcuts": [
         [
             "ExifSorter.jar",
@@ -15,7 +15,7 @@
     ],
     "checkver": {
         "url": "https://amok.am/en/freeware/amok_exif_sorter/download/",
-        "regex": "AmoK Exif Sorter (?<version>[\\d+.]+) Windows \\(No Setup, ZIP\\)(?<htmlgarbage>.+\\n)+.+(<i>MD5-Hash:<\/i> )(?<md5hash>.+)<\/font>(.+\\n)*.+form action=\"(?<download>/.+/) \".+check_lizenz",
+        "regex": "AmoK Exif Sorter (?<version>[\\d+.]+) Windows \\(No Setup, ZIP\\)(?<htmlgarbage>.+\\n)+.+(<i>MD5-Hash:</i> )(?<md5hash>.+)</font>(.+\\n)*.+form action=\"(?<download>/.+/) \".+check_lizenz",
         "replace": "${version}"
     },
     "autoupdate": {
