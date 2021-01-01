@@ -1,0 +1,21 @@
+{
+    "version": "2.49.4",
+    "description": "XnView is an efficient image viewer, browser and converter for Windows.",
+    "homepage": "https://www.xnview.com/en/xnview/",
+    "license": "Freeware|Proprietary",
+    "url": "https://download.xnview.com/XnView-win-full.zip",
+    "hash": "646DE249CEB6E9C1736BC34217C36E720FD7E2FA25468B271A6DEC18707D4E3E",
+    "extract_dir": "XnView",
+    "bin": "xnview.exe",
+    "shortcuts": [
+        [
+            "xnview.exe",
+            "XnView Classic"
+        ]
+    ],
+    "checkver": "Download <strong>XnView ([\\d.]+)",
+    "autoupdate": {
+        "url": "https://download.xnview.com/XnView-win-full.zip",
+        "extract_dir": "XnView"
+    }
+}
