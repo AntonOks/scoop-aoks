@@ -9,7 +9,6 @@
     "url": "https://openhardwaremonitor.org/files/openhardwaremonitor-v0.9.6.zip",
     "hash": "5E238C36AE5F8A8AB9AA5E6FA3C568967D61953393384C7C8FD6370F8BC86B85",
     "extract_dir": "OpenHardwareMonitor",
-    "persist": "OpenHardwareMonitor.config",
     "bin": "OpenHardwareMonitor.exe",
     "shortcuts": [
         [
