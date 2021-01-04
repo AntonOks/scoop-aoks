@@ -13,11 +13,6 @@
         "83d5a75e815198204238ab7c33c6853e4bf4ea66f4c3904ff7515196044239b3",
         "9f1fe4639eed1b77d8068e0605b2fc3583638e8bea9ba5aa30feec712200e23c"
         ],
-    "extract_dir": [
-        "",
-        "",
-        "nightly_$year_$month_$day_extension"
-    ],
     "bin": "ruffle.exe",
     "checkver": {
         "url": "https://ruffle.rs/",
@@ -28,7 +23,7 @@
         "url": [
             "https://github.com/ruffle-rs/ruffle/releases/download/nightly-$year-$month-$day/ruffle_nightly_$year_$month_$day_windows.zip",
             "https://github.com/ruffle-rs/ruffle/releases/download/nightly-$year-$month-$day/ruffle_nightly_$year_$month_$day_firefox.xpi",
-            "https://github.com/ruffle-rs/ruffle/releases/download/nightly-$year-$month-$day/ruffle_nightly_$year_$month_$day_extension.zip"
+            "https://github.com/ruffle-rs/ruffle/releases/download/nightly-$year-$month-$day/ruffle_nightly_$year_$month_$day_extension.zip#/nightly_$year_$month_$day_extension.unzipme"
         ]
     }
 }
