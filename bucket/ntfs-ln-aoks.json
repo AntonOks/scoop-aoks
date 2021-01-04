@@ -1,32 +1,30 @@
 {
     "homepage": "https://schinagl.priv.at/nt/ln/ln.html",
-    "version": "2.9.2.8",
+    "version": "2.9.3.0",
     "description": "(NTFS) Command line Hardlinks.",
     "license": {
         "identifier": "Proprietary",
         "url": "https://schinagl.priv.at/nt/ln/license.txt"
     },
-        "architecture": {
+    "architecture": {
         "64bit": {
-            "url": "https://schinagl.priv.at/nt/ln/save/2928/ln64.zip",
-            "hash": "a9fefe12861792e2e2f3b3691ea5e015521bb932b06b314383dc8ca0fe7a05aa"
+            "url": "https://schinagl.priv.at/nt/ln/save/2930/ln64.zip",
+            "hash": "0316be3abdca74afb3a2bbd995edbaef155c4adb6bcb048706ccab66ec9f087e"
         },
         "32bit": {
-            "url": "https://schinagl.priv.at/nt/ln/save/2928/ln.zip",
-            "hash": "e4ba6d09af236479bae055ac0200931440ad189670af1403c06fad7d5bbe1ae5"
+            "url": "https://schinagl.priv.at/nt/ln/save/2930/ln.zip",
+            "hash": "d9d4f7a2f1dec92b201a042b6efc600ce06e30aaef53f3547d2be20a0f881646"
         }
     },
-    "bin": [
-        "ln.exe"
-    ],
+    "bin": "ln.exe",
     "checkver": {
         "url": "https://schinagl.priv.at/nt/ln/ln.html",
         "regex": ">Last Updated .+ Version ([\\d.]+)<"
     },
     "autoupdate": {
-       "architecture": {
-           "64bit": {
-               "url": "https://schinagl.priv.at/nt/ln/save/$cleanVersion/ln64.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://schinagl.priv.at/nt/ln/save/$cleanVersion/ln64.zip"
             },
             "32bit": {
                 "url": "https://schinagl.priv.at/nt/ln/save/$cleanVersion/ln.zip"
