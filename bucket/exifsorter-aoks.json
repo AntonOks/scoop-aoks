@@ -1,12 +1,12 @@
 {
-    "version": "2.81",
+    "version": "3.0",
     "description": "AmoK Exif Sorter is the easy but powerful solution for renaming your photos.",
     "homepage": "https://amok.am/en/freeware/amok_exif_sorter/",
     "license": {
         "identifier": "Proprietary"
     },
-    "url": "http://www.amok.am/files/releases/AmoK_Exif_Sorter_v2.81_(Windows_64Bit).zip#/dl.7z",
-    "hash": "9988978cb7c5044cea60567860f7e9671fa6e15247c092853d19175af1c6435f",
+    "url": "http://www.amok.am/files/releases/AmoK_Exif_Sorter_v3.0_(Windows_64Bit).zip#/dl.7z",
+    "hash": "38d17c4c7aa2557844548268bcbbec377b6adffa3101220096642965bad25a55",
     "shortcuts": [
         [
             "ExifSorter.jar",
