@@ -6,7 +6,7 @@
     "url": [
         "https://github.com/ruffle-rs/ruffle/releases/download/nightly-2021-01-04/ruffle_nightly_2021_01_04_windows.zip",
         "https://github.com/ruffle-rs/ruffle/releases/download/nightly-2021-01-04/ruffle_nightly_2021_01_04_firefox.xpi",
-        "https://github.com/ruffle-rs/ruffle/releases/download/nightly-2021-01-04/ruffle_nightly_2021_01_04_extension.zip"
+        "https://github.com/ruffle-rs/ruffle/releases/download/nightly-2021-01-04/ruffle_nightly_2021_01_04_extension.zip#/nightly_$year_$month_$day_extension.unzipme"
         ],
     "hash": [
         "e95885e11266b801993e196068ea4e795a1dae6d22df7cbacab7f42952f619da",
