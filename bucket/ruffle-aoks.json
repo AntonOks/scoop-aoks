@@ -23,7 +23,7 @@
         "url": [
             "https://github.com/ruffle-rs/ruffle/releases/download/nightly-$year-$month-$day/ruffle_nightly_$year_$month_$day_windows.zip",
             "https://github.com/ruffle-rs/ruffle/releases/download/nightly-$year-$month-$day/ruffle_nightly_$year_$month_$day_firefox.xpi",
-            "https://github.com/ruffle-rs/ruffle/releases/download/nightly-$year-$month-$day/ruffle_nightly_$year_$month_$day_extension.zip"
+            "https://github.com/ruffle-rs/ruffle/releases/download/nightly-$year-$month-$day/ruffle_nightly_$year_$month_$day_extension.zip#/nightly_$year_$month_$day_extension.zip"
         ]
     }
 }
