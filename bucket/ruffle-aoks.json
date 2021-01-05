@@ -8,6 +8,7 @@
     "bin": "ruffle.exe",
     "post_install": [
         "$versionUnder = $version.replace(\"-\", \"_\")",
+        "$progresspreference = 'silentlyContinue'",
         "Invoke-WebRequest \"https://github.com/ruffle-rs/ruffle/releases/download/${version}/ruffle_${versionUnder}_firefox.xpi\" -Outfile \"$dir\\ruffle_nightly_firefox.xpi\"",
         "Invoke-WebRequest \"https://github.com/ruffle-rs/ruffle/releases/download/${version}/ruffle_${versionUnder}_extension.zip\" -Outfile \"$dir\\ruffle_nightly_extension.zip\"",
         "Expand-7zipArchive \"$dir\\ruffle_nightly_extension.zip\" \"$dir\\ruffle_nightly_Chrome+Edge+Safari_extension\"",
