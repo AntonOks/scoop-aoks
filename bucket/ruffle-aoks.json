@@ -1,29 +1,28 @@
 {
     "description": "ruffle is a Flash Player emulator built in the Rust programming language.",
     "homepage": "https://ruffle.rs/",
-    "version": "nightly-2021-01-04",
+    "version": "nightly-2021-01-05",
     "license": "MIT|Apache-2.0",
-    "url": [
-        "https://github.com/ruffle-rs/ruffle/releases/download/nightly-2021-01-04/ruffle_nightly_2021_01_04_windows.zip",
-        "https://github.com/ruffle-rs/ruffle/releases/download/nightly-2021-01-04/ruffle_nightly_2021_01_04_firefox.xpi",
-        "https://github.com/ruffle-rs/ruffle/releases/download/nightly-2021-01-04/ruffle_nightly_2021_01_04_extension.zip#/nightly_$year_$month_$day_extension.unzipme"
-        ],
-    "hash": [
-        "e95885e11266b801993e196068ea4e795a1dae6d22df7cbacab7f42952f619da",
-        "83d5a75e815198204238ab7c33c6853e4bf4ea66f4c3904ff7515196044239b3",
-        "9f1fe4639eed1b77d8068e0605b2fc3583638e8bea9ba5aa30feec712200e23c"
-        ],
+    "url": "https://github.com/ruffle-rs/ruffle/releases/download/nightly-2021-01-05/ruffle_nightly_2021_01_05_windows.zip",
+    "hash": "9ddf135970b49c6f0d7a57c45910767e7b414ba2414dffadcfc82945edcb6510",
     "bin": "ruffle.exe",
+    "post_install": [
+        "$versionUnder = $version.replace(\"-\", \"_\")",
+        "Invoke-WebRequest \"https://github.com/ruffle-rs/ruffle/releases/download/${version}/ruffle_${versionUnder}_firefox.xpi\" -Outfile \"$dir\\ruffle_nightly_firefox.xpi\"",
+        "Invoke-WebRequest \"https://github.com/ruffle-rs/ruffle/releases/download/${version}/ruffle_${versionUnder}_extension.zip\" -Outfile \"$dir\\ruffle_nightly_extension.zip\"",
+        "Expand-7zipArchive \"$dir\\ruffle_nightly_extension.zip\" \"$dir\\ruffle_nightly_Chrome+Edge+Safari_extension\"",
+        "Remove-Item \"$dir\\ruffle_nightly_extension.zip\""
+    ],
     "checkver": {
         "url": "https://ruffle.rs/",
         "regex": "ruffle/releases/download/nightly-(?<year>[\\d]{4})-(?<month>[\\d]{2})-(?<day>[\\d]{2})/ruffle_nightly_[\\d]{4}_[\\d]{2}_[\\d]{2}_windows.zip",
         "replace": "nightly-${year}-${month}-${day}"
-        },
+    },
     "autoupdate": {
-        "url": [
-            "https://github.com/ruffle-rs/ruffle/releases/download/nightly-$year-$month-$day/ruffle_nightly_$year_$month_$day_windows.zip",
-            "https://github.com/ruffle-rs/ruffle/releases/download/nightly-$year-$month-$day/ruffle_nightly_$year_$month_$day_firefox.xpi",
-            "https://github.com/ruffle-rs/ruffle/releases/download/nightly-$year-$month-$day/ruffle_nightly_$year_$month_$day_extension.zip#/nightly_$year_$month_$day_extension.unzipme"
-        ]
-    }
+        "url": "https://github.com/ruffle-rs/ruffle/releases/download/nightly-$matchYear-$matchMonth-$matchDay/ruffle_nightly_$matchYear_$matchMonth_$matchDay_windows.zip"
+    },
+    "##": [
+        "https://github.com/ruffle-rs/ruffle/releases/download/nightly-$matchYear-$matchMonth-$matchDay/ruffle_nightly_$matchYear_$matchMonth_$matchDay_firefox.xpi",
+        "https://github.com/ruffle-rs/ruffle/releases/download/nightly-$matchYear-$matchMonth-$matchDay/ruffle_nightly_$matchYear_$matchMonth_$matchDay_extension.zip"
+    ]
 }
