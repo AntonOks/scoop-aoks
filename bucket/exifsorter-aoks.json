@@ -5,8 +5,8 @@
     "license": {
         "identifier": "Proprietary"
     },
-    "url": "http://www.amok.am/files/releases/AmoK_Exif_Sorter_v3.0_(Windows_64Bit).zip#/dl.7z",
-    "hash": "961f43686cea1f75e711d87923a43da36c99b3404bcffa99fefd9182c2dbedf5",
+    "url": "http://www.amok.am/files/releases/AmoK_Exif_Sorter_v3.00_(Windows_64Bit).zip#/dl.7z",
+    "hash": "0bc022cf806553290ffaf3177baa49a6630cb44385ec3b6d20a283d8681c9631",
     "shortcuts": [
         [
             "ExifSorter.jar",
@@ -19,7 +19,7 @@
         "replace": "${version}"
     },
     "autoupdate": {
-        "url": "http://www.amok.am/files/releases/AmoK_Exif_Sorter_v$version_(Windows_64Bit).zip#/dl.7z",
+        "url": "http://www.amok.am/files/releases/AmoK_Exif_Sorter_v${version}0_(Windows_64Bit).zip#/dl.7z",
         "hash": "MD5:$matchMd5hash"
     },
     "notes": [
