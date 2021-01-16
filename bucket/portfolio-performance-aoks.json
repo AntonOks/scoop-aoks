@@ -1,0 +1,35 @@
+{
+    "##": "see bucket/portfolio-performance.json",
+    "homepage": "https://www.portfolio-performance.info",
+    "description": "An open source tool to calculate the overall performance of an investment portfolio - across all accounts - using True-Time Weighted Return or Internal Rate of Return.",
+    "license": "EPL-1.0 License",
+    "version": "0.50.1",
+    "extract_dir": "portfolio",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/buchen/portfolio/releases/download/0.50.1/PortfolioPerformance-0.50.1-win32.win32.x86_64.zip",
+            "hash": "92b23c3d072c15dba8dc7dea0afd04d279685a07dd573f47cac65c5bf6cd14a8"
+        }
+    },
+    "bin": "PortfolioPerformance.exe",
+    "suggest": {
+        "JDK": [
+            "java/oraclejdk",
+            "java/openjdk"
+        ]
+    },
+    "shortcuts": [
+        [
+            "PortfolioPerformance.exe",
+            "Portfolio Performance"
+        ]
+    ],
+    "checkver": "<strong>Download ([\\d.]+)</strong>",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/buchen/portfolio/releases/download/$version/PortfolioPerformance-$version-win32.win32.x86_64.zip"
+            }
+        }
+    }
+}
