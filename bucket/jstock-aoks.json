@@ -1,0 +1,29 @@
+{
+    "version": "1.0.7.45",
+    "description": "Stock investments tracker and manager",
+    "homepage": "https://jstock.org",
+    "license": "GPL-2.0-only",
+    "suggest": {
+        "JDK": [
+            "java/oraclejdk",
+            "java/openjdk"
+        ]
+    },
+    "url": "https://github.com/yccheok/jstock/releases/download/release_1-0-7-45/jstock-1.0.7.45-bin.zip",
+    "hash": "6a795a61258c3d9488b40cb449a1de9ea263624bd1a0e6c0ea73de6293e8a75b",
+    "extract_dir": "jstock",
+    "pre_install": "Set-Content \"$dir\\jstock.bat\" '@start javaw.exe -jar \"%~dp0jstock.jar\" %*' -Encoding Ascii",
+    "shortcuts": [
+        [
+            "jstock.bat",
+            "JStock"
+        ]
+    ],
+    "checkver": {
+        "url": "https://jstock.org/download.html",
+        "regex": "The current stable release is version ([\\d.]+)\\."
+    },
+    "autoupdate": {
+        "url": "https://github.com/yccheok/jstock/releases/download/release_$dashVersion/jstock-$version-bin.zip"
+    }
+}
