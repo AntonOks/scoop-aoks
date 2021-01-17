@@ -1,11 +1,11 @@
 {
     "homepage": "https://github.com/PredatH0r/ChanSort",
     "description": "TV channel list editor for Samsung, LG, Panasonic, Sony, Hisense, Philips, ITT/Medion/Nabo/ok/PEAQ/Schaub-Lorenz/Silva-Schneider/Telefunken, Toshiba, VDR",
-    "version": "2021-01-02",
+    "version": "2021-01-17",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/PredatH0r/ChanSort/releases/download/v2021-01-02/ChanSort_2021-01-02.zip",
-    "hash": "446a9e0290fd8f971fc779a5273ecadd8d7944c854690fe74b9a519633d7d7c4",
-    "extract_dir": "ChanSort_2021-01-02",
+    "url": "https://github.com/PredatH0r/ChanSort/releases/download/v2021-01-17/ChanSort_2021-01-17.zip",
+    "hash": "ade49689721ccc2938a947e409a092201f252e32190f22067dc0bc8f8d0e210c",
+    "extract_dir": "ChanSort_2021-01-17",
     "bin": "chansort.exe",
     "##": "the usual github thing doesn't work",
     "checkver": {
