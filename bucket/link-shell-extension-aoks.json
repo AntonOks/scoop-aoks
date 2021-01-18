@@ -1,6 +1,6 @@
 {
     "homepage": "https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html",
-    "version": "3.9.3.4",
+    "version": "3.9.3.5",
     "description": "Link Shell Extension offers  the creation of Hardlinks, Junctions, Volume Mountpoints, Symbolic Links and a folder cloning or copy process.",
     "license": {
         "identifier": "Proprietary",
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://schinagl.priv.at/nt/hardlinkshellext/save/3934/HardLinkShellExt_X64.exe",
-            "hash": "032db48f2c84011dd65d141cc52f00528883e7257a946f77143a957f5ca3fe9a",
+            "url": "https://schinagl.priv.at/nt/hardlinkshellext/save/3935/HardLinkShellExt_X64.exe",
+            "hash": "ca3f26ebf49dc4ea8b5d8c0154acca0de59a8689e5907fe748ffaeaa357ff3a0",
             "installer": {
                 "script": "Invoke-ExternalCommand -FilePath \"$dir\\HardLinkShellExt_X64.exe\" -Args @('/S', '/noredist', '/Language=English', \"/D=$dir\") -RunAs | Out-Null"
             },
@@ -28,8 +28,8 @@
             ]
         },
         "32bit": {
-            "url": "https://schinagl.priv.at/nt/hardlinkshellext/save/3934/HardLinkShellExt_win32.exe",
-            "hash": "1353122044bf8613bdd9a557b1e003724e579bde410a87f5e2e831c4ecadef68",
+            "url": "https://schinagl.priv.at/nt/hardlinkshellext/save/3935/HardLinkShellExt_win32.exe",
+            "hash": "b7e7227e960f025be992c398dafacd03c416adf5210d3fc0ff1d5b5771afdc4b",
             "installer": {
                 "script": "Invoke-ExternalCommand -FilePath \"$dir\\HardLinkShellExt_win32.exe\" -Args @('/S', '/noredist', '/Language=English', \"/D=$dir\") -RunAs | Out-Null"
             },
