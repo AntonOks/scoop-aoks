@@ -1,14 +1,14 @@
 {
     "description": "Raku environment manager.",
     "homepage": "https://rakubrew.org/",
-    "version": "v14",
+    "version": "v15",
     "license": "MIT",
     "url": "https://rakubrew.org/win/rakubrew.exe",
-    "hash": "d6af600ff1304e137f2fd530ec3591fc631a2c54da970c12da15c2248a87da0e",
+    "hash": "3146b89ec69371048b26afc5cab1738c681a91bdebeb78386f889aaeab47c5a7",
     "bin": "rakubrew.exe",
-    "post_install": [
-        "\"$dir\\rakubrew mode shim\""
-    ],
+    "post_install": "\"$dir\\rakubrew mode shim\"",
     "checkver": "\\s{62}(?<version>v[\\d]+)",
-    "autoupdate": "https://rakubrew.org/win/rakubrew.exe"
+    "autoupdate": {
+        "url": "https://rakubrew.org/win/rakubrew.exe"
+    }
 }
