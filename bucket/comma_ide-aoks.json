@@ -1,11 +1,11 @@
 {
     "homepage": "https://commaide.com/",
-    "version": "2020.10.0",
+    "version": "2021.01.0",
     "description": "The Integrated Development Environment for Raku",
     "license": {
         "identifier": "Proprietary"
     },
-    "hash": "6cce591a1420129553d3388621e4bf0c08091ea29dc798f233edc5d08cd0e64a",
+    "hash": "1550789bc9651c49505c757e0504905302eaf17553d9e1e540e909be8c1ae1b5",
     "url": "https://commaide.com/download/community/windows#/dl.7z",
     "shortcuts": [
         [
