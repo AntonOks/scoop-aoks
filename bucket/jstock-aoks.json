@@ -1,5 +1,5 @@
 {
-    "version": "1.0.7.46",
+    "version": "1.0.7.47",
     "description": "Stock investments tracker and manager",
     "homepage": "https://jstock.org",
     "license": "GPL-2.0-only",
@@ -9,8 +9,8 @@
             "java/openjdk"
         ]
     },
-    "url": "https://github.com/yccheok/jstock/releases/download/release_1-0-7-46/jstock-1.0.7.46-bin.zip",
-    "hash": "ced0d881c0f16e2428e7259fc74a8e141dffc411bc9458cccd19be21618e51a7",
+    "url": "https://github.com/yccheok/jstock/releases/download/release_1-0-7-47/jstock-1.0.7.47-bin.zip",
+    "hash": "b3ade06b82b5be0e12b19c8d7f6d6b97edcd3071d5e8b2b1a8746e1172a595ec",
     "extract_dir": "jstock",
     "pre_install": "Set-Content \"$dir\\jstock.bat\" '@start javaw.exe -jar \"%~dp0jstock.jar\" %*' -Encoding Ascii",
     "shortcuts": [
