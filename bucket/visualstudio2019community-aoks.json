@@ -1,5 +1,5 @@
 {
-    "version": "16.8.5",
+    "version": "16.8.6",
     "description": "Microsoft Visual Studio Community 2019",
     "homepage": "https://www.visualstudio.com/downloads/",
     "license": {
@@ -7,7 +7,7 @@
         "url": "https://visualstudio.microsoft.com/license-terms"
     },
     "url": "https://aka.ms/vs/16/release/vs_community.exe",
-    "hash": "bee2ebedafcbaaf0d4fe61c9bd50b5884e0149e953cbe2abb6cb142e8c60d389",
+    "hash": "e17c980fd6f31fe39ff45e89ef7e90186b6a0eaa4816fde243f43c784b759619",
     "installer": {
         "script": "Invoke-ExternalCommand -FilePath \"$dir\\vs_community.exe\" -Args @('--installPath', \"$dir\\vs\", '--add', 'Microsoft.VisualStudio.Workload.NativeDesktop', '--includeRecommended', '--quiet', '--norestart', '--wait') -RunAs | Out-Null"
     },
