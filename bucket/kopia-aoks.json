@@ -7,11 +7,11 @@
     "checkver": {
         "github": "https://github.com/kopia/kopia"
     },
-    "extract_dir": "kopia-0.7.3-windows-x64",
     "architecture": {
         "64bit": {
             "url": "https://github.com/kopia/kopia/releases/download/v0.7.3/kopia-0.7.3-windows-x64.zip",
-            "hash": "d24c7408dd0271259f1ebc634585968f1c15a43979c50f87f3519658e5be2f3e"
+            "hash": "d24c7408dd0271259f1ebc634585968f1c15a43979c50f87f3519658e5be2f3e",
+            "extract_dir": "kopia-0.7.3-windows-x64"
         }
     },
     "autoupdate": {
@@ -19,7 +19,7 @@
             "64bit": {
                 "url": "https://github.com/kopia/kopia/releases/download/v$version/kopia-$version-windows-x64.zip"
             },
-            "extract_dir": "kopia-$version-windows-x64"
+            "extract_dir": "kopia-$version-windows-x64",
             "hash": {
                 "url": "$baseurl/checksums.txt"
             }
