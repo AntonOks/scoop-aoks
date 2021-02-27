@@ -1,0 +1,28 @@
+{
+    "homepage": "https://kopia.io/",
+    "description": "Fast and Secure Open-Source Backup.",
+    "version": "0.7.3",
+    "license": "Apache-2.0",
+    "bin": "kopia.exe",
+    "checkver": {
+        "github": "https://github.com/kopia/kopia"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/kopia/kopia/releases/download/v0.7.3/kopia-0.7.3-windows-x64.zip",
+            "hash": "d24c7408dd0271259f1ebc634585968f1c15a43979c50f87f3519658e5be2f3e",
+            "extract_dir": "kopia-0.7.3-windows-x64"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/kopia/kopia/releases/download/v$version/kopia-$version-windows-x64.zip"
+            },
+            "extract_dir": "kopia-$version-windows-x64",
+            "hash": {
+                "url": "$baseurl/checksums.txt"
+            }
+        }
+    }
+}
