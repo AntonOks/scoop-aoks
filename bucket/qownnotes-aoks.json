@@ -1,13 +1,13 @@
 {
-    "version": "21.2.4",
+    "version": "21.2.5",
     "description": "Plain-text file markdown note taking with Nextcloud integration",
     "homepage": "https://www.qownnotes.org/",
     "license": {
         "identifier": "GPL-2.0-only",
         "url": "https://github.com/pbek/QOwnNotes/blob/develop/LICENSE"
     },
-    "url": "https://github.com/pbek/QOwnNotes/releases/download/v21.2.4/QOwnNotes.zip",
-    "hash": "028ffc25dff031737d8ab5154211cd28606d0b7c9a05c29a3a3462eb8be5726f",
+    "url": "https://github.com/pbek/QOwnNotes/releases/download/v21.2.5/QOwnNotes.zip",
+    "hash": "70e7c2f53c66debc1ec5684af3e7cf90f7ea588dd57d5c9d5bbd0b52aa6fd8da",
     "bin": [
         "QOwnNotes.exe",
         "QOwnNotesPortable.bat"
@@ -24,8 +24,5 @@
     },
     "autoupdate": {
         "url": "https://github.com/pbek/QOwnNotes/releases/download/v$version/QOwnNotes.zip",
-        "hash": {
-            "url": "$url.sha256"
-        }
     }
 }

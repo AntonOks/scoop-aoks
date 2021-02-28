@@ -1,10 +1,10 @@
 {
     "description": "ruffle is a Flash Player emulator built in the Rust programming language.",
     "homepage": "https://ruffle.rs/",
-    "version": "nightly-2021-02-21",
+    "version": "nightly-2021-02-27",
     "license": "MIT|Apache-2.0",
-    "url": "https://github.com/ruffle-rs/ruffle/releases/download/nightly-2021-02-21/ruffle_nightly_2021_02_21_windows.zip",
-    "hash": "382bc729ae07d69c4775d3daef6ea73aebfcaced6a0d75f2ceb8b3a321fb21e7",
+    "url": "https://github.com/ruffle-rs/ruffle/releases/download/nightly-2021-02-27/ruffle_nightly_2021_02_27_windows.zip",
+    "hash": "868a4d5d347da34841c79894555566d7a49e276b8d31df859d996cac62909743",
     "bin": "ruffle.exe",
     "post_install": [
         "$versionUnder = $version.replace(\"-\", \"_\")",
