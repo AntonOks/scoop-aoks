@@ -8,6 +8,6 @@
     "bin": "xh.exe",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/ducaale/xh/releases/download/v$version/xh-x86_64-pc-windows-msvc.zip"
+        "url": "https://github.com/ducaale/xh/releases/download/v$version/xh-v$version-x86_64-pc-windows-msvc.zip"
         }
 }
