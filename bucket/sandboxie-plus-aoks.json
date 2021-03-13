@@ -40,7 +40,11 @@
             "Sandboxie+"
         ]
     ],
-    "persist": "Sandboxie.ini",
+    "persist": [
+        "Sandboxie.ini",
+        "Sandboxie-Plus.ini",
+        "Sandbox"
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
