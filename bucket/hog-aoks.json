@@ -14,9 +14,7 @@
         }
     },
     "bin": "hog.exe",
-    "checkver": {
-        "github": "https://github.com/jjzcru/hog"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
