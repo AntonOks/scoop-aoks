@@ -14,10 +14,7 @@
         }
     },
     "bin": "ticker.exe",
-    "checkver": {
-        "github": "https://github.com/achannarasappa/ticker/",
-        "regex": "tag/v([\\d.]+)"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
