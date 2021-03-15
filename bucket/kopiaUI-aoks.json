@@ -22,7 +22,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/kopia/kopia/releases/download/v$version/kopia-$version-windows-x64.zip"
+                "url": "https://github.com/kopia/kopia/releases/download/v$version/KopiaUI-$version-win.zip"
             },
             "hash": {
                 "url": "$baseurl/checksums.txt"
