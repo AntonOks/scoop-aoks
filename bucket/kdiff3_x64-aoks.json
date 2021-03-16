@@ -1,12 +1,12 @@
 {
-    "version": "1.9-272",
+    "version": "1.9-273",
     "description": "Utility for comparing and merging files and directories",
     "homepage": "https://invent.kde.org/sdk/kdiff3",
     "license": "LGPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://binary-factory.kde.org/job/KDiff3_Stable_win64/lastSuccessfulBuild/artifact/kdiff3-1.9-272-windows-msvc2019_64-cl.7z",
-            "hash": "b48884a3cae189ae41cdb2a7f9fb5847f5b683361e8a163268cb876e649a2870"
+            "url": "https://binary-factory.kde.org/job/KDiff3_Stable_win64/lastSuccessfulBuild/artifact/kdiff3-1.9-273-windows-msvc2019_64-cl.7z",
+            "hash": "8476343449ed366bb24af9e9eb53ff1d374241c0c71b45d7f82e8401bc4e8858"
         }
     },
     "bin": "bin\\kdiff3.exe",
