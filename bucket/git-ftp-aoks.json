@@ -1,5 +1,6 @@
 {
     "homepage": "https://git-ftp.github.io/",
+    "description": "Upload to FTP servers the Git way.",
     "version": "1.6.0",
     "license": "MIT",
     "url": "https://github.com/git-ftp/git-ftp/archive/1.6.0.zip",

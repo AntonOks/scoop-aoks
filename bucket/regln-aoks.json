@@ -1,6 +1,6 @@
 {
     "homepage": "https://github.com/tenox7/regln",
-    "description": "Windows Registry Linking Utility", 
+    "description": "Windows Registry Linking Utility",
     "version": "2.2",
     "license": "Apache-2.0",
     "architecture": {

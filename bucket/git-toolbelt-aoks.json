@@ -2,6 +2,7 @@
     "version": "1.7.1",
     "description": "Helper tools to make everyday life with Git much easier.",
     "homepage": "https://github.com/nvie/git-toolbelt",
+    "license": "BSD",
     "suggest": {
         "git": "git"
     },
