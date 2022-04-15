@@ -1,0 +1,30 @@
+{
+    "homepage": "https://www.wisecleaner.com/wise-disk-cleaner.html",
+    "description": "Free Disk Cleaner and Defragmenter.",
+    "version": "10.8.4",
+    "license": "https://www.wisecleaner.com/eula.html",
+    "url": "https://downloads.wisecleaner.com/soft/WDCFree_10.8.4.804.exe#/WDCFree.exe",
+    "hash": "422f8987946158668f5ae64cbd00f846f0069c276c8993732af6c204f609f190",
+    "##": "see installer options here - https://jrsoftware.org/ishelp/index.php?topic=setupcmdline",
+    "installer": {
+        "script": "Invoke-ExternalCommand -FilePath \"$dir\\WDCFree.exe\" -Args @(\"/VERYSILENT\", \"/SUPPRESSMSGBOXES\", \"/LOG=${dir}\\WDCFree.log\", \"/DIR=${dir}\") -RunAs | Out-Null"
+    },
+    "uninstaller": {
+        "script": "Invoke-ExternalCommand -FilePath \"$dir\\unins000.exe\" -Args @(\"/VERYSILENT\", \"/SUPPRESSMSGBOXES\", \"/NORESTART\") -RunAs | Out-Null"
+    },
+    "bin": "WiseDiskCleaner.exe",
+    "shortcuts": [
+        [
+            "WiseDiskCleaner.exe",
+            "Wise Disk Cleaner"
+        ]
+    ],
+    "persist": "DefragOptions.ini",
+    "checkver": {
+        "regex": "<a href=\"https://downloads.wisecleaner.com/soft/WDCFree_(?<wdcfree>[\\d+.]+).exe\" id=\"free-download\" rel=\"nofollow\" target=\"_blank\">Free Download</a><p>version: (?<version>[\\d+.]+)",
+        "replace": "${version}"
+    },
+    "autoupdate": {
+        "url": "https://downloads.wisecleaner.com/soft/WDCFree_$matchWdcfree.exe#/WDCFree.exe"
+    }
+}

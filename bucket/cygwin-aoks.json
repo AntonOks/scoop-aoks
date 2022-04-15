@@ -1,0 +1,75 @@
+{
+    "version": "2.918",
+    "description": "A large collection of GNU and Open Source tools which provide functionality similar to a Linux distribution on Windows",
+    "homepage": "https://cygwin.com/",
+    "license": {
+        "identifier": "GPL-3.0-or-later,X11,Public Domain",
+        "url": "https://cygwin.com/faq.html#faq.what.free"
+    },
+    "notes": "To start a Cygwin shell, type \"cygwin\"",
+    "architecture": {
+        "64bit": {
+            "url": "https://cygwin.com/setup-x86_64.exe#/cygwin-setup.exe",
+            "hash": "sha512:7897f5ad1aa7c2d3b5767ec1bfe23f945dbc0ad6e4e0fa68cfadc115a2f8c9ec73f5d40b227cbd869546da8696a2692d2b317c96d30b0d0045e23f0a5372ff72"
+        },
+        "32bit": {
+            "url": "https://cygwin.com/setup-x86.exe#/cygwin-setup.exe",
+            "hash": "sha512:719aefe3c8d29df6d074d516905eeda191cb1e8cb502ef1ecca5d0f81c4d7cb13664607443f15c81f02b561ece114af39445f65207a5463a8584746ca384d3ea"
+        }
+    },
+    "checkver": {
+        "regex": ">release_([\\d.]+)<",
+        "url": "https://cygwin.com/git/?p=cygwin-apps/setup.git;a=tags"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://cygwin.com/setup-x86_64.exe#/cygwin-setup.exe"
+            },
+            "32bit": {
+                "url": "https://cygwin.com/setup-x86.exe#/cygwin-setup.exe"
+            }
+        },
+        "hash": {
+            "url": "https://cygwin.com/sha512.sum"
+        }
+    },
+    "bin": [
+        [
+            "root\\bin\\bash.exe",
+            "cygwin",
+            "--login -i"
+        ]
+    ],
+    "installer": {
+        "args": [
+            "--no-admin",
+            "--no-shortcuts",
+            "--quiet-mode",
+            "--local-package-dir \"$persist_dir\\packages\"",
+            "--root \"$persist_dir\\root\"",
+            "--site \"https://mirrors.kernel.org/sourceware/cygwin/\""
+        ],
+        "keep": true
+    },
+    "pre_install": "persist_data @{persist = @('packages', 'root')} $original_dir $persist_dir",
+    "shortcuts": [
+        [
+            "root\\Cygwin.bat",
+            "Cygwin",
+            "",
+            "root\\Cygwin-Terminal.ico"
+        ],
+        [
+            "cygwin-setup.exe",
+            "Cygwin Setup",
+            "--no-admin --no-shortcuts --root \"$persist_dir\\root\" --local-package-dir \"$persist_dir\\packages\""
+        ],
+        [
+            "root\\bin\\mintty.exe",
+            "Cygwin Terminal",
+            "-i \"$dir\\root\\Cygwin-Terminal.ico\" -",
+            "root\\Cygwin-Terminal.ico"
+        ]
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "version": "4.1.4",
+    "description": "The Fastest copy/backup software.",
+    "homepage": "https://fastcopy.jp/en/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://fastcopy.jp/help/fastcopy_eng.htm#license"
+    },
+    "url": "https://fastcopy.jp/archive/FastCopy4.1.4_installer.exe",
+    "hash": "149439ad5bf956311691bd290c062c83739d20a064381ff51368da5a24649469",
+    "installer": {
+        "args": [
+            "/SILENT",
+            "/DIR=\"$dir\"",
+            "/NOPROG",
+            "/NODESK"
+        ]
+    },
+    "uninstaller": {
+        "file": "Setup.exe",
+        "args": [
+            "/SILENT",
+            "/r"
+        ]
+    },
+    "bin": "FastCopy.exe",
+    "shortcuts": [
+        [
+            "FastCopy.exe",
+            "FastCopy"
+        ],
+        [
+            "doc\\FastCopy.chm",
+            "FastCopy Manual"
+        ]
+    ],
+    "notes": "Explorer menu can be enabled in \"Option\" -> \"Main Settings\" -> \"Shell Extension\"...",
+    "checkver": "FastCopy ver ([\\d.]+)",
+    "autoupdate": {
+        "url": "https://fastcopy.jp/archive/FastCopy$version_installer.exe"
+    }
+}

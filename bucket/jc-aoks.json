@@ -1,0 +1,14 @@
+{
+    "homepage": "https://github.com/kellyjonbrazil/jc",
+    "description": "CLI tool and python library that converts the output of popular command-line tools and file-types to JSON or Dictionaries.",
+    "license": "MIT",
+    "version": "1.18.6",
+    "url": "https://github.com/kellyjonbrazil/jc/releases/download/v1.18.6/jc-1.18.6.msi",
+    "hash": "e1d48b8fee6f7e5c63e5882dce8de70fc33588535ddd9c70504f609bfbd5b7b6",
+    "extract_dir": "PFiles\\jc",
+    "bin": "jc.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/kellyjonbrazil/jc/releases/download/v$version/jc-$version.msi"
+    }
+}

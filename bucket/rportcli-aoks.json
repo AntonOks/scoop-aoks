@@ -1,0 +1,31 @@
+{
+    "homepage": "https://github.com/cloudradar-monitoring/rportcli",
+    "description": "command line interface to manage rportd.",
+    "version": "0.2.6",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/cloudradar-monitoring/rportcli/releases/download/v0.2.6/rportcli_0.2.6_Windows_x86_64.zip",
+            "hash": "1dacfa773db27fa5d369e5d391cdf90f3673482c2f7d1f67a67e380ab0aab17c"
+        },
+        "32bit": {
+            "url": "https://github.com/cloudradar-monitoring/rportcli/releases/download/v0.2.6/rportcli_0.2.6_Windows_i386.zip",
+            "hash": "43ddf5b843af42fa321c08591021ebc339b1d8204d73e228657c6c9e5ff92990"
+        }
+    },
+    "bin": "rportcli.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/cloudradar-monitoring/rportcli/releases/download/v$version/rportcli_$version_Windows_x86_64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/cloudradar-monitoring/rportcli/releases/download/v$version/rportcli_$version_Windows_i386.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    }
+}

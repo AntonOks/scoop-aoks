@@ -1,0 +1,59 @@
+{
+    "homepage": "https://github.com/sandboxie-plus/Sandboxie",
+    "description": "A sandbox-based isolation software for 32- and 64-bit Windows NT-based operating systems.",
+    "version": "1.0.18",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/1.0.18/Sandboxie-Plus-x64-v1.0.18.exe#/SBP.exe",
+            "hash": "ceb1a00a45ecbf613e095b6a5113ac58cf96c66f5789c166f7054fe690eb5131"
+        },
+        "32bit": {
+            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/1.0.18/Sandboxie-Plus-x86-v1.0.18.exe#/SBP.exe",
+            "hash": "9067d01568c1b998320b40642eb2a296e3fbf35cc1515be97e9fcf12035818cd"
+        }
+    },
+    "##": "see installer options here - https://jrsoftware.org/ishelp/index.php?topic=setupcmdline",
+    "installer": {
+        "file": "SBP.exe",
+        "args": [
+            "/VERYSILENT",
+            "/NOCANCEL",
+            "/NORESTART",
+            "/DIR=\"$dir\"",
+            "/SUPPRESSMSGBOXES",
+            "/CLOSEAPPLICATIONS",
+            "/NORESTARTAPPLICATIONS",
+            "/CURRENTUSER",
+            "/PORTABLE=1"
+        ]
+    },
+    "shortcuts": [
+        [
+            "SandMan.exe",
+            "Sandboxie+"
+        ]
+    ],
+    "bin": [
+        [
+            "SandMan.exe",
+            "Sandboxie+"
+        ]
+    ],
+    "persist": [
+        "Sandboxie.ini",
+        "Sandboxie-Plus.ini",
+        "Sandbox"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/$version/Sandboxie-Plus-x64-v$version.exe#/SBP.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/$version/Sandboxie-Plus-x86-v$version.exe#/SBP.exe"
+            }
+        }
+    }
+}

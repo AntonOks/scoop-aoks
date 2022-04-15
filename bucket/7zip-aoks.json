@@ -1,0 +1,56 @@
+{
+    "version": "21.07",
+    "description": "A multi-format file archiver with high compression ratios",
+    "homepage": "https://www.7-zip.org/",
+    "license": {
+        "identifier": "Freeware,LGPL-2.0-only,BSD-3-Clause",
+        "url": "https://www.7-zip.org/license.txt"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://7-zip.org/a/7z2107-x64.msi",
+            "hash": "5447c9ac39c48f1bc7c88359b0520396a8c9707b307c107236a93a68e6fd3eb6"
+        },
+        "32bit": {
+            "url": "https://7-zip.org/a/7z2107.msi",
+            "hash": "b3ca98a8784c710108bbf56f9355ac6060af770b8459a32d94cc09b73cf0af7e"
+        }
+    },
+    "extract_dir": "Files\\7-Zip",
+    "bin": "7z.exe",
+    "shortcuts": [
+        [
+            "7zFM.exe",
+            "7-Zip"
+        ]
+    ],
+    "persist": [
+        "Codecs",
+        "Formats"
+    ],
+    "suggest": {
+        "7-Zip-zstd": "scoop-aoks/7-zip-zstd-aoks",
+        "modern7z": "scoop-aoks/modern7z-aoks"
+    },
+    "notes": [
+        "   To add Explorer context menu entries for 7-Zip,",
+        "      run 7zFM.exe",
+        "      open \"Tools\" -> \"Options\" -> \"Settings\" -> \"Show system menu\" AND",
+        "                                       \"7-Zip\" -> \"Integrate 7-Zip to shell context menu\"",
+        " "
+    ],
+    "checkver": {
+        "url": "https://www.7-zip.org/download.html",
+        "regex": "Download 7-Zip ([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://7-zip.org/a/7z$cleanVersion-x64.msi"
+            },
+            "32bit": {
+                "url": "https://7-zip.org/a/7z$cleanVersion.msi"
+            }
+        }
+    }
+}

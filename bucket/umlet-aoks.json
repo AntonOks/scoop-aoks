@@ -1,0 +1,26 @@
+{
+    "version": "14.3",
+    "description": "Free UML Tool for Fast UML Diagrams",
+    "homepage": "https://www.umlet.com/",
+    "license": "GPL-3.0-only",
+    "url": "https://www.umlet.com/download/umlet_14_3/umlet-standalone-14.3.0.zip",
+    "hash": "f4b064ed57ac0640daa31f5d59649a95596fc9290e503734ec4974a9bbecde49",
+    "extract_dir": "Umlet",
+    "bin": "umlet.jar",
+    "shortcuts": [
+        [
+            "umlet.jar",
+            "Umlet"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.umlet.com/changes.htm",
+        "regex": "New in <a href=\"download/umlet_(?<under>[\\d_]+)/umlet-standalone-(?<long>[\\d.]+).zip\">UMLet (?<version>[\\d.]+) stand-alone</a>",
+        "replace": "${version}"
+    },
+    "autoupdate": {
+        "url": "https://www.umlet.com/download/umlet_$matchUnder/umlet-standalone-$matchLong.zip",
+        "extract_dir": "Umlet"
+    },
+    "notes": "You need Java to be installed to use Umlet!"
+}

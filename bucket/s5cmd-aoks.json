@@ -1,0 +1,31 @@
+{
+    "version": "1.4.0",
+    "description": "Parallel S3 and local filesystem execution tool.",
+    "homepage": "https://github.com/peak/s5cmd",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/peak/s5cmd/releases/download/v1.4.0/s5cmd_1.4.0_Windows-64bit.zip",
+            "hash": "085ccd677662c0b4eea00325aaf04ce62b920d2a37f313af9616ace7ddda537e"
+        },
+        "32bit": {
+            "url": "https://github.com/peak/s5cmd/releases/download/v1.4.0/s5cmd_1.4.0_Windows-32bit.zip",
+            "hash": "9f13dd30aad3f16a284580f71018c77d34ec08b871053e095ec12864b7578d9a"
+        }
+    },
+    "bin": "s5cmd.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/peak/s5cmd/releases/download/v$version/s5cmd_$version_Windows-64bit.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/peak/s5cmd/releases/download/v$version/s5cmd_$version_Windows-32bit.zip"
+            },
+        },
+        "hash": {
+            "url": "$baseurl/s5cmd_checksums.txt"
+        }
+    }
+}

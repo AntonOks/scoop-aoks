@@ -1,0 +1,31 @@
+{
+    "homepage": "https://markdownmonster.west-wind.com",
+    "description": "Markdown editing and weblog publishing tool",
+    "version": "2.4.9.1",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://markdownmonster.west-wind.com/purchase.aspx#License"
+    },
+    "url": "https://west-wind.com/files/MarkdownMonsterPortable.zip",
+    "hash": "f4bbef45d38d258cddc1ff4b24673e882e5ee833d865637ba05fafdc84248dc6",
+    "pre_install": "if (!(Test-Path \"$dir\\_IsPortable\")) { New-Item \"$dir\\_IsPortable\" -Force | Out-Null }",
+    "bin": [
+        "mm.exe",
+        "MarkdownMonster.exe",
+        "mmcli.exe"
+    ],
+    "shortcuts": [
+        [
+            "MarkdownMonster.exe",
+            "Markdown Monster"
+        ]
+    ],
+    "persist": "PortableSettings",
+    "checkver": {
+        "url": "https://markdownmonster.west-wind.com/download",
+        "re": "<dt>Version:</dt> +\\n.+<dd><b>([\\d.]+)</b>"
+    },
+    "autoupdate": {
+        "url": "https://west-wind.com/files/MarkdownMonsterPortable.zip"
+    }
+}

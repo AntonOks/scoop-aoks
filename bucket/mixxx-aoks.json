@@ -1,0 +1,37 @@
+{
+    "version": "2.3.2",
+    "description": "DJ Your Way. Free and open source DJ software.",
+    "homepage": "https://mixxx.org/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://github.com/mixxxdj/mixxx/blob/main/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://downloads.mixxx.org/releases/2.3.2/mixxx-2.3.2-win64.msi",
+            "hash": "eb5b800f76a4dbe8bb1ecc2e6df4605b3d55ddd735cf81bbe80d3d759dfb57a8"
+        }
+    },
+    "extract_dir": "Mixxx",
+    "bin": "mixxx.exe",
+    "shortcuts": [
+        [
+            "mixxx.exe",
+            "MIXXX - DJ software"
+        ]
+    ],
+    "checkver": {
+        "url": "https://mixxx.org/news/tag/release-announcement/",
+        "re": ">Mixxx ([\\d.]+) released<"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://downloads.mixxx.org/releases/$version/mixxx-$version-win64.msi",
+            }
+        },
+        "hash": {
+            "url": "$url.sha256sum"
+        }
+    }
+}
