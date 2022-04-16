@@ -2,6 +2,7 @@
     "version": "1.0.0",
     "description": "A tool for converting C and Objective-C headers to D modules.",
     "homepage": "https://github.com/jacob-carlborg/dstep",
+    "license": "Boost",
     "architecture": {
         "64bit": {
             "url": "https://github.com/jacob-carlborg/dstep/releases/download/v1.0.0/dstep-1.0.0-win64.7z",
@@ -18,10 +19,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/jacob-carlborg/dstep/releases/download/v${version}/dstep-$version-win64.7z"
+                "url": "https://github.com/jacob-carlborg/dstep/releases/download/v$version/dstep-$version-win64.7z"
             },
             "32bit": {
-                "url": "https://github.com/jacob-carlborg/dstep/releases/download/v${version}/dstep-$version-win32.7z"
+                "url": "https://github.com/jacob-carlborg/dstep/releases/download/v$version/dstep-$version-win32.7z"
             }
         }
     }
