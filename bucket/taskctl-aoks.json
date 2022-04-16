@@ -2,6 +2,7 @@
     "homepage": "https://github.com/taskctl/taskctl",
     "description": "Concurrent task runner, developer's routine tasks automation toolkit. Simple modern alternative to GNU Make",
     "version": "1.4.2",
+    "license": "GPL-3.0-only",
     "architecture": {
         "32bit": {
             "url": "https://github.com/taskctl/taskctl/releases/download/1.4.2/taskctl_1.4.2_windows_386.zip",

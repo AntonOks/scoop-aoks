@@ -2,6 +2,7 @@
     "version": "11.7",
     "description": "High-performance http, https, socks5, ss, websocket, tcp, udp and game proxy and game shield.",
     "homepage": "https://github.com/snail007/goproxy",
+    "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
             "url": "https://github.com/snail007/goproxy/releases/download/v11.7/proxy-windows-amd64.tar.gz",
