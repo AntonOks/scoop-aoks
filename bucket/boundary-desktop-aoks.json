@@ -1,12 +1,12 @@
 {
-    "version": "1.4.2",
+    "version": "1.4.3",
     "description": "Desktop app to connect to a running Boundary server",
     "homepage": "https://www.boundaryproject.io",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://releases.hashicorp.com/boundary-desktop/1.4.2/boundary-desktop_1.4.2_windows_amd64.zip",
-            "hash": "57ca89cd39b8cb9a5693fdc39c9c3084445010bf6b5c0fc23624d26ac45d520c"
+            "url": "https://releases.hashicorp.com/boundary-desktop/1.4.3/boundary-desktop_1.4.3_windows_amd64.zip",
+            "hash": "5f1ec539519005d95f20254c0507ed395812276cee6726e4875e94d670544b07"
         }
     },
     "extract_dir": "Boundary",
