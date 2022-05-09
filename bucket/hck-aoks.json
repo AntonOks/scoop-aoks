@@ -1,12 +1,12 @@
 {
     "homepage": "https://github.com/sstadick/hck",
     "description": "A sharp cut(1) clone",
-    "version": "0.7.1",
+    "version": "0.7.2",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sstadick/hck/releases/download/v0.7.1/hck-windows-amd64#/hck.exe",
-            "hash": "7d3da5c13e4190128aa37ecd572f8a0ead3184d0ec43afb6d50f83b20e72b5fd"
+            "url": "https://github.com/sstadick/hck/releases/download/v0.7.2/hck-windows-amd64.exe#/hck.exe",
+            "hash": "a21a33b1383991eb5a4d2960093be65b020497725ad40800a448d26589d00d73"
         }
     },
     "bin": "hck.exe",
@@ -14,7 +14,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/sstadick/hck/releases/download/v$version/hck-windows-amd64#/hck.exe"
+                "url": "https://github.com/sstadick/hck/releases/download/v$version/hck-windows-amd64.exe#/hck.exe"
             }
         }
     }
