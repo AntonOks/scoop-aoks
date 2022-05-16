@@ -10,7 +10,9 @@
         }
     },
     "bin": "k0s.exe",
-    "suggest": "scoop-aoks/k0sctl-aoks",
+    "suggest": {
+        "k0sctl": "scoop-aoks/k0sctl-aoks"
+    },
     "checkver": {
         "url": "https://github.com/k0sproject/k0s/releases/",
         "regex": "k0s-v([\\d.-]+)\\+k0s\\.(?<patch>\\d)-amd64.exe"

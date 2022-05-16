@@ -2,10 +2,7 @@
     "homepage": "https://schinagl.priv.at/nt/ln/ln.html",
     "version": "2.9.3.3",
     "description": "(NTFS) Command line Hardlinks.",
-    "license": {
-        "identifier": "Proprietary",
-        "url": "https://schinagl.priv.at/nt/ln/license.txt"
-    },
+    "license": "https://schinagl.priv.at/nt/ln/license.txt",
     "architecture": {
         "64bit": {
             "url": "https://schinagl.priv.at/nt/ln/save/2933/ln64.zip",

@@ -23,12 +23,12 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://rakudo.org/dl/star/rakudo-star-$version-win-x86_64-$matchCompiler.msi"
+                "url": "https://rakudo.org/dl/star/rakudo-star-$version-win-x86_64-$matchCompiler.msi",
+                "hash": {
+                    "url": "$url.checksums.txt",
+                    "regex": "SHA256\\s+$sha256"
+                }
             }
-        },
-        "hash": {
-            "url": "$url.checksums.txt",
-            "regex": "SHA256\\s+$sha256"
         }
     }
 }

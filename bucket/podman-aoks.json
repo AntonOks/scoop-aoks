@@ -13,7 +13,8 @@
     "autoupdate": {
         "url": "https://github.com/containers/podman/releases/download/v$version/podman-v$version.msi",
         "hash": {
-            "url": "$baseurl/shasums"
+            "url": "$baseurl/shasums",
+            "regex": "$sha256\\s+$basename"
         }
     }
 }

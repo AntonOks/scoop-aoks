@@ -2,10 +2,7 @@
     "version": "10.0.50",
     "description": "Convert executable installers to MSI packages fast and easy.",
     "homepage": "https://www.exemsi.com/",
-    "license": {
-        "identifier": "Proprietary",
-        "url": "https://www.exemsi.com/eula/"
-    },
+    "license": "https://www.exemsi.com/eula/",
     "architecture": {
         "64bit": {
             "url": "https://www.exemsi.com/downloads/msi_wrapper/MSI_Wrapper_10_0_50_0.msi",

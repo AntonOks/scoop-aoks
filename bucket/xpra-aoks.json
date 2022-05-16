@@ -27,11 +27,11 @@
         "architecture": {
             "64bit": {
                 "url": "https://xpra.org/dists/windows/Xpra-Python3-x86_64_$version.zip",
-                "extract_dir": "Xpra-Python3-x86_64_$version"
+                "extract_dir": "Xpra-Python3-x86_64_$version",
+                "hash": {
+                    "url": "$url.sha1"
+                }
             }
-        },
-        "hash": {
-            "url": "$url.sha1"
         }
     }
 }

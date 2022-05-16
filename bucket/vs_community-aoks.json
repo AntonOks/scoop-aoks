@@ -2,10 +2,7 @@
     "version": "16.11.14",
     "description": "Microsoft Visual Studio Community 2019",
     "homepage": "https://www.visualstudio.com/downloads/",
-    "license": {
-        "identifier": "Freeware",
-        "url": "https://visualstudio.microsoft.com/license-terms"
-    },
+    "license": "https://visualstudio.microsoft.com/license-terms/mlt031819/",
     "url": "https://aka.ms/vs/16/release/vs_community.exe",
     "hash": "bac769ac161e6797cade44882e3de6f54292d6c1d8bb546daa91fe96f30813a3",
     "installer": {

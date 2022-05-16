@@ -28,11 +28,11 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/flameshot-org/flameshot/releases/download/v$version/flameshot-$version-win64.zip",
-                "extract_dir": "flameshot-$version-win64/flameshot-$version-win64"
+                "extract_dir": "flameshot-$version-win64/flameshot-$version-win64",
+                "hash": {
+                    "url": "$url.sha256"
+                }
             }
-        },
-        "hash": {
-            "url": "$url.sha256sum"
         }
     }
 }

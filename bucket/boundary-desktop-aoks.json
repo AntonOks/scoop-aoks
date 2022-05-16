@@ -23,11 +23,12 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://releases.hashicorp.com/boundary-desktop/$version/boundary-desktop_$version_windows_amd64.zip"
+                "url": "https://releases.hashicorp.com/boundary-desktop/$version/boundary-desktop_$version_windows_amd64.zip",
+                "hash": {
+                    "url": "$baseurl/boundary-desktop_$version_SHA256SUMS",
+                    "regex": "$sha256\\s+$basename"
+                }
             }
-        },
-        "hash": {
-            "url": "$baseurl/boundary-desktop_$version_SHA256SUMS"
         }
     }
 }

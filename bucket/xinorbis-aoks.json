@@ -15,10 +15,10 @@
                 ]
             ],
             "shortcuts": [
-                 [
-                     "x8.64.exe",
-                     "xinorbis8"
-                 ]
+                [
+                    "x8.64.exe",
+                    "xinorbis8"
+                ]
             ]
         },
         "32bit": {
@@ -27,19 +27,19 @@
             "extract_dir": "XinorbisPro32",
             "bin": [
                 [
-                     "x8.32.exe",
-                     "xinorbis8"
-                 ]
-             ],
-             "shortcuts": [
-                 [
-                     "x8.32.exe",
-                     "xinorbis8"
-                 ]
+                    "x8.32.exe",
+                    "xinorbis8"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "x8.32.exe",
+                    "xinorbis8"
+                ]
             ]
-       }
-   },
-   "persist": "custom.ini",
+        }
+    },
+    "persist": "custom.ini",
     "checkver": {
         "url": "https://sourceforge.net/projects/xinorbis-and-tools/",
         "regex": "dateUpdated\" datetime.*([\\d]{4}-[\\d]{2}-[\\d]{2})</time>"

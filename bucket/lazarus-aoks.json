@@ -2,10 +2,7 @@
     "homepage": "https://www.lazarus-ide.org",
     "version": "2.2.0",
     "description": "A Delphi compatible cross-platform IDE for Rapid Application Development.",
-    "license": {
-        "identifier": "GPL-2.0-or-later | FPC-modified-LGPL-2.0-or-later",
-        "url": "http://wiki.lazarus.freepascal.org/licensing"
-    },
+    "license": "GPL-2.0-or-later|FPC-modified-LGPL-2.0-or-later",
     "architecture": {
         "64bit": {
             "url": "https://downloads.sourceforge.net/project/lazarus/Lazarus%20Windows%2064%20bits/Lazarus%202.2.0/lazarus-2.2.0-fpc-3.2.2-win64.exe",
@@ -45,15 +42,19 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://downloads.sourceforge.net/project/lazarus/Lazarus%20Windows%2064%20bits/Lazarus%20$version/lazarus-$version-fpc-$matchFpc-win64.exe"
+                "url": "https://downloads.sourceforge.net/project/lazarus/Lazarus%20Windows%2064%20bits/Lazarus%20$version/lazarus-$version-fpc-$matchFpc-win64.exe",
+                "hash": {
+                    "url": "http://www.lazarus-ide.org/index.php?page=checksums",
+                    "regex": "$sha256.*$basename"
+                }
             },
             "32bit": {
-                "url": "https://downloads.sourceforge.net/project/lazarus/Lazarus%20Windows%2032%20bits/Lazarus%20$version/lazarus-$version-fpc-$matchFpc-win32.exe"
+                "url": "https://downloads.sourceforge.net/project/lazarus/Lazarus%20Windows%2032%20bits/Lazarus%20$version/lazarus-$version-fpc-$matchFpc-win32.exe",
+                "hash": {
+                    "url": "http://www.lazarus-ide.org/index.php?page=checksums",
+                    "regex": "$sha256.*$basename"
+                }
             }
-        },
-        "hash": {
-            "url": "http://www.lazarus-ide.org/index.php?page=checksums",
-            "regex": "$sha256.*?$basename"
         }
     }
 }
