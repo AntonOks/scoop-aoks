@@ -2,10 +2,7 @@
     "version": "2.918",
     "description": "A large collection of GNU and Open Source tools which provide functionality similar to a Linux distribution on Windows",
     "homepage": "https://cygwin.com/",
-    "license": {
-        "identifier": "GPL-3.0-or-later,X11,Public Domain",
-        "url": "https://cygwin.com/faq.html#faq.what.free"
-    },
+    "license": "GPL-3.0-or-later,X11,Public Domain",
     "notes": "To start a Cygwin shell, type \"cygwin\"",
     "architecture": {
         "64bit": {
@@ -24,14 +21,19 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://cygwin.com/setup-x86_64.exe#/cygwin-setup.exe"
+                "url": "https://cygwin.com/setup-x86_64.exe#/cygwin-setup.exe",
+                "hash": {
+                    "url": "https://cygwin.com/sha512.sum",
+                    "regex": "$sha512\\s+$basename"
+                }
             },
             "32bit": {
-                "url": "https://cygwin.com/setup-x86.exe#/cygwin-setup.exe"
+                "url": "https://cygwin.com/setup-x86.exe#/cygwin-setup.exe",
+                "hash": {
+                    "url": "https://cygwin.com/sha512.sum",
+                    "regex": "$sha512\\s+$basename"
+                }
             }
-        },
-        "hash": {
-            "url": "https://cygwin.com/sha512.sum"
         }
     },
     "bin": [

@@ -2,9 +2,7 @@
     "version": "21.03-v1.5.0-R2",
     "description": "7-Zip support for Brotli, Fast-LZMA2, Lizard, LZ4, LZ5 and Zstandard.",
     "homepage": "https://mcmilk.de/projects/7-Zip-zstd/",
-    "license": {
-        "url": "https://github.com/mcmilk/7-Zip-zstd/blob/master/COPYING"
-    },
+    "license": "LGPL-2.1-or-later,BSD-3-Clause,Proprietary",
     "notes": "When you update 7zip-aoks, please reinstall 7-zip-zstd-aoks.",
     "depends": "scoop-aoks/7zip-aoks",
     "##": "the usual github thing doesn't work",

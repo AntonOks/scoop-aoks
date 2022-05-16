@@ -15,11 +15,12 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/k0sproject/k0sctl/releases/download/v$version/k0sctl-win-x64.exe#/k0sctl.exe"
+                "url": "https://github.com/k0sproject/k0sctl/releases/download/v$version/k0sctl-win-x64.exe#/k0sctl.exe",
+                "hash": {
+                    "url": "$baseurl/checksums.txt",
+                    "regex": "$sha256\\s+\\*$basename"
+                }
             }
-        },
-        "hash": {
-            "url": "$baseurl/checksums.txt"
         }
     }
 }

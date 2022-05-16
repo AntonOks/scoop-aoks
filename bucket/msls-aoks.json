@@ -2,10 +2,7 @@
     "homepage": "https://u-tools.com/msls",
     "description": "GNU ls for Microsoft Windows",
     "version": "4.8.349",
-    "license": {
-        "identifier": "freeware",
-        "url": "https://u-tools.com/download_agree.asp?download_id=600"
-    },
+    "license": "GPL-2.0-only",
     "url": "https://u-tools.com/files/msls349.exe#/dl.7z",
     "hash": "ae2e4cd4eff41b64c241fa45137d979d8a9e4197332c442a650bbac47bf00fc5",
     "bin": [

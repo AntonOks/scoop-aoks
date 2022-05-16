@@ -2,10 +2,7 @@
     "version": "4.1.5",
     "description": "The Fastest copy/backup software.",
     "homepage": "https://fastcopy.jp/en/",
-    "license": {
-        "identifier": "Freeware",
-        "url": "https://fastcopy.jp/help/fastcopy_eng.htm#license"
-    },
+    "license": "BSD-1-Clause,BSD-2-Clause,Apache-2.0",
     "url": "https://fastcopy.jp/archive/FastCopy4.1.5_installer.exe",
     "hash": "16ca73b9982733e57d5d7d57236af9e695422c7ac7869b16df2fb7662e88889b",
     "installer": {

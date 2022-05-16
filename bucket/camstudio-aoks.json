@@ -2,9 +2,7 @@
     "homepage": "https://camstudio.org/",
     "version": "2.7.4",
     "description": "Free Desktop Recorder Streaming Video Software.",
-    "license": {
-        "identifier": "GPL-3.0-only"
-    },
+    "license": "GPL-3.0-only",
     "url": "https://cs07112018.s3.us-east-2.amazonaws.com/CamStudioSetup.exe",
     "hash": "3fbe450e3267799f372a775e4c7e7c47c8bbffeebb0bd0c9690e63374eba8ba0",
     "depends": "extras/vcredist2010",

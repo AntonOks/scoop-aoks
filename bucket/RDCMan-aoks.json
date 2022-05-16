@@ -2,9 +2,7 @@
     "homepage": "https://docs.microsoft.com/en-us/sysinternals/downloads/rdcman",
     "version": "2.90",
     "description": "RDCMan manages multiple remote desktop connections.",
-    "license": {
-        "identifier": "Proprietary"
-    },
+    "license": "Proprietary",
     "url": "https://download.sysinternals.com/files/RDCMan.zip",
     "hash": "5b3281c5ff7eebd208b51d24d72de1b37c23cb3860350e27e9b4189b25a274d0",
     "shortcuts": [

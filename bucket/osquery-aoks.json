@@ -2,10 +2,7 @@
     "version": "5.2.3",
     "description": "Performant endpoint visibility",
     "homepage": "https://osquery.io/",
-    "license": {
-        "identifier": "Apache-2.0|GPL-2.0-only",
-        "url": "https://github.com/osquery/osquery/blob/master/LICENSE"
-    },
+    "license": "Apache-2.0|GPL-2.0-only",
     "url": "https://pkg.osquery.io/windows/osquery-5.2.3.msi",
     "hash": "52bd94d335b12880df606e682a8a2c4fda7fbf3425d5b0e69cd30f8f1ff16349",
     "extract_dir": "osquery",

@@ -2,9 +2,7 @@
     "homepage": "https://commaide.com/",
     "version": "2022.04.0",
     "description": "The Integrated Development Environment for Raku",
-    "license": {
-        "identifier": "Proprietary"
-    },
+    "license": "Proprietary",
     "architecture": {
         "64bit": {
             "hash": "1d83caaab47d285b92682852ef740042863c667aba079ccf05dd5e1cfb97f29f",

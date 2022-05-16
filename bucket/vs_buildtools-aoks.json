@@ -2,10 +2,7 @@
     "version": "16.11.14",
     "description": "Microsoft Visual Studio Build Tools 2019",
     "homepage": "https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019",
-    "license": {
-        "identifier": "Freeware",
-        "url": "https://visualstudio.microsoft.com/license-terms"
-    },
+    "license": "https://visualstudio.microsoft.com/license-terms/mlt031519/",
     "url": "https://aka.ms/vs/16/release/vs_buildtools.exe",
     "hash": "b5427e5f95a5e7f19adc18df89891f7808370cc63911f1df27996071de612180",
     "installer": {

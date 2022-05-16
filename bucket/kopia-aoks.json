@@ -18,11 +18,12 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/kopia/kopia/releases/download/v$version/kopia-$version-windows-x64.zip",
+                "hash": {
+                    "url": "$baseurl/checksums.txt",
+                    "regex": "$sha256\\s+$basename"
+                },
                 "extract_dir": "kopia-$version-windows-x64"
             }
-        },
-        "hash": {
-            "url": "$baseurl/checksums.txt"
         }
     }
 }
