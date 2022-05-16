@@ -17,7 +17,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.raidrive.com/download"
+        "url": "https://www.raidrive.com/download",
         "regex": ">v([\\d.]+) Release date "
     },
     "autoupdate": {
