@@ -38,7 +38,7 @@ jobs:
       - name: Checkout Scoop
         uses: actions/checkout@v3
         with:
-          repository: ScoopInstaller/Scoop
+          repository:  AntonOks/Scoop
           path: 'scoop_core'
       - name: Init and Test
         shell: pwsh
