@@ -1,5 +1,5 @@
 {
-    "##": "don't continue with this for now as it 1. installs a own driver (???) __AND__ it's also almosr imposible to get a download patj",
+    "##": "don't continue with this for now as it 1. installs a own driver (???) __AND__ it's also almost imposible to get a donwnload and an autoupdate url",
     "version": "2021.09.9",
     "description": "Conveniently manage all your cloud services as a network drive using the standard file explorer.",
     "homepage": "https://www.raidrive.com/",
@@ -17,7 +17,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.raidrive.com/download"
+        "url": "https://www.raidrive.com/download",
         "regex": ">v([\\d.]+) Release date "
     },
     "autoupdate": {
