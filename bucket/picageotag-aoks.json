@@ -5,13 +5,19 @@
     "license": "Freeware",
     "architecture": {
         "32bit": {
-            "url": "https://www.picageotag.com/download/PicaGeoTag32.exe",
+            "url": "https://www.picageotag.com/download/PicaGeoTag32.exe#/_PicaGeoTag.exe",
             "hash": "sha1:7d34a537c887d413c67c6b276b25ad4b7fdcc6eb"
         },
         "64bit": {
-            "url": "https://www.picageotag.com/download/PicaGeoTag64.exe",
+            "url": "https://www.picageotag.com/download/PicaGeoTag64.exe#/_PicaGeoTag.exe",
             "hash": "sha1:f6f1562ece8a6dd27172d99d300ab1367d9a32a4"
         }
+    },
+    "installer": {
+        "script": "Invoke-ExternalCommand -FilePath \"$dir\\_PicaGeoTag.exe\" -Args @(\"/VERYSILENT\", \"/SP-\", \"/SUPPRESSMSGBOXES\", \"/NORESTART\", \"/NOCLOSEAPPLICATIONS\", \"/LOG=${dir}\\PicaGeoTag.log\", \"/DIR=${dir}\") -RunAs | Out-Null"
+    },
+    "uninstaller": {
+        "script": "Invoke-ExternalCommand -FilePath \"$dir\\unins000.exe\" -Args @(\"/VERYSILENT\", \"/SUPPRESSMSGBOXES\", \"/NORESTART\", \"/CLOSEAPPLICATIONS\") -RunAs | Out-Null"
     },
     "bin": "PicaGeoTag.exe",
     "shortcuts": [
