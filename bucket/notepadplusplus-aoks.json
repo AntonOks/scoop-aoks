@@ -78,7 +78,10 @@
         "themes",
         "userDefineLangs",
         "config.xml",
+        "nativeLang.xml",
         "session.xml",
+        "shortcuts.xml",
+        "stylers.xml",
         "userDefineLang.xml"
     ],
     "checkver": {
