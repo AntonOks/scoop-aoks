@@ -1,0 +1,45 @@
+{
+    "version": "1.8.0",
+    "homepage": "https://www.picageotag.com/en/",
+    "description": "Your pictures deserve to know where they come from.",
+    "license": "Freeware",
+    "architecture": {
+        "32bit": {
+            "url": "https://www.picageotag.com/download/PicaGeoTag32.exe",
+            "hash": "sha1:7d34a537c887d413c67c6b276b25ad4b7fdcc6eb"
+        },
+        "64bit": {
+            "url": "https://www.picageotag.com/download/PicaGeoTag64.exe",
+            "hash": "sha1:f6f1562ece8a6dd27172d99d300ab1367d9a32a4"
+        }
+    },
+    "bin": "PicaGeoTag.exe",
+    "shortcuts": [
+        [
+            "PicaGeoTag.exe",
+            "PicaGeoTag"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.picageotag.com/en/download/",
+        "regex": "Current version : ([\\d+.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.picageotag.com/download/PicaGeoTag64.exe",
+                "hash": {
+                    "url": "https://www.picageotag.com/en/download/",
+                    "regex": ">PicaGeoTag 64 bits</td><td class=\"column-2\">$sha1<"
+                }
+            },
+            "32bit": {
+                "url": "https://www.picageotag.com/download/PicaGeoTag32.exe",
+                "hash": {
+                    "url": "https://www.picageotag.com/en/download/",
+                    "regex": ">PicaGeoTag 32 bits</td><td class=\"column-2\">$sha1<"
+                }
+            }
+        }
+    }
+}
