@@ -1,10 +1,10 @@
 {
-    "version": "4.2.0",
+    "version": "4.3",
     "description": "Create Lists of Directory Contents and File Properties.",
-    "homepage": "https://www.jam-software.com/treesize_free",
+    "homepage": "https://www.jam-software.com/filelist",
     "license": "Freeware",
     "url": "https://downloads.jam-software.de/filelist/FileList.zip",
-    "hash": "dffd10fcaf1c1a5067cb2bf0c897ae1786275fa139514b37dbd17838d04fe8a5",
+    "hash": "f0c1b3aef8e06195bc448c6ab9a4896871652a349aac5a410ee836313143ae41",
     "bin": "filelist.exe",
     "checkver": {
         "url": "https://www.jam-software.de/filelist/changes.shtml",
