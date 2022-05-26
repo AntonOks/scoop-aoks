@@ -15,7 +15,6 @@
     ],
     "checkver": ">Release Version ([\\d.]+)<",
     "autoupdate": {
-        "url": "https://openhardwaremonitor.org/files/openhardwaremonitor-v$version.zip",
-        "extract_dir": "OpenHardwareMonitor"
+        "url": "https://openhardwaremonitor.org/files/openhardwaremonitor-v$version.zip"
     }
 }
