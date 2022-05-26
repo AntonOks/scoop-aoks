@@ -24,7 +24,6 @@
             "32bit": {
                 "url": "https://bsdio.com/fio/releases/fio-$version-x86.msi"
             }
-        },
-        "extract_dir": "fio"
+        }
     }
 }
