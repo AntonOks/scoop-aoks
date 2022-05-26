@@ -30,12 +30,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/couchcoding/Logbert/releases/download/$version/Logbert.$version.-.Setup.-.x64.msi",
-                "extract_dir": "Couchcoding\\Logbert"
+                "url": "https://github.com/couchcoding/Logbert/releases/download/$version/Logbert.$version.-.Setup.-.x64.msi"
             },
             "32bit": {
-                "url": "https://github.com/couchcoding/Logbert/releases/download/$version/Logbert.$version.-.Setup.-.x86.msi",
-                "extract_dir": "Couchcoding\\Logbert"
+                "url": "https://github.com/couchcoding/Logbert/releases/download/$version/Logbert.$version.-.Setup.-.x86.msi"
             }
         }
     }
