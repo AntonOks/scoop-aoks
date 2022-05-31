@@ -10,6 +10,9 @@
         }
     },
     "extract_dir": "rakudo",
+    "env_add_path": [
+        "share\\perl6\\site\\bin"
+    ],
     "bin": [
         "bin\\perl6.exe",
         "bin\\raku.exe",
