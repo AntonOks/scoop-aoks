@@ -11,13 +11,8 @@
     },
     "extract_dir": "rakudo",
     "env_add_path": [
+        "bin",
         "share\\perl6\\site\\bin"
-    ],
-    "bin": [
-        "bin\\perl6.exe",
-        "bin\\raku.exe",
-        "bin\\rakudo.exe",
-        "share\\perl6\\site\\bin\\zef.bat"
     ],
     "checkver": {
         "url": "https://rakudo.org/downloads/star",
