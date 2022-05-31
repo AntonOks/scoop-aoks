@@ -28,5 +28,8 @@
                 }
             }
         }
-    }
+    },
+    "notes": [
+        "   You may want to set your environment variable \"RAKULIB\", usually pointing to \\$HOME\\.raku"
+    ],
 }
