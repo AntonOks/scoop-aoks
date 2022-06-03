@@ -1,14 +1,14 @@
 {
-    "version": "1.7.1",
+    "version": "1.8.0",
     "description": "Helper tools to make everyday life with Git much easier.",
     "homepage": "https://github.com/nvie/git-toolbelt",
     "license": "BSD-3-Clause",
     "suggest": {
         "git": "git"
     },
-    "url": "https://github.com/nvie/git-toolbelt/archive/v1.7.1.zip",
-    "hash": "9d8ea3914b9d71bff5d6c5c249e64b87c8256474f9312627973c3aa0ea31ed95",
-    "extract_dir": "git-toolbelt-1.7.1",
+    "url": "https://github.com/nvie/git-toolbelt/archive/v1.8.0.zip",
+    "hash": "0dafd8f1862df592c36a10f08de8cb57e394f52371f67f5b35ac5c3065b13218",
+    "extract_dir": "git-toolbelt-1.8.0",
     "extract_to": "exe",
     "env_add_path": "exe",
     "checkver": "github",
