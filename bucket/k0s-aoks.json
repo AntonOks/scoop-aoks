@@ -1,12 +1,12 @@
 {
-    "version": "1.23.6",
+    "version": "1.23.7",
     "description": "Zero Friction Kubernetes distribution",
     "homepage": "https://github.com/k0sproject/k0s",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/k0sproject/k0s/releases/download/v1.23.6%2Bk0s.0/k0s-v1.23.6+k0s.0-amd64.exe#/k0s.exe",
-            "hash": "9c1dfd8901e9bc38857546617d343098f01a5bf7831f1ee9cbcc561d07e88a6c"
+            "url": "https://github.com/k0sproject/k0s/releases/download/v1.23.7%2Bk0s.0/k0s-v1.23.7+k0s.0-amd64.exe#/k0s.exe",
+            "hash": "7f0fda68b6274871c27d80f74b1bd2d1ac38e62960cfba3eea2b3748f94708f4"
         }
     },
     "bin": "k0s.exe",
