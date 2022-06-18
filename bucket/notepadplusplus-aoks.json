@@ -41,8 +41,10 @@
         }
     },
     "pre_install": [
-        "if (!(Test-Path \"$persist_dir\\session.xml\")) { New-Item \"$dir\\session.xml\" -Force | Out-Null }",
-        "if (!(Test-Path \"$persist_dir\\userDefineLang.xml\")) { New-Item \"$dir\\userDefineLang.xml\" -Force | Out-Null }"
+        "'session.xml', 'userDefineLang.xml', 'nativeLang.xml' | ForEach-Object {",
+        "    if (!(Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" -ItemType File | Out-Null }",
+        "}",
+        "if (!(Test-Path \"$persist_dir\\stylers.xml\")) { Copy-Item \"$dir\\stylers.model.xml\" \"$dir\\stylers.xml\" }"
     ],
     "post_install": [
         "if (Test-Path \"$dir\\notepadplusplus-install-context.reg\") {",
