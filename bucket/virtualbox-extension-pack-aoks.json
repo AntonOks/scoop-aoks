@@ -8,7 +8,6 @@
         "identifier": "GPL-2.0-only|Freeware",
         "url": "https://www.virtualbox.org/wiki/VirtualBox_PUEL"
     },
-    "changelog": "https://www.virtualbox.org/wiki/Changelog",
     "notes": [
         "The VirtualBox Extension Pack is only free for personal, educational or evaluation use.",
         "A license must be purchased for enterprise use.",
@@ -20,7 +19,6 @@
             "hash": "d7856f0688b6d2ed1e8bff0b367efa952068b03fa5a3a29b46db08cfd5d9a810"
         }
     },
-    "pre_download": "Assert-Administrator",
     "installer": {
         "script": [
             "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
