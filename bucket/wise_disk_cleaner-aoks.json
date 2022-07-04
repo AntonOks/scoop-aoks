@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.wisecleaner.com/wise-disk-cleaner.html",
     "description": "Free Disk Cleaner and Defragmenter.",
-    "version": "10.8.5",
+    "version": "10.8.6",
     "license": "https://www.wisecleaner.com/eula.html",
-    "url": "https://downloads.wisecleaner.com/soft/WDCFree_10.8.5.805.exe#/WDCFree.exe",
-    "hash": "62fd90f08ecb0b92a21f6822db759437e0f8181b0dbcc25fdeb41947c152d8c1",
+    "url": "https://downloads.wisecleaner.com/soft/WDCFree_10.8.6.806.exe#/WDCFree.exe",
+    "hash": "9058a79f673e06659e33e81edbd87cd856a2f8ded5b87bfdeb59575969c6b04f",
     "##": "see installer options here - https://jrsoftware.org/ishelp/index.php?topic=setupcmdline",
     "installer": {
         "script": "Invoke-ExternalCommand -FilePath \"$dir\\WDCFree.exe\" -Args @(\"/VERYSILENT\", \"/SUPPRESSMSGBOXES\", \"/LOG=${dir}\\WDCFree.log\", \"/DIR=${dir}\") -RunAs | Out-Null"
