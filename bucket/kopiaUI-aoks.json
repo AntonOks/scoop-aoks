@@ -1,7 +1,7 @@
 {
     "homepage": "https://kopia.io/",
     "description": "KopiaUI - Fast and Secure Open-Source Backup.",
-    "version": "0.11.1",
+    "version": "0.11.2",
     "license": "Apache-2.0",
     "bin": "KopiaUI.exe",
     "shortcuts": [
@@ -15,8 +15,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/kopia/kopia/releases/download/v0.11.1/KopiaUI-0.11.1-win.zip",
-            "hash": "1a432e91f5286d8610acdacea5067613b4663e19abadf7dcb0b886a26be33610"
+            "url": "https://github.com/kopia/kopia/releases/download/v0.11.2/KopiaUI-0.11.2-win.zip",
+            "hash": "b64106da3edac94227442883d4bd3f411ff551a8155a8278ebef3e287f54cfda"
         }
     },
     "autoupdate": {
