@@ -1,16 +1,16 @@
 {
-    "version": "4.0.0",
+    "version": "5.0.0",
     "description": "Open source graph visualization software.",
     "homepage": "https://www.graphviz.org/",
     "license": "EPL-1.0",
     "architecture": {
         "64bit": {
-            "url": "https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/4.0.0/windows_10_cmake_Debug_graphviz-install-4.0.0-win64.exe#/dl.7z",
-            "hash": "859dcbd9860630c595e6e318265e89fefe6144ef8f8e9eb25dd525d9f7f42dac"
+            "url": "https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/5.0.0/windows_10_cmake_Debug_graphviz-install-5.0.0-win64.exe#/dl.7z",
+            "hash": "12c55f669767f0f2d4a7fa3681e513d533792008c52a4ec4bb8b18cc58f5b234"
         },
         "32bit": {
-            "url": "https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/4.0.0/windows_10_cmake_Debug_graphviz-install-4.0.0-win32.exe#/dl.7z",
-            "hash": "7c76287dfe4764b1d24a9e18b8bc75fa9f21b759905889a5199f9670439a5a56"
+            "url": "https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/5.0.0/windows_10_cmake_Debug_graphviz-install-5.0.0-win32.exe#/dl.7z",
+            "hash": "e5ffcc351d9836637bcb0504e1c0a19d0bc4a9f67428aafc12f42a55da83129b"
         }
     },
     "bin": [
