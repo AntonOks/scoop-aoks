@@ -1,12 +1,12 @@
 {
-    "version": "0.13.0",
+    "version": "0.13.1",
     "description": "A bootstrapping and management tool for k0s clusters.",
     "homepage": "https://github.com/k0sproject/k0sctl",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/k0sproject/k0sctl/releases/download/v0.13.0/k0sctl-win-x64.exe#/k0sctl.exe",
-            "hash": "12881882a7d0217a64bad514c1bbc2a1c83e31cdb22bbcccee697d21db8f1efe"
+            "url": "https://github.com/k0sproject/k0sctl/releases/download/v0.13.1/k0sctl-win-x64.exe#/k0sctl.exe",
+            "hash": "a86286d17824e5b798448d51f5e8564c95292014343870b06a0ed14368ecf876"
         }
     },
     "bin": "k0sctl.exe",
