@@ -1,16 +1,16 @@
 {
-    "version": "1.8.0",
+    "version": "1.8.1",
     "homepage": "https://www.picageotag.com/en/",
     "description": "Your pictures deserve to know where they come from.",
     "license": "Freeware",
     "architecture": {
         "32bit": {
-            "url": "https://www.picageotag.com/download/PicaGeoTag32.exe#/_PicaGeoTag.exe",
-            "hash": "sha1:7d34a537c887d413c67c6b276b25ad4b7fdcc6eb"
+            "url": "https://www.picageotag.com/download/PicaGeoTag32.exe",
+            "hash": "sha1:b46baef1aacf3341fd41dec05f9b5a2a186b2a0a"
         },
         "64bit": {
-            "url": "https://www.picageotag.com/download/PicaGeoTag64.exe#/_PicaGeoTag.exe",
-            "hash": "sha1:f6f1562ece8a6dd27172d99d300ab1367d9a32a4"
+            "url": "https://www.picageotag.com/download/PicaGeoTag64.exe",
+            "hash": "sha1:ba2e7b5b0165c6e73ce0d2aacb8389616010719b"
         }
     },
     "installer": {
