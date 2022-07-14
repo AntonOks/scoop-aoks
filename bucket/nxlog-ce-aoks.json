@@ -1,12 +1,12 @@
 {
-    "version": "3.0.2284",
+    "version": "2.11.2190",
     "description": "The modern open source log collector.",
     "homepage": "https://nxlog.co/products/nxlog-community-edition",
     "license": "Freeware|Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://nxlog.co/system/files/products/files/348/nxlog-ce-3.0.2284.msi",
-            "hash": "e986d0af6c252e1516b37057fb3ff4e0caecc706b371c9637c562d9eddfc400f"
+            "url": "https://nxlog.co/system/files/products/files/348/nxlog-ce-2.11.2190.msi",
+            "hash": "413972d1769d406fb6a8d67ef951f3353f7392543ea537bd93ebe41b990c7a98"
         }
     },
     "extract_dir": "PFiles\\nxlog",
