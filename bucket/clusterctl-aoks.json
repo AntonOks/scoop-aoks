@@ -1,12 +1,12 @@
 {
     "homepage": "https://cluster-api.sigs.k8s.io/",
     "description": "Kubernetes Cluster API is a Kubernetes sub-project focused on providing declarative APIs and tooling to simplify provisioning, upgrading, and operating multiple Kubernetes clusters.",
-    "version": "1.1.5",
+    "version": "1.2.0",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.1.5/clusterctl-windows-amd64.exe#/clusterctl.exe",
-            "hash": "e8dda3cd39619e857ab284b5a385648ea3819d61e32fca54819cc232cce2cdbd"
+            "url": "https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.2.0/clusterctl-windows-amd64.exe#/clusterctl.exe",
+            "hash": "0811fcadce2fc900cd9c9d875973b6f38adb53aa8dfdd2a2b16bd6cb4cd7e30b"
         }
     },
     "bin": "clusterctl.exe",
