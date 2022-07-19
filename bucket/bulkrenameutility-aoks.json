@@ -1,10 +1,10 @@
 {
-    "version": "3.4.3.0",
+    "version": "3.4.4.0",
     "description": "file renaming software for Windows",
     "homepage": "https://www.bulkrenameutility.co.uk/",
     "license": "https://www.bulkrenameutility.co.uk/License.php",
     "url": "http://www.s3.tgrmn.com/bru/BRU_NoInstall.zip",
-    "hash": "md5:960d78ea89a07da6d5331ea3d36cf571",
+    "hash": "md5:8268648df4b9cb329920bbfe0b97bca1",
     "architecture": {
         "64bit": {
             "extract_dir": "64-bit"
