@@ -1,12 +1,12 @@
 {
-    "version": "10.0.50",
+    "version": "10.0.51",
     "description": "Convert executable installers to MSI packages fast and easy.",
     "homepage": "https://www.exemsi.com/",
     "license": "https://www.exemsi.com/eula/",
     "architecture": {
         "64bit": {
-            "url": "https://www.exemsi.com/downloads/msi_wrapper/MSI_Wrapper_10_0_50_0.msi",
-            "hash": "280a9bec543d30e9058b760a1b3f3d5df0401f3d327e4489556050a2c7d903f5"
+            "url": "https://www.exemsi.com/downloads/msi_wrapper/MSI_Wrapper_10_0_51_0.msi",
+            "hash": "2845306b309d4d58633343bb12bd9afe536e8115d73a62e4424e8db20f0fd470"
         }
     },
     "extract_dir": "MSI Wrapper",
