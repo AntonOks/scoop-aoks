@@ -1,11 +1,11 @@
 {
     "homepage": "https://commaide.com/",
-    "version": "2022.04.0",
+    "version": "2022.07.0",
     "description": "The Integrated Development Environment for Raku",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "hash": "1d83caaab47d285b92682852ef740042863c667aba079ccf05dd5e1cfb97f29f",
+            "hash": "235bf442241a6f7b893d72b9ede3515a12e069a669bb73cea8a719223077d0ad",
             "url": "https://commaide.com/download/community/windows#/dl.7z"
         }
     },
