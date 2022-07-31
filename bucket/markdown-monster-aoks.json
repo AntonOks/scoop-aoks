@@ -7,9 +7,7 @@
     "hash": "f733ffcbde324e9ba60c1231ee1a7e005dff097fa362eeb587aa3046e44edbeb",
     "pre_install": "if (!(Test-Path \"$dir\\_IsPortable\")) { New-Item \"$dir\\_IsPortable\" -Force | Out-Null }",
     "bin": [
-        "mm.exe",
-        "MarkdownMonster.exe",
-        "mmcli.exe"
+        "MarkdownMonster.exe"
     ],
     "shortcuts": [
         [
