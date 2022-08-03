@@ -14,7 +14,7 @@
         }
     },
     "pre_install": "Write-Host 'Installing Anaconda 3. This can take up to 30 minutes on an HDD.' -ForegroundColor Magenta",
-    "post_install": "cp $dir\\Library\\bin\libssl-*.dll,$dir\\Library\\bin\libcrypto-*.dll $dir\\DLLs\\",
+    "post_install": "cp $dir\\Library\\bin\\libssl-*.dll,$dir\\Library\\bin\\libcrypto-*.dll $dir\\DLLs\\",
     "installer": {
         "args": [
             "/S",
