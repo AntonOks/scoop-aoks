@@ -1,5 +1,5 @@
 {
-    "version": "1.24",
+    "version": "1.25",
     "description": "Low-ops, minimal production Kubernetes, for devs, cloud, clusters, workstations, Edge and IoT.",
     "homepage": "https://microk8s.io/",
     "license": "Apache-2.0",
