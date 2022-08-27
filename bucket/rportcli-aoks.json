@@ -7,10 +7,6 @@
         "64bit": {
             "url": "https://github.com/cloudradar-monitoring/rportcli/releases/download/0.3.1/rportcli_0.3.1_Windows_x86_64.zip",
             "hash": "cf7eb70f8b4614281af58ace58d711c8e91026f715b61b0204964f78d54353f8"
-        },
-        "32bit": {
-            "url": "https://github.com/cloudradar-monitoring/rportcli/releases/download/0.3.1/rportcli_0.3.1_Windows_i386.zip",
-            "hash": "a537d2749c52e29c3973342dfb6b7f12bcd9c93971d18ba216e3ad9d7a093831"
         }
     },
     "bin": "rportcli.exe",
@@ -19,13 +15,6 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/cloudradar-monitoring/rportcli/releases/download/$version/rportcli_$version_Windows_x86_64.zip",
-                "hash": {
-                    "url": "$baseurl/checksums.txt",
-                    "regex": "$sha256\\s+$basename"
-                }
-            },
-            "32bit": {
-                "url": "https://github.com/cloudradar-monitoring/rportcli/releases/download/$version/rportcli_$version_Windows_i386.zip",
                 "hash": {
                     "url": "$baseurl/checksums.txt",
                     "regex": "$sha256\\s+$basename"
