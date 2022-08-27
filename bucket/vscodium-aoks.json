@@ -24,6 +24,7 @@
             "VSCodium"
         ]
     ],
+    "##": "see https://github.com/ScoopInstaller/Extras/tree/master/scripts/vscode for the org. reg files",
     "post_install": [
         "$dirpath = \"$dir\".Replace('\\', '\\\\')",
         "$exepath = \"$dir\\VSCodium.exe\".Replace('\\', '\\\\')",
