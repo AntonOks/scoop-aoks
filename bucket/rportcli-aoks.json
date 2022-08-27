@@ -1,12 +1,12 @@
 {
     "homepage": "https://github.com/cloudradar-monitoring/rportcli",
     "description": "command line interface to manage rportd.",
-    "version": "0.3.1",
+    "version": "0.4.1",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/cloudradar-monitoring/rportcli/releases/download/0.3.1/rportcli_0.3.1_Windows_x86_64.zip",
-            "hash": "cf7eb70f8b4614281af58ace58d711c8e91026f715b61b0204964f78d54353f8"
+            "url": "https://github.com/cloudradar-monitoring/rportcli/releases/download/0.4.1/rportcli_0.4.1_Windows_x86_64.zip",
+            "hash": "2e4af6d79d377a9ecf7942853ed2553b4183b0bca4acf309951e3c2784925e2b"
         }
     },
     "bin": "rportcli.exe",
