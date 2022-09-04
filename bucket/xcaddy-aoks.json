@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/caddyserver/xcaddy/releases/download/v0.3.1/xcaddy_0.3.1_windows_amd64.zip",
-            "hash": "06b821c6780d49ed866629764613deaff9adf3c7a26c35ec9413979b5e1087a6"
+            "hash": "6ed0ca221c4894a037caa478610d59e27df90cd293b0fb46cc741d348b4e7bab"
         }
     },
     "bin": "xcaddy.exe",
