@@ -13,21 +13,7 @@
             "hash": "2e1669c1ec3f8971fe97c9d17b5af6bcce076bdf0e9f0f29ae4f5a0f1b0ec165"
         }
     },
-    "##": "see installer options here - https://jrsoftware.org/ishelp/index.php?topic=setupcmdline",
-    "installer": {
-        "file": "SBP.exe",
-        "args": [
-            "/VERYSILENT",
-            "/NOCANCEL",
-            "/NORESTART",
-            "/DIR=\"$dir\"",
-            "/SUPPRESSMSGBOXES",
-            "/CLOSEAPPLICATIONS",
-            "/NORESTARTAPPLICATIONS",
-            "/CURRENTUSER",
-            "/PORTABLE=1"
-        ]
-    },
+    "innosetup": true,
     "shortcuts": [
         [
             "SandMan.exe",
