@@ -14,10 +14,7 @@
         }
     },
     "bin": "s5cmd.exe",
-    "checkver": {
-        "github": "https://github.com/peak/s5cmd",
-        "regex": "s5cmd_([\\w.-]+)_Windows-(?:64|32)bit\\.zip"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
