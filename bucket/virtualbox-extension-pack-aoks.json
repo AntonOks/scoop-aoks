@@ -1,6 +1,6 @@
 {
     "##": "see https://github.com/ACooper81/scoop-apps/blob/master/bucket/VirtualBox-Extension-Pack-Install.json",
-    "version": "6.1.36",
+    "version": "6.1.38",
     "description": "Adds support for USB 2.0 and USB 3.0 devices, VirtualBox RDP, disk encryption, NVMe and PXE boot for Intel cards in Virtualbox.",
     "homepage": "https://www.virtualbox.org/",
     "depends": "virtualbox-aoks",
@@ -15,8 +15,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://download.virtualbox.org/virtualbox/6.1.36/Oracle_VM_VirtualBox_Extension_Pack-6.1.36a-152435.vbox-extpack",
-            "hash": "3c84f0177a47a1969aff7c98e01ddceedd50348f56cc52d63f4c2dd38ad2ca75"
+            "url": "https://download.virtualbox.org/virtualbox/6.1.38/Oracle_VM_VirtualBox_Extension_Pack-6.1.38.vbox-extpack",
+            "hash": "052f26cf8c619b1aa0cad94c05ece0c1ae326248b4746c95e1deb0729ae4417a"
         }
     },
     "installer": {
@@ -28,12 +28,12 @@
     },
     "checkver": {
         "url": "https://www.virtualbox.org/wiki/Downloads",
-        "regex": "https://download.virtualbox.org/virtualbox/(?<version>[\\d.]+)/Oracle_VM_VirtualBox_Extension_Pack-(?<patch>[\\d.]+.)-(?<revision>[\\d]+).vbox-extpack"
+        "regex": "https://download.virtualbox.org/virtualbox/(?<version>[\\d.]+)/Oracle_VM_VirtualBox_Extension_Pack-(?<patch>[\\d.]+).vbox-extpack"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://download.virtualbox.org/virtualbox/$version/Oracle_VM_VirtualBox_Extension_Pack-$matchPatch-$matchRevision.vbox-extpack"
+                "url": "https://download.virtualbox.org/virtualbox/$version/Oracle_VM_VirtualBox_Extension_Pack-$matchPatch.vbox-extpack"
             }
         },
         "hash": {
