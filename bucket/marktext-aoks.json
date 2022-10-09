@@ -1,7 +1,7 @@
 {
     "version": "0.17.1",
     "description": "A simple and elegant markdown editor",
-    "homepage": "https://marktext.app",
+    "homepage": "https://github.com/marktext/marktext",
     "license": "MIT",
     "architecture": {
         "64bit": {
@@ -26,8 +26,7 @@
         ]
     ],
     "persist": "marktext-user-data",
-    "checkver": {
-        "github": "https://github.com/marktext/marktext"
+    "checkver": "github",
     },
     "autoupdate": {
         "architecture": {
