@@ -10,7 +10,7 @@
         },
         "arm64": {
             "url": "https://github.com/caddyserver/xcaddy/releases/download/v0.3.1/xcaddy_0.3.1_windows_arm64.zip",
-            "hash": "lkkk"
+            "hash": "31bb4a4d7d50cc663e9f2bfa9c2a103306005d253b603236359b21ebd4ef366a"
         }
     },
     "bin": "xcaddy.exe",
