@@ -27,7 +27,6 @@
     ],
     "persist": "marktext-user-data",
     "checkver": "github",
-    },
     "autoupdate": {
         "architecture": {
             "64bit": {
