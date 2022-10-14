@@ -1,12 +1,12 @@
 {
-    "version": "0.97.0",
+    "version": "0.98.1",
     "description": "Open Source Airtable Alternative - turns any MySQL, Postgres, SQLite into a Spreadsheet with REST APIs.",
     "homepage": "https://github.com/nocodb/nocodb",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nocodb/nocodb/releases/download/0.97.0/Noco-win-x64.exe#/noco.exe",
-            "hash": "526cbc53f23e30eae8aeb1cc3454cb5a83d0bdcac953120b2afa437d17aff084"
+            "url": "https://github.com/nocodb/nocodb/releases/download/0.98.1/Noco-win-x64.exe#/noco.exe",
+            "hash": "aaeb3833988206aca3139955eb8dea82126934b1c4681a9cfc1fcec0c27a8d88"
         }
     },
     "bin": "noco.exe",
