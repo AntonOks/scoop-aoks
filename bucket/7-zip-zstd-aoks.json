@@ -18,6 +18,10 @@
         "32bit": {
             "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v21.03-v1.5.0-R2/Codecs-x32.7z",
             "hash": "c845ce295a59fc07a514c88c8a4f320425592299700ae900dbf2064a565dd2ed"
+        },
+        "arm64": {
+            "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v21.03-v1.5.0-R2/Codecs-arm64.7z",
+            "hash": "be9f5c3963177d33c86bf961ad79febeba84c0c1607f1ad2ef1f621efb72ae28"
         }
     },
     "installer": {
@@ -42,6 +46,9 @@
             },
             "32bit": {
                 "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v$version/Codecs-x32.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v$version/Codecs-arm64.7z"
             }
         }
     }
