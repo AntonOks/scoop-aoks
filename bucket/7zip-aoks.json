@@ -36,8 +36,7 @@
         "Formats"
     ],
     "suggest": {
-        "7-Zip-zstd": "scoop-aoks/7-zip-zstd-aoks",
-        "modern7z": "scoop-aoks/modern7z-aoks"
+        "7-Zip-zstd": "scoop-aoks/7-zip-zstd-aoks"
     },
     "notes": [
         "   To add Explorer context menu entries for 7-Zip,",
