@@ -15,6 +15,10 @@
         "32bit": {
             "url": "https://github.com/VSCodium/vscodium/releases/download/1.72.2.22286/VSCodium-win32-ia32-1.72.2.22286.zip",
             "hash": "2f4af1a9963c14c4c29db046cf92c7ea8e30dd14cee0215618c01eca349984bc"
+        },
+        "arm64": {
+            "url": "https://github.com/VSCodium/vscodium/releases/download/1.72.2.22286/VSCodium-win32-arm64-1.72.2.22286.zip",
+            "hash": "0c21416771ed9701a289c54205744c62c719bc9fd661961611381f8b143b3de9"
         }
     },
     "env_add_path": "bin",
@@ -58,6 +62,9 @@
             },
             "32bit": {
                 "url": "https://github.com/VSCodium/vscodium/releases/download/$version/VSCodium-win32-ia32-$version.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/VSCodium/vscodium/releases/download/$version/VSCodium-win32-arm64-$version.zip"
             }
         },
         "hash": {
