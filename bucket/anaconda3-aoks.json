@@ -7,10 +7,6 @@
         "64bit": {
             "url": "https://repo.anaconda.com/archive/Anaconda3-2022.05-Windows-x86_64.exe",
             "hash": "2766eb102f9d65da36d262b651777358de39fbe5f1a74f9854a2e5e29caeeeec"
-        },
-        "32bit": {
-            "url": "https://repo.anaconda.com/archive/Anaconda3-2022.05-Windows-x86.exe",
-            "hash": "cd8c688349bcd1f429e3b383620fb0d19f52be0f765b2eae78d63b41aefb2e73"
         }
     },
     "pre_install": "Write-Host 'Installing Anaconda 3. This can take up to 30 minutes on an HDD.' -ForegroundColor Magenta",
@@ -52,13 +48,6 @@
                 "url": "https://repo.anaconda.com/archive/Anaconda3-$version-Windows-x86_64.exe",
                 "hash": {
                     "url": "http://docs.anaconda.com/anaconda/install/hashes/Anaconda3-$version-Windows-x86_64.exe-hash/",
-                    "regex": "$sha256"
-                }
-            },
-            "32bit": {
-                "url": "https://repo.anaconda.com/archive/Anaconda3-$version-Windows-x86.exe",
-                "hash": {
-                    "url": "http://docs.anaconda.com/anaconda/install/hashes/Anaconda3-$version-Windows-x86.exe-hash/",
                     "regex": "$sha256"
                 }
             }
