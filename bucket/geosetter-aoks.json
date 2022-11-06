@@ -16,7 +16,7 @@
     "persist": "config.ini",
     "checkver": {
         "url": "https://geosetter.de/en/changes-en/",
-        "regex": "title=\"Update ([\\d.]+)\">"
+        "regex": ">Update ([\\d.]+)</a>"
     },
     "autoupdate": {
         "url": "https://geosetter.de/update/geosetter.zip"
