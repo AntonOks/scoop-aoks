@@ -1,5 +1,5 @@
 {
-    "version": "2022-09-25",
+    "version": "2020-08-20",
     "description": "A very powerful hard disk, folder and storage analyser.",
     "homepage": "https://sourceforge.net/projects/xinorbis-and-tools/",
     "license": "unknown",
@@ -41,8 +41,8 @@
     },
     "persist": "custom.ini",
     "checkver": {
-        "url": "https://sourceforge.net/projects/xinorbis-and-tools/",
-        "regex": "dateUpdated\" datetime.*([\\d]{4}-[\\d]{2}-[\\d]{2})</time>"
+        "url": "https://sourceforge.net/projects/xinorbis-and-tools/files/",
+        "regex": "<span class=\"name\">XinorbisPortable_64.zip</span></a>[\\r\\n]+</th>[\\r\\n]+<td headers=\"files_date_h\" class=\"opt\"><abbr title=\"2020-08-20 11:29:11 UTC\">([\\d]{4}-[\\d]{2}-[\\d]{2})</abbr></td>"
     },
     "autoupdate": {
         "architecture": {
