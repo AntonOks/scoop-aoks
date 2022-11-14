@@ -1,10 +1,10 @@
 {
-    "version": "4.3",
+    "version": "4.3.1",
     "description": "Create Lists of Directory Contents and File Properties.",
     "homepage": "https://www.jam-software.com/filelist",
     "license": "Freeware",
     "url": "https://downloads.jam-software.de/filelist/FileList.zip",
-    "hash": "f0c1b3aef8e06195bc448c6ab9a4896871652a349aac5a410ee836313143ae41",
+    "hash": "a085e7689237e9ee31f29171997bec98c3a61bf1d9ff5630877962b4d766745e",
     "bin": "filelist.exe",
     "checkver": {
         "url": "https://www.jam-software.de/filelist/changes.shtml",
