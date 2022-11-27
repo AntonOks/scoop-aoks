@@ -1,16 +1,16 @@
 {
     "homepage": "https://schinagl.priv.at/nt/ln/ln.html",
-    "version": "2.9.3.3",
+    "version": "2.9.3.4",
     "description": "(NTFS) Command line Hardlinks.",
     "license": "https://schinagl.priv.at/nt/ln/license.txt",
     "architecture": {
         "64bit": {
-            "url": "https://schinagl.priv.at/nt/ln/save/2933/ln64.zip",
-            "hash": "27fadef5143aa76e3840b96f2626bb9d6d511bdd889979513d62d3994bde39d2"
+            "url": "https://schinagl.priv.at/nt/ln/save/2934/ln64.zip",
+            "hash": "9ac19f84846c2571fcf1017e88a7b58959e739620b6628f0cf7a1a2299b28ba2"
         },
         "32bit": {
-            "url": "https://schinagl.priv.at/nt/ln/save/2933/ln.zip",
-            "hash": "be87e1593f40f6d37111655cc6e903a0644bcffe1282a0fee18ff90052c3b2bd"
+            "url": "https://schinagl.priv.at/nt/ln/save/2934/ln.zip",
+            "hash": "30ca81c2b75f9a8b0095aaf825dac02deb336c58f608b0649ec84f20d128399c"
         }
     },
     "bin": "ln.exe",
