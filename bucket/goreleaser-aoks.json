@@ -1,16 +1,16 @@
 {
-    "version": "1.13.0",
+    "version": "1.13.1",
     "homepage": "https://goreleaser.com",
     "description": "Deliver Go binaries as fast and easily as possible",
     "license": "MIT",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/goreleaser/goreleaser/releases/download/v1.13.0/goreleaser_Windows_i386.zip",
-            "hash": "3b405e2eeedb2b97cdedd70077ca13e654401eb6f39c9a1262d6b63008a8ea11"
+            "url": "https://github.com/goreleaser/goreleaser/releases/download/v1.13.1/goreleaser_Windows_i386.zip",
+            "hash": "003d6f3facaf8757bf8a70e741994e9658d4a1b9d18cc29d7ec96abce5f75d95"
         },
         "64bit": {
-            "url": "https://github.com/goreleaser/goreleaser/releases/download/v1.13.0/goreleaser_Windows_x86_64.zip",
-            "hash": "0bb625437ef4163c0a8017f4271e33c98077566c2962b0192826d863613beda8"
+            "url": "https://github.com/goreleaser/goreleaser/releases/download/v1.13.1/goreleaser_Windows_x86_64.zip",
+            "hash": "c3880be7597a5f9478cb8bf2ba291b8b1ff749191f373de886cbc4583c5a8c51"
         }
     },
     "bin": "goreleaser.exe",
