@@ -1,10 +1,10 @@
 {
-    "version": "1.1.2",
+    "version": "1.3.0",
     "description": "Better Unlock Stubborn Files.",
     "homepage": "https://www.iobit.com/en/iobit-unlocker.php",
     "license": "Freeware|Proprietary",
     "url": "https://www.iobit.com/downloadcenter.php?product=iobit-unlocker#/unlocker-setup.exe",
-    "hash": "ae8e0cab1786a619e0e0cb044209e5de7a6a30375dd88400c59551061f318a68",
+    "hash": "2efdffd1cf3adab21ff760f009d8893d8c4cbcf63b2c3bfcc1139457c9cd430b",
     "installer": {
         "file": "unlocker-setup.exe",
         "args": [
