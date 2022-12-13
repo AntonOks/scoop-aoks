@@ -1,10 +1,10 @@
 {
     "description": "Raku environment manager.",
     "homepage": "https://rakubrew.org/",
-    "version": "v30",
+    "version": "v31",
     "license": "MIT",
     "url": "https://rakubrew.org/win/rakubrew.exe",
-    "hash": "e96a06179d0fd5c74e1ba5862cf609ddd652ac7297eeabd1e0021b3d5c00490d",
+    "hash": "ec1f2756e16fa72a966c1fa7a6eec27b71c7c3694f41777ec53b8c07c2fede7f",
     "bin": "rakubrew.exe",
     "post_install": "\"$dir\\rakubrew mode shim\"",
     "checkver": "\\s{62}(?<version>v[\\d]+)",
