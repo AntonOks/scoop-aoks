@@ -4,7 +4,7 @@
     "version": "2.7.7",
     "license": "https://markdownmonster.west-wind.com/purchase.aspx#License",
     "url": "https://west-wind.com/files/MarkdownMonsterPortable.zip",
-    "hash": "a4c734a3f409a92b4868aeb9226947c9cfb1fb203892135e95afe1b0dc6d29d6",
+    "hash": "c9fd65b98f485ff9b244818f070c5a848648d78e10572c1e4ef0f7cde87be2af",
     "pre_install": "if (!(Test-Path \"$dir\\_IsPortable\")) { New-Item \"$dir\\_IsPortable\" -Force | Out-Null }",
     "bin": "MarkdownMonster.exe",
     "shortcuts": [
