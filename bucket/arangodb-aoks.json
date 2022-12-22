@@ -1,5 +1,5 @@
 {
-    "version": "3.10.1",
+    "version": "3.10.2",
     "description": "Highly available and scalable multi-model database to natively work with graphs, documents and fulltext search with one engine & query language.",
     "homepage": "https://www.arangodb.com/",
     "license": {
@@ -13,9 +13,9 @@
             "java/openjdk11"
         ]
     },
-    "url": "https://download.arangodb.com/arangodb310/Community/Windows/ArangoDB3-3.10.1_win64.zip",
-    "hash": "cac0413a99fce2990d688fc4c8edf4f4bc80b8448f232ce061b60ec7a715b192",
-    "extract_dir": "ArangoDB3-3.10.1_win64",
+    "url": "https://download.arangodb.com/arangodb310/Community/Windows/ArangoDB3-3.10.2_win64.zip",
+    "hash": "62e6db7e50d3847659d600d270552695d38cc1b81496dabfafad8bbcae419859",
+    "extract_dir": "ArangoDB3-3.10.2_win64",
     "persist": [
         "etc/arangodb3",
         "var/lib/arangodb3-apps"
