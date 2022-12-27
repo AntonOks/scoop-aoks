@@ -41,7 +41,7 @@
     "bin": "CamCommandLine.exe",
     "checkver": {
         "url": "https://camstudio.org/",
-        "regex": "Latest Version</strong></span><strong>: CamStudio ([\\d.-]+) "
+        "regex": ">Latest Version: CamStudio ([\\d.-]+)"
     },
     "autoupdate": {
         "url": "https://cs07112018.s3.us-east-2.amazonaws.com/CamStudioSetup.exe"
