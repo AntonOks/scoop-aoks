@@ -14,7 +14,7 @@
     "persist": "conf",
     "checkver": {
         "url": "https://nxlog.co/products/nxlog-community-edition/download",
-        "regex": "type=\"application/x-msi; length=\\d+\" title=\"nxlog-ce-([\\d.-]+).msi"
+        "regex": ">nxlog-ce-([\\d.-]+).msi<"
     },
     "autoupdate": {
         "architecture": {
