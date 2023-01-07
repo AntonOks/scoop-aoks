@@ -1,5 +1,5 @@
 {
-    "##": "don't continue with this for now as it 1. installs a own driver (???) __AND__ it's also almost imposible to get a donwnload and an autoupdate url",
+    "##": "don't continue with this for now as it 1. installs a own driver (???) __AND__ it's also almost impossible to get a download and an autoupdate url",
     "version": "2021.09.9",
     "description": "Conveniently manage all your cloud services as a network drive using the standard file explorer.",
     "homepage": "https://www.raidrive.com/",
@@ -7,20 +7,26 @@
         "identifier": "Freeware",
         "url": "https://www.raidrive.com/about/terms"
     },
-    "url": "",
-    "hash": "123",
+    "architecture": {
+        "64bit": {
+            "url": "https://app.raidrive.com/d86ea6fa40f74010914976063f94774b/release/stable/RaiDrive_2022.6.92_x64.exe#/_RaiDrive.exe",
+            "hash": "16a0d9eabed46a13e19a827e4936b70753e0e5692d62c98a3412372ba7bedfd0"
+        },
+        "32bit": {
+            "url": "https://app.raidrive.com/d86ea6fa40f74010914976063f94774b/release/stable/RaiDrive_2022.6.92_x86.exe#/_RaiDrive.exe",
+            "hash": "817bddacd09b6951825863e0abc3e37acedb74ad5606b397412e5e21340f4061"
+        }
+    },
     "bin": "raidrive.exe",
     "shortcuts": [
         [
             "raidrive.exe",
-            "raidrive"
+            "RaiDrive"
         ]
     ],
+    "##": "see https://github.com/ScoopInstaller/Extras/blob/master/bucket/umbrello.json for a nice way to enable a non-trivial \"autoupdate\"",
     "checkver": {
         "url": "https://www.raidrive.com/download",
-        "regex": ">v([\\d.]+) Release date "
-    },
-    "autoupdate": {
-        "url": "?????"
+        "regex": "<td class=\"fw-normal\">([\\d.]+)</td>"
     }
 }
