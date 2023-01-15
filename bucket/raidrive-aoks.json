@@ -59,14 +59,14 @@
             "}",
             "",
             "IF(($cont -MATCH 'id=\"pack_windows_x86\" href=\"https://app.raidrive.com/([a-z0-9]+)/release/stable/RaiDrive_([\\d\\.]+)_x86.exe\">x86</a>')) {",
-            "    $x64_tmp_dir = $matches[1]",
+            "    $x86_tmp_dir = $matches[1]",
             "    $x86_version = $matches[2]",
             "} ELSE {",
             "    ERROR 'NO x86 match found!'",
             "}",
             "",
             "IF($x64_version -NE $x86_version) { ERROR '  Version for 64-bit and 32-bit does not match, aborting autoupdate'; CONTINUE }",
-            "IF($x64_tmp_dir -NE $x64_tmp_dir) { ERROR ' URL path for 64-bit and 32-bit does not match, aborting autoupdate'; CONTINUE }",
+            "IF($x64_tmp_dir -NE $x86_tmp_dir) { ERROR ' URL path for 64-bit and 32-bit does not match, aborting autoupdate'; CONTINUE }",
             "Write-Output $x64_version $x64_tmp_dir"
         ],
         "regex": "([\\d.]+) ([a-z0-9]+)"
