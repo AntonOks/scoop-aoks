@@ -32,7 +32,6 @@
         "VBoxNetDHCP.exe",
         "VBoxNetNAT.exe",
         "VBoxSDS.exe",
-        "VBoxSetup.exe",
         "VBoxSVC.exe",
         "VBoxTestOGL.exe",
         "VBoxWebSrv.exe",
