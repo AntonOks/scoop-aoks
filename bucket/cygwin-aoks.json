@@ -1,5 +1,5 @@
 {
-    "version": "2.924",
+    "version": "2.925",
     "description": "A large collection of GNU and Open Source tools which provide functionality similar to a Linux distribution on Windows",
     "homepage": "https://cygwin.com/",
     "license": "GPL-3.0-or-later,X11,Public Domain",
@@ -7,11 +7,11 @@
     "architecture": {
         "64bit": {
             "url": "https://cygwin.com/setup-x86_64.exe#/cygwin-setup.exe",
-            "hash": "sha512:e897399d2ec5fcd1e7ead6ec0e7d20c64a0386b391d6c6ce588e5cac54efb5013ad9941d98213fc3f33418faff54fbe5239920df5c0ae3adfd313eac46643cea"
+            "hash": "sha512:cddb07f40bb43ff90e5ef32aea835a63dc4885d8eed5bfde34f5702289846f6405e319bb9d5c18750b3bd43702daa723e97c6f0fe9badfb02761dbc0be135bda"
         },
         "32bit": {
             "url": "https://cygwin.com/setup-x86.exe#/cygwin-setup.exe",
-            "hash": "sha512:502bae9bfe3f5a80ebd692ee5891ab91c19aa83070c3f9152102bcf07ac701bbc75fa8d9bebfc7dfd4103ac8f4ca8ad4db2b24946eef6615e79e1fe923d03f8d"
+            "hash": "sha512:ed7fd6729dc878e5e64eca0ea4c6f7dddaf2e1cabc5d24f3a57525f785e9ef5830266540c36c8f840e8733d86843ce05a2a45446afefcfafd8fc944e066b8a9c"
         }
     },
     "checkver": {
