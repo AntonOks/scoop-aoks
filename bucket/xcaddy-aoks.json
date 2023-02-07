@@ -1,16 +1,16 @@
 {
-    "version": "0.3.1",
+    "version": "0.3.2",
     "description": "Build Caddy with plugins",
     "homepage": "https://github.com/caddyserver/xcaddy",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/caddyserver/xcaddy/releases/download/v0.3.1/xcaddy_0.3.1_windows_amd64.zip",
-            "hash": "6ed0ca221c4894a037caa478610d59e27df90cd293b0fb46cc741d348b4e7bab"
+            "url": "https://github.com/caddyserver/xcaddy/releases/download/v0.3.2/xcaddy_0.3.2_windows_amd64.zip",
+            "hash": "c74b20bedb0c691905435ef9ba7a90bb421aae9c6eca26f9fc4e809d260e5a62"
         },
         "arm64": {
-            "url": "https://github.com/caddyserver/xcaddy/releases/download/v0.3.1/xcaddy_0.3.1_windows_arm64.zip",
-            "hash": "31bb4a4d7d50cc663e9f2bfa9c2a103306005d253b603236359b21ebd4ef366a"
+            "url": "https://github.com/caddyserver/xcaddy/releases/download/v0.3.2/xcaddy_0.3.2_windows_arm64.zip",
+            "hash": "44b60b2952e9da5ef2a4972ff9a78a074f681cb31fababb7a5615abf3eeeb1ae"
         }
     },
     "bin": "xcaddy.exe",
@@ -27,7 +27,7 @@
             "hash": {
                 "url": "$baseurl/xcaddy_$version_checksums.txt",
                 "regex": "$sha256\\s+$basename"
-                }
+            }
         }
     }
 }
