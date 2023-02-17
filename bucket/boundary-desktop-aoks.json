@@ -9,11 +9,10 @@
             "hash": "497348d86300467adac7abeeeb9cc331d1f93c646c1955604c1c0fcd32c767e0"
         }
     },
-    "extract_dir": "Boundary",
     "bin": [
         [
-            "boundary-desktop_*_.exe",
-            "boundary-desktop"
+            "Boundary.exe",
+            "Boundary-Desktop"
         ]
     ],
     "checkver": {
