@@ -1,5 +1,5 @@
 {
-    "version": "22.01-v1.5.4-R3",
+    "version": "22.01-v1.5.4-R4",
     "description": "7-Zip support for Brotli, Fast-LZMA2, Lizard, LZ4, LZ5 and Zstandard.",
     "homepage": "https://mcmilk.de/projects/7-Zip-zstd/",
     "license": "LGPL-2.1-or-later,BSD-3-Clause,Proprietary",
@@ -12,16 +12,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v22.01-v1.5.4-R3/Codecs-x64.7z",
-            "hash": "6a02e0f9e1c83af0d52926fbefe0ddba5eac791e27cd7c3f4e48e2e591af6f92"
+            "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v22.01-v1.5.4-R4/Codecs-x64.7z",
+            "hash": "0a585fc2a04012741099ef5a387a8df85168f1f61246e341de19f489a26dda90"
         },
         "32bit": {
-            "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v22.01-v1.5.4-R3/Codecs-x32.7z",
-            "hash": "a33f6026a2f8afa94ce124111e6c7067b27d854a206e4401f2f6d7e3a47f3c82"
+            "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v22.01-v1.5.4-R4/Codecs-x32.7z",
+            "hash": "552fc7d956d0aad99747d9776d6df332ac8d4c9bf06b149696ba588ff8f5c5dd"
         },
         "arm64": {
-            "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v22.01-v1.5.4-R3/Codecs-arm64.7z",
-            "hash": "0a7fb3f2347c0e062375bd6fdbd64e66cb0b9f6a33d9c04786def63b1a9b2dcf"
+            "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v22.01-v1.5.4-R4/Codecs-arm64.7z",
+            "hash": "2bb293c1d82fb1c57ebdc04b2f2492da08be85130ae4403b9c63f453a1c7d7f4"
         }
     },
     "installer": {
