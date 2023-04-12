@@ -1,10 +1,10 @@
 {
-    "version": "5.8.1",
+    "version": "5.8.2",
     "description": "Performant endpoint visibility",
     "homepage": "https://osquery.io/",
     "license": "Apache-2.0|GPL-2.0-only",
-    "url": "https://pkg.osquery.io/windows/osquery-5.8.1.msi",
-    "hash": "9c4062537d4be157a517617d7329dafaac6196f3284e7f13a77f8a30860a62a2",
+    "url": "https://pkg.osquery.io/windows/osquery-5.8.2.msi",
+    "hash": "d319837d4e95d1e477c2126d383501180925a29f488ff1164fa16d2e576f96dd",
     "extract_dir": "osquery",
     "bin": [
         "osqueryi.exe",
