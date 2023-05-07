@@ -1,12 +1,12 @@
 {
-    "version": "0.6.1",
+    "version": "0.6.0",
     "description": "Age based repository file encryption gitops tool.",
     "homepage": "https://github.com/slok/agebox",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/slok/agebox/releases/download/v0.6.1/agebox-windows-amd64.exe#/agebox.exe",
-            "hash": "3b7df938738ada23147bbb500d60291f644521fde8f8acc034c27a8ec62836a1"
+            "url": "https://github.com/slok/agebox/releases/download/v0.6.0/agebox-windows-amd64.exe#/agebox.exe",
+            "hash": "7adb69aaf8df9bd9b883194ecf61b612bdd40a63c0598510bd0463c6f898e23e"
         }
     },
     "bin": "agebox.exe",
