@@ -17,7 +17,7 @@
         "replace": "${version}"
     },
     "autoupdate": {
-        "url": "http://www.amok.am/files/releases/AmoK_Exif_Sorter_v${version}0_(Windows_64Bit).zip#/dl.7z",
+        "url": "http://www.amok.am/files/releases/AmoK_Exif_Sorter_v$version-win32_x86_64.zip#/dl.7z",
         "hash": "MD5:$matchMd5hash"
     },
     "notes": [
