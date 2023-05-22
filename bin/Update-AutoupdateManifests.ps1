@@ -12,7 +12,6 @@
 param(
     [Alias('App', 'Name')]
     [String[]] $Manifests,
-    
     [Alias('V')]
     [Switch] $Verbose,
 
@@ -39,9 +38,8 @@ process {
     [ARRAY]$manifestsStatus = @(& $checkverScript * 6>&1)
 
     FOR ( $i=0; $i -lt $manifestsStatus.length; ) {
-        
         IF ( $Verbose ) { Write-Host "   INFO - Working on line NR $i" }
-        
+
         IF ( $manifestsStatus[$i] -match "(?<TOOL>.+):" ) {
             $TOOL = $Matches.TOOL
             $VERSION = $manifestsStatus[$i + 1]
@@ -50,13 +48,12 @@ process {
             IF ( $manifestsStatus[$i + 3] -match " autoupdate available" ) {
                 IF ( -NOT ($GITPULLED) | Out-Null ) { ( & git pull -q) -and ( $GITPULLED = $True ) }
                 & $ScriptRoot\checkver.ps1 $TOOL -u
-                
+
                 IF ( -NOT $env:I_AM_A_GITHUB_ACTION ) {
                   & git add $ScriptRoot\..\bucket\${TOOL}.json
                   & git commit -m "${TOOL}: Update to $VERSION"
                   $GITDOPUSH = $True
                 }
-                
                 $i = $i + 4
             } ELSE { $i = $i + 2 }
         } ELSE {
@@ -65,8 +62,8 @@ process {
     }
 
 <# IF ( $manifestsStatus[$i] -ne "DONE" ) {
-	Write-Host " ERROR - Seems like parsing of the `$manifestsStatus ARRAY wasn't succesful, please check"
-	Write-Host "         Last line was `"$manifestsStatus[$i]`""
+    Write-Host " ERROR - Seems like parsing of the `$manifestsStatus ARRAY wasn't succesful, please check"
+    Write-Host "         Last line was `"$manifestsStatus[$i]`""
 } #>
 
     IF ( $GITDOPUSH ) { & git push -q}
