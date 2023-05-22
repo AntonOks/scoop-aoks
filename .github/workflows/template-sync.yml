@@ -6,6 +6,7 @@ on:
   - cron:  "0 0 1 * *"
   # manual trigger
   workflow_dispatch:
+name: Template Sync
 jobs:
   template-sync:
     runs-on: ubuntu-latest
