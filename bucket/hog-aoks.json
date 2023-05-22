@@ -20,11 +20,11 @@
             "64bit": {
                 "url": "https://github.com/jjzcru/hog/releases/download/v$version/hog_$version_windows_x86_64.tar.gz",
                 "extract_dir": "hog_$version_windows_x86_64"
+            },
+            "32bit": {
+                "url": "https://github.com/jjzcru/hog/releases/download/v$version/hog_$version_windows_x86_64.tar.gz",
+                "extract_dir": "hog_$version_windows_x86_64"
             }
-        },
-        "32bit": {
-            "url": "https://github.com/jjzcru/hog/releases/download/v$version/hog_$version_windows_x86_64.tar.gz",
-            "extract_dir": "hog_$version_windows_x86_64"
         }
     }
 }
