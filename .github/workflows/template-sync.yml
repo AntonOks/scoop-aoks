@@ -17,7 +17,7 @@ jobs:
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v0.8.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.SCOOP_WORKFLOW_TOKEN }}
           source_repo_path: ScoopInstaller/BucketTemplate
           upstream_branch: master
           
