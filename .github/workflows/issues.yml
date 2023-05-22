@@ -1,15 +1,28 @@
 on:
   issues:
+<<<<<<< HEAD
     types: [ opened, labeled ]
+=======
+    types: [opened, labeled]
+>>>>>>> template_origin/master
 name: Issues
 jobs:
   issueHandler:
     name: IssueHandler
     runs-on: windows-latest
     steps:
+<<<<<<< HEAD
     - uses: actions/checkout@main
     - name: IssueHandler
       uses: ScoopInstaller/GithubActions@main
       if: github.event.action == 'opened' || (github.event.action == 'labeled' && contains(github.event.issue.labels.*.name, 'verify'))
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+=======
+      - uses: actions/checkout@main
+      - name: IssueHandler
+        uses: ScoopInstaller/GithubActions@main
+        if: github.event.action == 'opened' || (github.event.action == 'labeled' && contains(github.event.issue.labels.*.name, 'verify'))
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+>>>>>>> template_origin/master
