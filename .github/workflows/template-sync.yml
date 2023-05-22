@@ -20,4 +20,3 @@ jobs:
           github_token: ${{ secrets.SCOOP_WORKFLOW_TOKEN }}
           source_repo_path: ScoopInstaller/BucketTemplate
           upstream_branch: master
-          
