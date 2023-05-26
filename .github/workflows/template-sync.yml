@@ -3,7 +3,7 @@
 on:
     # cronjob trigger (disabled)
   #schedule:
-  ä- cron:  "0 0 1 * *"
+  - cron:  "0 0 1 * *"
   # manual trigger
   workflow_dispatch:
 name: Template Sync
