@@ -1,6 +1,6 @@
 {
     "version": "17.6",
-    "description": "Microsoft Visual Studio Build Tools 2019",
+    "description": "Microsoft Visual Studio Build Tools 2022",
     "homepage": "https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022",
     "license": "https://visualstudio.microsoft.com/license-terms/mlt031519/",
     "url": "https://aka.ms/vs/17/release/vs_BuildTools.exe",
