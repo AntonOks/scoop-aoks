@@ -1,5 +1,5 @@
 {
-    "version": "17.6",
+    "version": "17.6.3",
     "description": "Microsoft Visual Studio Build Tools 2022",
     "homepage": "https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022",
     "license": "https://visualstudio.microsoft.com/license-terms/mlt031519/",
@@ -19,11 +19,12 @@
     "bin": [
         "vs\\Common7\\Tools\\LaunchDevCmd.bat",
         "vs\\Common7\\Tools\\VsDevCmd.bat",
-        "vs\\Common7\\Tools\\VsMSBuildCmd.bat"
+        "vs\\Common7\\Tools\\VsMSBuildCmd.bat",
+        "vs\\Common7\\Tools\\Launch-VsDevShell.ps1"
     ],
     "checkver": {
         "url": "https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes",
-        "regex": ">Visual Studio 2022 version ([\\d.]+)"
+        "regex": ">Visual Studio 2022 version ([\\d.]+)</a>"
     },
     "autoupdate": {
         "url": "https://aka.ms/vs/17/release/vs_BuildTools.exe"
