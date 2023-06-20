@@ -1,10 +1,10 @@
 {
-    "version": "17.6.3",
+    "version": "17.6.4",
     "description": "Microsoft Visual Studio Build Tools 2022",
     "homepage": "https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022",
     "license": "https://visualstudio.microsoft.com/license-terms/mlt031519/",
     "url": "https://aka.ms/vs/17/release/vs_BuildTools.exe",
-    "hash": "d3db293970b59c02a510ed25e4f80086001b158bbeb651c5f1fdc49572828829",
+    "hash": "5ae40ab45b17219f8a9c505f5106bbe818bceba5f8e92bd1df5d6db8fa44d820",
     "installer": {
         "script": "Invoke-ExternalCommand -FilePath \"$dir\\vs_buildtools.exe\" -Args @('--installPath', \"$dir\\vs\\\", '--quiet', '--norestart', '--wait', '--add', 'Microsoft.VisualStudio.Workload.VCTools', '--add', 'Microsoft.VisualStudio.Component.VC.ATL', '--add', 'Microsoft.VisualStudio.Workload.MSBuildTools', '--includeRecommended') -RunAs | Out-Null"
     },
