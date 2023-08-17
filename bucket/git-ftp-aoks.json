@@ -1,10 +1,10 @@
 {
     "homepage": "https://git-ftp.github.io/",
     "description": "Upload to FTP servers the Git way.",
-    "version": "1.6.0",
+    "version": "1.5.2",
     "license": "MIT",
-    "url": "https://github.com/git-ftp/git-ftp/archive/1.6.0.zip",
-    "extract_dir": "git-ftp-1.6.0",
+    "url": "https://github.com/git-ftp/git-ftp/archive/1.5.2.zip",
+    "extract_dir": "git-ftp-1.5.2",
     "depends": "git",
     "post_install": [
         "",
