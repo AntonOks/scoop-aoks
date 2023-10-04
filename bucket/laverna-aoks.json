@@ -1,16 +1,16 @@
 {
     "description": "Laverna is a JavaScript note taking application with Markdown editor and encryption support. Consider it like open source alternative to Evernote.",
     "homepage": "https://laverna.cc/",
-    "version": "0.7.5",
+    "version": "0.7.51",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Laverna/laverna/releases/download/0.7.5/laverna-0.7.5-win32-x64.zip",
-            "hash": "fbc05a0761374381361a230b3dc21dfdcca4eca578c539bdc6351fc33a2062db"
+            "url": "https://github.com/Laverna/laverna/releases/download/0.7.51/laverna-0.7.51-win32-x64.zip",
+            "hash": "126ececb7adf870b1a2b6ab968b2748cab7cec45c5a356d9155055a7f1016e5b"
         },
         "32bit": {
-            "url": "https://github.com/Laverna/laverna/releases/download/0.7.5/laverna-0.7.5-win32-ia32.zip",
-            "hash": "abd7a72dde5c5b31917764de3b6e647e4235e019af36fec48da0e57f96d56dbf"
+            "url": "https://github.com/Laverna/laverna/releases/download/0.7.51/laverna-0.7.51-win32-ia32.zip",
+            "hash": "b2362eb1c3e24187614ba41e5548dac2f35f2d411d1902d7f8f616dad14cec5c"
         }
     },
     "bin": "laverna.exe",
