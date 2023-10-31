@@ -1,12 +1,12 @@
 {
-    "homepage": "https://rport.io/",
-    "description": "Manage remote systems with ease.",
-    "version": "0.9.12",
+    "homepage": "https://oss.openrport.io/",
+    "description": "Open-source remote access and remote management.",
+    "version": "0.9.13",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/cloudradar-monitoring/rport/releases/download/0.9.12/rport_0.9.12_Windows_x86_64.zip",
-            "hash": "75a29c1b09a847d9546bf02fcc819da39ab1c7a27f9e182f4d369bd61d6193ca"
+            "url": "https://github.com/openrport/openrport/releases/download/0.9.13/rport_0.9.13_windows_x86_64.zip",
+            "hash": "8a135900b5a8a27e45bc9cf94763457f428c3349774511875eceaaf97581ec44"
         }
     },
     "bin": "rport.exe",
@@ -20,12 +20,12 @@
         " "
     ],
     "checkver": {
-        "github": "https://github.com/cloudradar-monitoring/rport"
+        "github": "https://github.com/openrport/openrport"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/cloudradar-monitoring/rport/releases/download/$version/rport_$version_Windows_x86_64.zip",
+                "url": "https://github.com/openrport/openrport/releases/download/$version/rport_$version_windows_x86_64.zip",
                 "hash": {
                     "url": "$baseurl/checksums.txt",
                     "regex": "$sha256\\s+$basename"
