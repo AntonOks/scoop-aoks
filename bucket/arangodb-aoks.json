@@ -25,8 +25,9 @@
         "ICU_DATA": "$dir\\usr\\share\\arangodb3"
     },
     "checkver": {
-        "url": "https://arangodb.com/download-major/windows/",
-        "regex": "Server\\W*(\\d+\\.\\d+\\.\\d+)"
+        "url": "https://download.arangodb.com/arangodb311/Community/Windows/index.html",
+        "regex": ">ArangoDB3-(\\d+\\.\\d+\\.\\d+)_win64.zip<",
+        "reverse": true
     },
     "autoupdate": {
         "url": "https://download.arangodb.com/arangodb$majorVersion$minorVersion/Community/Windows/ArangoDB$majorVersion-$version_win64.zip",
