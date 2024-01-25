@@ -21,7 +21,7 @@
         "networkhosts.json",
         "sharehosts.json",
         "open_gl_config.ini"
-    ]
+    ],
     "bin": "system_backup_gui.exe",
     "shortcuts": [
         [
