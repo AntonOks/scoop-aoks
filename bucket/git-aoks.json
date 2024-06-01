@@ -22,15 +22,11 @@
     },
     "installer": {
         "script": [
-            "echo \"dev\\fd\", \"dev\\stderr\", \"dev\\stdin\", \"dev\\stdout\", \"etc\\mtab\" > \"$dir\\excludefile",
             "$Array = @(\"dev\\fd\", \"dev\\stderr\", \"dev\\stdin\", \"dev\\stdout\", \"etc\\mtab\")",
-            "$Array | Out-File \"$dir\\excludefile",
-            "echo \"$Array\" is: $Array",
-            "$7ZIP_EXE = ((Get-Command \"7z.exe\" -ErrorAction SilentlyContinue).Path)",
-            "$TAR_File = Split-Path \"$dir\\$fname\" -LeafBase",
-            "$7ZIP_EXE x -y -bd \"$dir\\$fname\"",
-            "$7ZIP_EXE x -y -bd -xr!dev\\fd -xr!dev\\stderr -x!dev\\stdin \"$TAR_File\" | Out-Null -ErrorAction SilentlyContinue",
-            "Remove-Item \"$dir\\excludefile\", \"$dir\\$fname\" , $TAR_File -Force -Recurse"
+            "$Array | Out-File \"$dir\\excludefile\"",
+            "$TAR_File = (Split-Path \"$dir\\$fname\" -LeafBase)",
+            "7z x -y -bd \"$dir\\$fname\" -o\"$dir\" | Out-Null -ErrorAction SilentlyContinue",
+            "7z x -y -bd -x@\"$dir\\excludefile\" \"$TAR_File\" | Out-Null -ErrorAction SilentlyContinue"
         ]
     },
     "post_install": [
