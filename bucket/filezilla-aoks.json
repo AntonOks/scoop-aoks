@@ -52,9 +52,27 @@
         ]
     ],
     "persist": "config",
+    
     "checkver": {
-        "url": "https://filezilla-project.org/download.php",
+        "script": [
+            "# FileZilla try's to ensure their web site ger visitors so we are forced to use a script to get the version number",
+            "$url = 'https://filezilla-project.org/download.php?show_all=1'",
+            "$regex = '<p>The latest stable version of FileZilla Client is ([\\d.]+)</p>'",
+            "$userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Firefox",
+            "$myIWR = $(Invoke-WebRequest -UserAgent \"$userAgent\" -Headers @{'Accept' = '*/*'} -SkipHeaderValidatio $url).RawContent",
+            "if(!($myIWR -match $regex)) { error \"Could match '$regex' on '$url'\"; return }",
+            "$script_ver = $(Get-Date $matches[1])",
+            "Write-Output $script_ver"
+        ],
+	    "regex": "([\\d.]+)"
+    }
+    
+    
+    
+    
+    "checkver": {
         "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0",
+        "url": "https://filezilla-project.org/download.php",
         "regex": "The latest stable version of FileZilla Client is ([\\d.]+)"
     },
     "autoupdate": {
