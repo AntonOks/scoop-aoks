@@ -36,7 +36,7 @@
                 "url": "https://github.com/nushell/nushell/releases/download/$version/nu-$version-x86_64-pc-windows-msvc.zip"
             },
             "arm64": {
-                "url": "https://github.com/nushell/nushell/releases/download/$version/nu-$version-aarch64-windows-msvc-full.zip"
+                "url": "https://github.com/nushell/nushell/releases/download/$version/nu-$version-aarch64-pc-windows-msvc.zip"
             }
         }
     }
