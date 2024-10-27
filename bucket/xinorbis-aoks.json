@@ -1,5 +1,5 @@
 {
-    "version": "2.5.33",
+    "version": "2020-06-05",
     "description": "A very powerful hard disk, folder and storage analyser.",
     "homepage": "https://sourceforge.net/projects/xinorbis-and-tools/",
     "license": "unknown",
@@ -44,8 +44,8 @@
         "script": [
             "# Using script to get version number",
             "$url = 'https://sourceforge.net/projects/xinorbis-and-tools/files/'",
-            "$regex = 'name\">XinorbisPortable_32.zip</span></a>\\n\\s+</th>\\n\\s+.+ UTC\">([\\d]{4}-[\\d]{2}-[\\d]{2})<'",
-            "$cont = $(Invoke-WebRequest $url).Content",
+            "$regex = '(?sm)name\">XinorbisPortable_32.zip</span></a>.* UTC\">([\\d]{4}-[\\d]{2}-[\\d]{2})<'",
+            "$cont = $(Invoke-WebRequest $url -UserAgent \"Firefox Windows\").Content",
             "if(!($cont -match $regex)) { error \"Could match '$regex' on '$url'\"; return }",
             "Write-Output $matches[1]"
         ],
