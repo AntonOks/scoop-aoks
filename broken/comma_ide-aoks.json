@@ -16,7 +16,6 @@
         ]
     ],
     "bin": "bin\\comma64.exe",
-    
     "autoupdate": {
         "architecture": {
             "64bit": {
