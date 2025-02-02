@@ -1,12 +1,12 @@
 {
-    "version": "3.82",
+    "version": "3.83",
     "description": "SeaweedFS is a fast distributed storage system for blobs, objects, files, and data lake, for billions of files! Blob store has O(1) disk seek, cloud tiering. Filer supports Cloud Drive, cross-DC active-active replication, Kubernetes, POSIX FUSE mount, S3 API, S3 Gateway, Hadoop, WebDAV, encryption, Erasure Coding.",
     "homepage": "https://github.com/seaweedfs/seaweedfs",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/seaweedfs/seaweedfs/releases/download/3.82/windows_amd64_large_disk.zip",
-            "hash": "md5:d246cb0f752c9953425b68386e926917"
+            "url": "https://github.com/seaweedfs/seaweedfs/releases/download/3.83/windows_amd64_large_disk.zip",
+            "hash": "md5:45d9f02be5cbed723d387fe9d51695c1"
         }
     },
     "bin": "weed.exe",
