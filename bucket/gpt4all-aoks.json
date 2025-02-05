@@ -1,12 +1,12 @@
 {
-    "version": "3.8.0",
+    "version": "3.9.0",
     "description": "Run Large Language Models Locally.",
     "homepage": "https://www.nomic.ai/gpt4all",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nomic-ai/gpt4all/releases/download/v3.8.0/gpt4all-installer-win64-v3.8.0.exe",
-            "hash": "78d60817a986f5346f347073e3ac1dca2863353d3494b564db3b1cde25be47eb"
+            "url": "https://github.com/nomic-ai/gpt4all/releases/download/v3.9.0/gpt4all-installer-win64-v3.9.0.exe",
+            "hash": "9caa0748f6f47ea60ebffe90c939b00672733347fb40027ae91b317017e82aba"
         }
     },
     "installer": {
