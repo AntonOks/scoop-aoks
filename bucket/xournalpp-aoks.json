@@ -9,7 +9,7 @@
             "hash": "6aea253be8beb56faafeef1686e60558ffbd57b5c7a888c1b50971aa09b84207"
         }
     },
-    "extract_dir": "xournalpp-1.2.5-windows-portable-x86_64",
+    "extract_dir": "xournalpp-1.2.6-windows-portable-x86_64",
     "bin": "bin\\xournalpp.exe",
     "shortcuts": [
         [
