@@ -1,12 +1,12 @@
 {
-    "version": "0.6.1",
+    "version": "0.7.0",
     "description": "A simple application deployment framework for Kubernetes.",
     "homepage": "https://acorn.io",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/obot-platform/obot/releases/download/v0.6.1/obot_v0.6.1_windows_amd64.zip",
-            "hash": "40dbacb87233009ab50d07b97b42f502eb9079720b51c746ef08d5fddd411f37"
+            "url": "https://github.com/obot-platform/obot/releases/download/v0.7.0/obot_v0.7.0_windows_amd64.zip",
+            "hash": "8cde840844a8afc9604447e4ee5580f60283a37da32293669d1e7dec4899ce70"
         }
     },
     "bin": "acorn.exe",
