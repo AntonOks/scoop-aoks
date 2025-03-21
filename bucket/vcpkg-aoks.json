@@ -1,11 +1,11 @@
 {
     "homepage": "https://github.com/microsoft/vcpkg",
     "description": "C++ Library Manager",
-    "version": "2025.02.14",
+    "version": "2025.03.19",
     "license": "MIT",
-    "url": "https://github.com/microsoft/vcpkg/archive/2025.02.14.zip",
-    "extract_dir": "vcpkg-2025.02.14",
-    "hash": "867d6a5165ce4aad4eced65a3b900f9453bdf82d0750fdaebc47258549d16863",
+    "url": "https://github.com/microsoft/vcpkg/archive/2025.03.19.zip",
+    "extract_dir": "vcpkg-2025.03.19",
+    "hash": "c7ed2030f502ea7b8ebe9e89e02e395f3c1a9ffca034436087db61d7d63f19d4",
     "installer": {
         "file": "bootstrap-vcpkg.bat",
         "args": "-disableMetrics",
