@@ -1,5 +1,5 @@
 {
-    "version": "25.1.1",
+    "version": "25.1.2",
     "description": "A universal database tool for developers, DBAs and analysts.",
     "homepage": "https://www.dbvis.com/",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://www.dbvis.com/product_download/dbvis-25.1.1/media/dbvis_windows-x64_25_1_1_jre.exe#/dbvis-setup.exe",
-            "hash": "b8788af71cf97dabfa735b3cb54499990442988ac04b24f1b819bd672d3c1b2c"
+            "url": "https://www.dbvis.com/product_download/dbvis-25.1.2/media/dbvis_windows-x64_25_1_2_jre.exe#/dbvis-setup.exe",
+            "hash": "6663621b59ad1040600e3d95e355bfe01ce110d761f1c3e273cb6697cda08e63"
         },
         "arm64": {
-            "url": "https://www.dbvis.com/product_download/dbvis-25.1.1/media/dbvis_windows-arm64_25_1_1_jre.exe#/dbvis-setup.exe",
-            "hash": "ad6b1aeea2527d905762ad78c7ef3189559c487a51fd066d2e471af7be89475d"
+            "url": "https://www.dbvis.com/product_download/dbvis-25.1.2/media/dbvis_windows-arm64_25_1_2_jre.exe#/dbvis-setup.exe",
+            "hash": "85a2fd03df50353d28cecec4e4ba786e5cfe8b532d07dcc42510b3726147052a"
         }
     },
     "##": "Installer infos, see https://www.ej-technologies.com/resources/install4j/help/doc/main/introduction.html",
