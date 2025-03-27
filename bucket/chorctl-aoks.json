@@ -1,16 +1,16 @@
 {
-    "version": "0.5.13",
+    "version": "0.5.14",
     "homepage": "https://github.com/clyso/chorus/tree/main/tools/chorctl",
     "description": "CLI for chorus management API.",
     "license": "Apache-2.0",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/clyso/chorus/releases/download/v0.5.13/chorctl_v0.5.13_windows_386.zip",
-            "hash": "1f1d34a547c8fd5ecec904b3397207232ca88c68c54a324085ab021c92db0513"
+            "url": "https://github.com/clyso/chorus/releases/download/v0.5.14/chorctl_v0.5.14_windows_386.zip",
+            "hash": "3dd9f6be025aa7c3dcb07621413b7107cbe13f7a39bfcb18bc79cd42510dc9b8"
         },
         "64bit": {
-            "url": "https://github.com/clyso/chorus/releases/download/v0.5.13/chorctl_v0.5.13_windows_amd64.zip",
-            "hash": "65e4d9b78803a4aba087662b73de6b33df3decd6d8be94cbdea91b6210201770"
+            "url": "https://github.com/clyso/chorus/releases/download/v0.5.14/chorctl_v0.5.14_windows_amd64.zip",
+            "hash": "c5143f3da9f55379a580e20ded3f0542fb5651b1bf95a88e673de77b52502fa4"
         }
     },
     "bin": "chorctl.exe",
