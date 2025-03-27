@@ -1,16 +1,16 @@
 {
-    "version": "0.5.13",
+    "version": "0.5.14",
     "homepage": "https://github.com/clyso/chorus",
     "description": "S3 multi provider data lifecycle management.",
     "license": "Apache-2.0",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/clyso/chorus/releases/download/v0.5.13/standalone_v0.5.13_windows_386.zip",
-            "hash": "0c32b3fcf319cbe40045688074d7de5672c50f5eaa61a19d8beb30918cc66418"
+            "url": "https://github.com/clyso/chorus/releases/download/v0.5.14/standalone_v0.5.14_windows_386.zip",
+            "hash": "032ccd38e8cd087b94cd4f9115a301cca6277466ea8c2e0d6938e10ca352e121"
         },
         "64bit": {
-            "url": "https://github.com/clyso/chorus/releases/download/v0.5.13/standalone_v0.5.13_windows_amd64.zip",
-            "hash": "2c6f8ac7968008f2f196f97136b26fbbe21ec1395216efea13935e927949f0e0"
+            "url": "https://github.com/clyso/chorus/releases/download/v0.5.14/standalone_v0.5.14_windows_amd64.zip",
+            "hash": "130c1f451896408fc45908e2a4b540281cf332d60085092f560707806f13fcf6"
         }
     },
     "bin": "chorus.exe",
