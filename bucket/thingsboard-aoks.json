@@ -1,0 +1,39 @@
+{
+    "version": "3.9.1",
+    "homepage": "https://thingsboard.io/",
+    "description": "Open-source IoT Platform.Device management, data collection, processing and visualization for your IoT solution.",
+    "license": "Apache-2.0",
+    "url": "https://github.com/thingsboard/thingsboard/releases/download/v3.9.1/thingsboard-windows-3.9.1.zip",
+    "hash": "886d5cf56cd555367a7a1cf67071f5ce46c03c25bf205c7c696528da4e0e965f",
+    "depends": "java/temurin17-jre",
+    "extract_dir": "thingsboard",
+    "installer": {
+        "script": "Start-Process -FilePath \"$dir\\install.bat\" -Wait"
+    },
+    "uninstaller": {
+        "script": "Start-Process -FilePath \"$dir\\uninstall.bat\" -Wait"
+    },
+    "persist": [
+        "conf",
+        "data/sql",
+        "install/logback.xml"
+    ],
+    "bin": [
+        [
+            "java -jar \"$dir\\lib\\thingsboard.jar\"",
+            "ThingsBoard"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "java -jar \"$dir\\lib\\thingsboard.jar\"",
+            "thingsboard"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/thingsboard/thingsboard"
+    },
+    "autoupdate": {
+        "url": "https://github.com/thingsboard/thingsboard/releases/download/v$version/thingsboard-windows-$version.zip"
+    }
+}
