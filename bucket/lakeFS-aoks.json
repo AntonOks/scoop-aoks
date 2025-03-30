@@ -1,16 +1,16 @@
 {
-    "version": "1.53.0",
+    "version": "1.53.1",
     "description": "Data version control for your data lake | Git for data.",
     "homepage": "https://github.com/treeverse/lakeFS",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/treeverse/lakeFS/releases/download/v1.53.0/lakeFS_1.53.0_Windows_x86_64.zip",
-            "hash": "ab92cc5e43fbf7428cf83d096a1387f781e54f57bfa5d885656dc55752c12960"
+            "url": "https://github.com/treeverse/lakeFS/releases/download/v1.53.1/lakeFS_1.53.1_Windows_x86_64.zip",
+            "hash": "ecfd8520747f9df9f14b470485da717ddde73b8b2431ad60b4e73dcda6448ba5"
         },
         "arm64": {
-            "url": "https://github.com/treeverse/lakeFS/releases/download/v1.53.0/lakeFS_1.53.0_Windows_arm64.zip",
-            "hash": "5891800e06f0b949b456c6c1d5d0f51b9147e168c8f0e893a66c847a6bca6342"
+            "url": "https://github.com/treeverse/lakeFS/releases/download/v1.53.1/lakeFS_1.53.1_Windows_arm64.zip",
+            "hash": "77de0754365118a21d80dc21ce049d593430570a75511a092d5dcd626297f81d"
         }
     },
     "bin": [
