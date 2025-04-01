@@ -1,18 +1,18 @@
 {
-    "version": "1.29.3",
+    "version": "1.29.4",
     "description": "The Syncthing relay server",
     "homepage": "https://syncthing.net/",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/syncthing/relaysrv/releases/download/v1.29.3/strelaysrv-windows-amd64-v1.29.3.zip",
-            "hash": "fa4c51fb13a6e1ba18598128ac2a44cb22974ca5913664c06dbde8325148ca0a",
-            "extract_dir": "strelaysrv-windows-amd64-v1.29.3"
+            "url": "https://github.com/syncthing/relaysrv/releases/download/v1.29.4/strelaysrv-windows-amd64-v1.29.4.zip",
+            "hash": "e1046a5a072deb3cbe84504b5ece48cbb6f2f6b09dc47d49f3051896b37ae631",
+            "extract_dir": "strelaysrv-windows-amd64-v1.29.4"
         },
         "32bit": {
-            "url": "https://github.com/syncthing/relaysrv/releases/download/v1.29.3/strelaysrv-windows-386-v1.29.3.zip",
-            "hash": "054cc7b892b8b26cafe7bea1688636bed337f4a8a38514a25b5a320985b08b85",
-            "extract_dir": "strelaysrv-windows-386-v1.29.3"
+            "url": "https://github.com/syncthing/relaysrv/releases/download/v1.29.4/strelaysrv-windows-386-v1.29.4.zip",
+            "hash": "278016954f6a73dddb4759d2c32065fa76b1fd9c3470e3e0f34f373337a2d341",
+            "extract_dir": "strelaysrv-windows-386-v1.29.4"
         }
     },
     "bin": [
