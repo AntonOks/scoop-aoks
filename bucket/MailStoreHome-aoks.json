@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.mailstore.com/en/products/mailstore-home/",
     "license": "Freeware",
-    "version": "25.1",
+    "version": "25.2",
     "url": "https://my.mailstore.com/Downloads/Home#/dl.7z",
-    "hash": "f5c8bbc4ad184c104e2c8270fd19fc3b25ce37dcd9a5d28af959c04ae4edfaea",
+    "hash": "ebb60abe8529bd1b1e182a930df438af763f021d53bc68f8f20589eb6b594f6d",
     "bin": "MailStoreHome.exe",
     "shortcuts": [
         [
