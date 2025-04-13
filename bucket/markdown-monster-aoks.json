@@ -1,10 +1,10 @@
 {
     "homepage": "https://markdownmonster.west-wind.com",
     "description": "Markdown editing and weblog publishing tool",
-    "version": "3.7.1.8",
+    "version": "3.7.1.9",
     "license": "https://markdownmonster.west-wind.com/purchase.aspx#License",
     "url": "https://west-wind.com/files/MarkdownMonsterPortable.zip",
-    "hash": "b87d9704cd0675a0cd70bed30ea408d948ac245a291f4a64c4e66b7c2872e5c0",
+    "hash": "9e8214035e2241d375dd8aa47656c26687018294a529b753907ff8870cc00337",
     "pre_install": "if (!(Test-Path \"$dir\\_IsPortable\")) { New-Item \"$dir\\_IsPortable\" -Force | Out-Null }",
     "bin": "MarkdownMonster.exe",
     "shortcuts": [
