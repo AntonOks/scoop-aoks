@@ -60,8 +60,7 @@
             "$userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Firefox",
             "$myIWR = $(Invoke-WebRequest -UserAgent \"$userAgent\" -Headers @{'Accept' = '*/*'} -SkipHeaderValidation $url).RawContent",
             "if(!($myIWR -match $regex)) { error \"Could match '$regex' on '$url'\"; return }",
-            "$script_ver = $matches[0]",
-            "Write-Output $script_ver"
+            "Write-Output $matches[0]"
         ],
         "regex": "([\\d.]+)"
     },
