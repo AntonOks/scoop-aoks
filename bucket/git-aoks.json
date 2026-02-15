@@ -47,10 +47,8 @@
         "}"
     ],
     "bin": [
-        "usr\\bin\\sh.exe",
         "cmd\\git.exe",
-        "cmd\\scalar.exe",
-        "cmd\\tig.exe"
+        "cmd\\scalar.exe"
     ],
     "env_set": {
         "GIT_INSTALL_ROOT": "$dir"
