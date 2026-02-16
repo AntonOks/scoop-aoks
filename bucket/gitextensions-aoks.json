@@ -33,7 +33,7 @@
         "Themes"
     ],
     "suggest": {
-        "extras/windowsdesktop-runtime-lts"
+        "windowsdesktop-runtime-lts": "extras/windowsdesktop-runtime-lts"
     },
     "checkver": {
         "url": "https://api.github.com/repositories/85953/releases/latest",
