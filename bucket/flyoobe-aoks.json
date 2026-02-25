@@ -12,11 +12,11 @@
             "hash": "cff3d6b13d99de4f28062113fa7a593bcea7d4d1a5db9e70b70d94926f1083dd"
         }
     },
-    "bin": "Flyo.exe",
+    "bin": "FlyOOBE.exe",
     "shortcuts": [
         [
-            "Flyo.exe",
-            "Flyo"
+            "FlyOOBE.exe",
+            "FlyOOBE"
         ]
     ],
     "checkver": {
