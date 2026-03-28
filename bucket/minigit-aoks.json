@@ -54,3 +54,5 @@
             "regex": "(?s)$basename.*?$sha256"
         }
     }
+}
+
