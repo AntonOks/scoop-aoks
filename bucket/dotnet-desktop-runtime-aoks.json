@@ -1,22 +1,22 @@
 {
     "##": "see also https://github.com/ScoopInstaller/Extras/blob/master/bucket/windowsdesktop-runtime-lts.json",
-    "version": "10.0.3",
+    "version": "10.0.8",
     "description": "Microsoft .NET Desktop Runtime LTS (Long-term support)",
     "homepage": "https://dotnet.microsoft.com/download/dotnet",
     "license": "MIT",
     "notes": "You can now remove this installer with 'scoop uninstall windowsdesktop-runtime-lts'",
     "architecture": {
         "64bit": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/10.0.3/windowsdesktop-runtime-10.0.3-win-x64.exe",
-            "hash": "sha512:7ce6f187618a550594bb5e979f3aba46e7a1ceed712b404b43160ea5ca6e60f681833ce03475054ce31485498e709cdb884b70c5b4b70ba4a496a595b0c77a0e"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/10.0.8/windowsdesktop-runtime-10.0.8-win-x64.exe",
+            "hash": "sha512:8dde7d1fe5d1934d386c01ac208e1a9debc1afa2448c5404e969c3bdee36b2dbaa9cff999452bd26181659f27f3eeffe200ac223c26a2196dc563bef0536ca1e"
         },
         "32bit": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/10.0.3/windowsdesktop-runtime-10.0.3-win-x86.exe",
-            "hash": "sha512:0d61feb27e2081cd00be137a0816ca429eaa6ecaaa16b19bd49f4ae5533adeaa40427f51ae8834bebdf5b8781cb33e7ef88e31d54f3150874aaeb0a77bee8432"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/10.0.8/windowsdesktop-runtime-10.0.8-win-x86.exe",
+            "hash": "sha512:9822ff88aecfe89b91d66948c29bbff2a8d51c607f15c65f83da68da3cce4dbc7b7cdd898f5d3fdd1888443b757f857d609d8fc69aadf8c0d37f97b22e982a82"
         },
         "arm64": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/10.0.3/windowsdesktop-runtime-10.0.3-win-arm64.exe",
-            "hash": "sha512:37b268e612b7859fe493a8601d55a280d9daab0dfb98de422749fd81767b43de5964339b1c55a7cb2d54ca8e7c127c5bdd3a68fd56382333e2b7f96039587a0f"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/10.0.8/windowsdesktop-runtime-10.0.8-win-arm64.exe",
+            "hash": "sha512:42d30c5da6b87f4caa7bfcff25d2144922e4242da2fb5d4adf0c9555eabd96deae4e51724a8580976bc652f74713fa8e1d1fba17cc19e27ca48e131ea291318d"
         }
     },
     "pre_install": "if (!(is_admin)) { error 'Admin privileges are required.'; break }",

@@ -1,17 +1,17 @@
 {
     "##": "see https://github.com/ScoopInstaller/Main/blob/master/bucket/nfpm.json or https://github.com/goreleaser/scoop-bucket/blob/master/bucket/nfpm.json",
-    "version": "2.45.0",
+    "version": "2.46.3",
     "description": "nFPM is Not FPM - a simple deb, rpm, apk, ipk, and arch linux packager written in Go",
     "homepage": "https://github.com/goreleaser/nfpm",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/goreleaser/nfpm/releases/download/v2.45.0/nfpm_2.45.0_Windows_x86_64.zip",
-            "hash": "97be2e4f2b970175b60fe6752fe2ac33ca39b0e3846924142ed362ff42323a06"
+            "url": "https://github.com/goreleaser/nfpm/releases/download/v2.46.3/nfpm_2.46.3_Windows_x86_64.zip",
+            "hash": "396ba24b30791392da229210e0d56388955f76cacbfe4c94baf65de46478fa6c"
         },
         "arm64": {
-            "url": "https://github.com/goreleaser/nfpm/releases/download/v2.45.0/nfpm_2.45.0_Windows_arm64.zip",
-            "hash": "771366eab82f71b3697e8f26b63db2d4962082d3610510d186d3227f01546cf9"
+            "url": "https://github.com/goreleaser/nfpm/releases/download/v2.46.3/nfpm_2.46.3_Windows_arm64.zip",
+            "hash": "2c167332054e6c9dd60956d7f6de54b5153d7c9acc7c5590eb6b2796ce58d441"
         }
     },
     "bin": "nfpm.exe",

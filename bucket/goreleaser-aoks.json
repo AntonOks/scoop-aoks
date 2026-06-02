@@ -1,16 +1,16 @@
 {
-    "version": "2.13.3",
+    "version": "2.16.0",
     "homepage": "https://goreleaser.com",
     "description": "Deliver Go binaries as fast and easily as possible",
     "license": "MIT",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/goreleaser/goreleaser/releases/download/v2.13.3/goreleaser_Windows_i386.zip",
-            "hash": "397729363d32fd2a16e48ef95c17d41e15037351ffea8821c801ba65ee982e0e"
+            "url": "https://github.com/goreleaser/goreleaser/releases/download/v2.16.0/goreleaser_Windows_i386.zip",
+            "hash": "d5b702f899a357670e1bd6ecc692a35baa61974185adb968c51ca441776cab7f"
         },
         "64bit": {
-            "url": "https://github.com/goreleaser/goreleaser/releases/download/v2.13.3/goreleaser_Windows_x86_64.zip",
-            "hash": "c5586c4ed749ca358ad61ed73ee4b8039cfa68daae8c23e69fb086d549dfb31d"
+            "url": "https://github.com/goreleaser/goreleaser/releases/download/v2.16.0/goreleaser_Windows_x86_64.zip",
+            "hash": "6fe5eda11f0bcac8069aff3ef3dcb0b11816c9e95f89773595564697a5278bc9"
         }
     },
     "bin": "goreleaser.exe",
@@ -20,19 +20,14 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/goreleaser/goreleaser/releases/download/v$version/goreleaser_Windows_x86_64.zip",
-                "hash": {
-                    "url": "$baseurl/checksums.txt",
-                    "regex": "$sha256\\s+$basename"
-                }
+                "url": "https://github.com/goreleaser/goreleaser/releases/download/v$version/goreleaser_Windows_x86_64.zip"
             },
             "32bit": {
-                "url": "https://github.com/goreleaser/goreleaser/releases/download/v$version/goreleaser_Windows_i386.zip",
-                "hash": {
-                    "url": "$baseurl/checksums.txt",
-                    "regex": "$sha256\\s+$basename"
-                }
+                "url": "https://github.com/goreleaser/goreleaser/releases/download/v$version/goreleaser_Windows_i386.zip"
             }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
         }
     }
 }

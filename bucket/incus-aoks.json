@@ -1,16 +1,16 @@
 {
     "homepage": "https://linuxcontainers.org/incus/",
     "description": "Modern, secure and powerful system container and virtual machine manager, a fork of Canonical LXD.",
-    "version": "6.21.0",
+    "version": "7.1.0",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/lxc/incus/releases/download/v6.21.0/bin.windows.incus.x86_64.exe#/incus.exe",
-            "hash": "37f5f0d70944176e18399a09a5b03785b7a0cdf2fcaefb45ced0071cb3ad672c"
+            "url": "https://github.com/lxc/incus/releases/download/v7.1.0/bin.windows.incus.x86_64.exe#/incus.exe",
+            "hash": "0fd7f6b82dd0d80f6967b601c063937efdcd2570a0a496347a7cfdd7bfd4f960"
         },
         "arm64": {
-            "url": "https://github.com/lxc/incus/releases/download/v6.21.0/bin.windows.incus.aarch64.exe#/incus.exe",
-            "hash": "bf608581f86e74287e62fd30d63bc089bf239a14296c2f0b93c41310f4cad81e"
+            "url": "https://github.com/lxc/incus/releases/download/v7.1.0/bin.windows.incus.aarch64.exe#/incus.exe",
+            "hash": "b5bead3343d2a41ab27ca79c38518aca06847c5e7e14b0c82f3b9ac45b6d0b6c"
         }
     },
     "bin": "incus.exe",
