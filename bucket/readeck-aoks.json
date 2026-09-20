@@ -1,16 +1,16 @@
 {
-    "version": "0.23.2",
+    "version": "0.23.4",
     "description": "A simple web application that lets you save the precious readable content of web pages you like and want to keep forever.",
     "homepage": "https://readeck.org/",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://codeberg.org/readeck/readeck/releases/download/0.23.2/readeck-0.23.2-windows-amd64.exe#/readeck.exe",
-            "hash": "c91aad0b1d11be82d2244b22cb5e5b79cc6439dca2367b6b57fd864be7042764"
+            "url": "https://codeberg.org/readeck/readeck/releases/download/0.23.4/readeck-0.23.4-windows-amd64.exe#/readeck.exe",
+            "hash": "54eaf72ce30f37d34c250716b2fe8ce8af4309093228e924a7e9ae8d2bbe10b9"
         },
         "32bit": {
-            "url": "https://codeberg.org/readeck/readeck/releases/download/0.23.2/readeck-0.23.2-windows-386.exe#/readeck.exe",
-            "hash": "76cb6bd062dd76366d7164d4892c8c340277bb0d361b72c867a023d3e3b34572"
+            "url": "https://codeberg.org/readeck/readeck/releases/download/0.23.4/readeck-0.23.4-windows-386.exe#/readeck.exe",
+            "hash": "6c8139dbead3e22f0acdbc2e4d6a2b48402bb4de4fbb117104dd3e50297b7365"
         }
     },
     "bin": "readeck.exe",
