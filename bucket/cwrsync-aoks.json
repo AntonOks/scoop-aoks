@@ -12,7 +12,7 @@
             "hash": "8dc20afec889908c05c2abaa21d37f3fcad3e7ea5f3f37e95b25e6178f6b983a"
         }
     },
-    "bin": "rsync.cmd",
+    "bin": "cwrsync.cmd",
     "checkver": {
         "url": "https://itefix.net/changelogs/cwrsync/",
         "regex": "Latest release cwRsync client ([\\d.-]+)"
