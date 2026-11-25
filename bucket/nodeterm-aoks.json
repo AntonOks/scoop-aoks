@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/eneskirca/nodeterm/releases/download/v0.5.3/nodeterm-0.5.3-win.zip",
-            "hash": "sha512:00d66298f59ee2373d54f1d1f6a0fad646432506a42772d88613143688ff27cd23f34790d7b1093520163d4e6e5ab8d1e0627bff409594f4796556659d5e1a4d"
+            "hash": "5be08fcef6de61d81d43d9be8c47ceee8229322a556f31fb7abbe11659c58967"
         }
     },
     "bin": "nodeterm.exe",
