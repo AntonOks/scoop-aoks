@@ -16,11 +16,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/eneskirca/nodeterm/releases/download/v$version/nodeterm-$version-win.zip",
-                "hash": {
-                    "url": "$baseurl/latest.yml",
-                    "regex": "sha512: $base64"
-                }
+                "url": "https://github.com/eneskirca/nodeterm/releases/download/v$version/nodeterm-$version-win.zip"
             }
         }
     }
