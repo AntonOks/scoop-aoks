@@ -1,0 +1,27 @@
+{
+    "version": "0.5.3",
+    "description": "Node-based terminal manager for AI coding agents — tmux-backed terminals and parallel agent sessions as draggable nodes on an infinite pan/zoom canvas.",
+    "homepage": "https://nodeterm.dev/",
+    "license": "BUSL-1.1",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/eneskirca/nodeterm/releases/download/v0.5.3/nodeterm-0.5.3-win.zip",
+            "hash": "sha512:00d66298f59ee2373d54f1d1f6a0fad646432506a42772d88613143688ff27cd23f34790d7b1093520163d4e6e5ab8d1e0627bff409594f4796556659d5e1a4d"
+        }
+    },
+    "bin": "nodeterm.exe",
+    "checkver": {
+        "github": "https://github.com/eneskirca/nodeterm"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/eneskirca/nodeterm/releases/download/v$version/nodeterm-$version-win.zip",
+                "hash": {
+                    "url": "$baseurl/latest.yml",
+                    "regex": "sha512: $base64"
+                }
+            }
+        }
+    }
+}
