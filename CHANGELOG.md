@@ -2,7 +2,22 @@
 
 All notable changes to this repository's tooling and manifests are documented in this file.
 
-## [Unreleased] - 2026-11-28
+## [0.002] - 2026-11-28
+
+### Fixed
+
+- `bin/Update-AutoupdateManifests.ps1`
+  - Honor the `-Manifests` parameter: only the requested manifest(s) are checked instead of
+    always scanning the whole bucket.
+  - Honor the `-BucketDir` parameter: `checkver.ps1` is now called directly with
+    `-Dir $BucketDir` (and manifests are resolved from it) instead of relying on the
+    hard-coded `..\bucket` path in the `bin\checkver.ps1` wrapper.
+  - Stop hiding failures with an unconditional `exit 0`. Failed autoupdates, `git add`,
+    `git commit` and `git push` now set a failure flag, and the script exits with code `1`.
+  - The `git pull` guard (review item 1) was already fixed in `0.001`; no further change
+    was needed for this round.
+
+## [0.001] - 2026-11-28
 
 ### Fixed
 

@@ -23,19 +23,25 @@ param(
 begin {
     [BOOL]$GITPULLED = $False
     [BOOL]$GITDOPUSH = $False
+    [BOOL]$failed = $False
 
-    IF ( $PSScriptRoot ) { $ScriptRoot = $PSScriptRoot} ELSE { $ScriptRoot = Get-Location }
-
-    IF ( -NOT(Test-Path -Path $ScriptRoot\checkver.ps1) ) {
-        Write-Host "  ERROR - `"$ScriptRoot\checkver.ps1`" is required but cannot be found."
-        EXIT
-    } ELSE {
-        $checkverScript = "$ScriptRoot\checkver.ps1"
+    IF ( -NOT $env:SCOOP_HOME ) { $env:SCOOP_HOME = Convert-Path (scoop prefix scoop) }
+    $checkverScript = "$env:SCOOP_HOME\bin\checkver.ps1"
+    IF ( -NOT (Test-Path -Path $checkverScript) ) {
+        Write-Host "  ERROR - `"$checkverScript`" is required but cannot be found."
+        EXIT 1
     }
+
+    $BucketDir = (Resolve-Path -Path $BucketDir).Path
 }
 #
 process {
-    [ARRAY]$manifestsStatus = @(& $checkverScript * 6>&1)
+    $apps = IF ( $Manifests ) { $Manifests } ELSE { @('*') }
+    [ARRAY]$manifestsStatus = @(
+        FOREACH ( $app in $apps ) {
+            & $checkverScript -App $app -Dir $BucketDir 6>&1
+        }
+    )
 
     FOR ( $i=0; $i -lt $manifestsStatus.length; ) {
         IF ( $Verbose ) { Write-Host "   INFO - Working on line NR $i" }
@@ -55,20 +61,31 @@ process {
                     $GITPULLED = $True
                 }
 
-                $manifestFile = "$ScriptRoot\..\bucket\${TOOL}.json"
-                IF ( (Get-Content $manifestFile -Raw) -match '\$match' ) {
-                    # autoupdate uses '$match*' variables, which only a full check populates
-                    & $ScriptRoot\checkver.ps1 $TOOL -Update
-                } ELSE {
-                    # reuse the version from the initial check: no second request, no version drift
-                    & $ScriptRoot\checkver.ps1 $TOOL -Update -Version $VERSION
+                $manifestFile = Join-Path $BucketDir "${TOOL}.json"
+                $updateOk = $True
+                TRY {
+                    IF ( (Get-Content $manifestFile -Raw) -match '\$match' ) {
+                        # autoupdate uses '$match*' variables, which only a full check populates
+                        & $checkverScript -App $TOOL -Dir $BucketDir -Update -ThrowError
+                    } ELSE {
+                        # reuse the version from the initial check: no second request, no version drift
+                        & $checkverScript -App $TOOL -Dir $BucketDir -Update -Version $VERSION -ThrowError
+                    }
+                } CATCH {
+                    Write-Host "  ERROR - update failed for ${TOOL}: $($_.Exception.Message)"
+                    $failed = $True
+                    $updateOk = $False
                 }
-                $VERSION = (Get-Content $manifestFile -Raw | ConvertFrom-Json).version
 
-                IF ( -NOT $env:I_AM_A_GITHUB_ACTION ) {
-                  & git add $manifestFile
-                  & git commit -m "${TOOL}: Update to $VERSION"
-                  $GITDOPUSH = $True
+                IF ( $updateOk ) {
+                    $VERSION = (Get-Content $manifestFile -Raw | ConvertFrom-Json).version
+
+                    IF ( -NOT $env:I_AM_A_GITHUB_ACTION ) {
+                      & git add $manifestFile
+                      IF ( $LASTEXITCODE -ne 0 ) { $failed = $True }
+                      & git commit -m "${TOOL}: Update to $VERSION"
+                      IF ( $LASTEXITCODE -ne 0 ) { $failed = $True } ELSE { $GITDOPUSH = $True }
+                    }
                 }
                 $i = $i + 4
             } ELSE { $i = $i + 2 }
@@ -82,7 +99,13 @@ process {
     Write-Host "         Last line was `"$manifestsStatus[$i]`""
 } #>
 
-    IF ( $GITDOPUSH ) { & git push -q}
+    IF ( $GITDOPUSH ) {
+        & git push -q
+        IF ( $LASTEXITCODE -ne 0 ) {
+            Write-Host "  ERROR - 'git push' failed (exit code $LASTEXITCODE)."
+            $failed = $True
+        }
+    }
 
-    EXIT 0 #force $LastExitCode to be 0 :|
+    IF ( $failed ) { EXIT 1 } ELSE { EXIT 0 }
 }
