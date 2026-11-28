@@ -46,11 +46,27 @@ process {
             IF ( $Verbose ) { Write-Host "   INFO - `$TOOL is `"$TOOL`", `$VERSION is `"$VERSION`"" }
 
             IF ( $manifestsStatus[$i + 3] -match " autoupdate available" ) {
-                IF ( -NOT ($GITPULLED) | Out-Null ) { ( & git pull -q) -and ( $GITPULLED = $True ) }
-                & $ScriptRoot\checkver.ps1 $TOOL -u
+                IF ( -NOT $GITPULLED ) {
+                    & git pull --ff-only -q
+                    IF ( $LASTEXITCODE -ne 0 ) {
+                        Write-Host "  ERROR - 'git pull --ff-only' failed (exit code $LASTEXITCODE). Aborting."
+                        EXIT 1
+                    }
+                    $GITPULLED = $True
+                }
+
+                $manifestFile = "$ScriptRoot\..\bucket\${TOOL}.json"
+                IF ( (Get-Content $manifestFile -Raw) -match '\$match' ) {
+                    # autoupdate uses '$match*' variables, which only a full check populates
+                    & $ScriptRoot\checkver.ps1 $TOOL -Update
+                } ELSE {
+                    # reuse the version from the initial check: no second request, no version drift
+                    & $ScriptRoot\checkver.ps1 $TOOL -Update -Version $VERSION
+                }
+                $VERSION = (Get-Content $manifestFile -Raw | ConvertFrom-Json).version
 
                 IF ( -NOT $env:I_AM_A_GITHUB_ACTION ) {
-                  & git add $ScriptRoot\..\bucket\${TOOL}.json
+                  & git add $manifestFile
                   & git commit -m "${TOOL}: Update to $VERSION"
                   $GITDOPUSH = $True
                 }
