@@ -11,8 +11,7 @@
     "hash": "7aa2b82925e314578fff272bf6775a6e56f891182b42e11a3ecfd2cac5ea3927",
     "bin": "wcurl",
     "checkver": {
-        "url": "https://github.com/curl/wcurl/tags",
-        "regex": "tag/v?([\\d.]+)"
+        "github": "https://github.com/curl/wcurl"
     },
     "autoupdate": {
         "url": "https://raw.githubusercontent.com/curl/wcurl/v$version/wcurl"
