@@ -2,6 +2,15 @@
 
 All notable changes to this repository's tooling and manifests are documented in this file.
 
+## [0.003] - 2026-11-28
+
+### Fixed
+
+- `bin/Update-AutoupdateManifests.ps1`
+  - Restrict each commit to the updated manifest by passing it as a pathspec
+    (`git commit -m "..." -- <manifest>`). Previously `git commit` committed the whole
+    index, so unrelated staged changes could be bundled into the per-manifest commit.
+
 ## [0.002] - 2026-11-28
 
 ### Fixed

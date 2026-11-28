@@ -83,7 +83,7 @@ process {
                     IF ( -NOT $env:I_AM_A_GITHUB_ACTION ) {
                       & git add $manifestFile
                       IF ( $LASTEXITCODE -ne 0 ) { $failed = $True }
-                      & git commit -m "${TOOL}: Update to $VERSION"
+                      & git commit -m "${TOOL}: Update to $VERSION" -- $manifestFile
                       IF ( $LASTEXITCODE -ne 0 ) { $failed = $True } ELSE { $GITDOPUSH = $True }
                     }
                 }
